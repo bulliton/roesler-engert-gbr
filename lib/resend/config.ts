@@ -12,12 +12,26 @@ export function getFromEmail() {
   return process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev";
 }
 
-export function getSalesNotificationEmail() {
+export function getSalesNotificationEmail(requestType?: string) {
+  if (requestType === "partnership" && process.env.SALES_EMAIL_PARTNERSHIP) {
+    return process.env.SALES_EMAIL_PARTNERSHIP;
+  }
+  if (requestType === "diamonds" && process.env.SALES_EMAIL_DIAMONDS) {
+    return process.env.SALES_EMAIL_DIAMONDS;
+  }
+  if (requestType === "collection" && process.env.SALES_EMAIL_COLLECTION) {
+    return process.env.SALES_EMAIL_COLLECTION;
+  }
+
   return (
     process.env.SALES_NOTIFICATION_EMAIL ??
     process.env.RESEND_FROM_EMAIL ??
     "info@roesler-engert.de"
   );
+}
+
+export function getCronSecret() {
+  return process.env.CRON_SECRET;
 }
 
 export function getResendAudienceId() {

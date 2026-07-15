@@ -2,9 +2,14 @@ import { render } from "@react-email/components";
 import {
   BookletLeadConfirmationEmail,
   BookletLeadSalesNotificationEmail,
+  CatalogFollowUp1Email,
+  CatalogFollowUp2Email,
   ContactLeadConfirmationEmail,
+  ContactLeadFollowUpEmail,
   ContactLeadSalesNotificationEmail,
   NewsletterConfirmationEmail,
+  NewsletterDoubleOptInEmail,
+  PartnershipNurtureEmail,
 } from "@/lib/resend/emails";
 import {
   getCatalogDownloadUrl,
@@ -12,8 +17,10 @@ import {
   getResendAudienceId,
   getResendClient,
   getSalesNotificationEmail,
+  getSiteUrl,
   type AppLocale,
 } from "@/lib/resend/config";
+import { buildNewsletterConfirmUrl, createLeadToken } from "@/lib/leads/tokens";
 
 type SendResult = { ok: true } | { ok: false; error: unknown };
 
@@ -76,7 +83,7 @@ export async function sendContactLeadEmails({
   if (!confirmation.ok) return confirmation;
 
   return sendEmail({
-    to: getSalesNotificationEmail(),
+    to: getSalesNotificationEmail(requestType),
     subject: `Neue B2B-Anfrage: ${company} (${name})`,
     react: (
       <ContactLeadSalesNotificationEmail
@@ -151,7 +158,40 @@ export async function sendBookletLeadEmails({
   });
 }
 
-export async function sendNewsletterEmails({
+export async function sendNewsletterDoubleOptIn({
+  locale,
+  email,
+  company,
+}: {
+  locale: AppLocale;
+  email: string;
+  company?: string;
+}): Promise<SendResult> {
+  const token = createLeadToken({
+    type: "newsletter_confirm",
+    email,
+    locale,
+    company,
+  });
+
+  const isEn = locale === "en";
+
+  return sendEmail({
+    to: email,
+    subject: isEn
+      ? "Please confirm your newsletter subscription — Rösler & Engert"
+      : "Bitte bestätigen Sie Ihre Newsletter-Anmeldung — Rösler & Engert",
+    react: (
+      <NewsletterDoubleOptInEmail
+        locale={locale}
+        email={email}
+        confirmUrl={buildNewsletterConfirmUrl(token)}
+      />
+    ),
+  });
+}
+
+export async function sendNewsletterConfirmation({
   locale,
   email,
   company,
@@ -187,3 +227,24 @@ export async function sendNewsletterEmails({
     react: <NewsletterConfirmationEmail locale={locale} email={email} />,
   });
 }
+
+/** @deprecated Use sendNewsletterDoubleOptIn + sendNewsletterConfirmation */
+export async function sendNewsletterEmails({
+  locale,
+  email,
+  company,
+}: {
+  locale: AppLocale;
+  email: string;
+  company?: string;
+}): Promise<SendResult> {
+  return sendNewsletterDoubleOptIn({ locale, email, company });
+}
+
+export {
+  CatalogFollowUp1Email,
+  CatalogFollowUp2Email,
+  ContactLeadFollowUpEmail,
+  PartnershipNurtureEmail,
+  getSiteUrl,
+};
