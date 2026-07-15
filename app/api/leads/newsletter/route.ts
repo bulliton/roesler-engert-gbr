@@ -8,8 +8,9 @@ import {
   serverError,
   validationError,
 } from "@/lib/api/leads";
+import { recordLead } from "@/lib/leads/record";
 import { getResendClient } from "@/lib/resend/config";
-import { sendNewsletterEmails } from "@/lib/resend/send";
+import { sendNewsletterDoubleOptIn } from "@/lib/resend/send";
 
 export async function POST(request: Request) {
   let locale = parseLocale(undefined);
@@ -29,18 +30,26 @@ export async function POST(request: Request) {
       return emailNotConfiguredError(locale);
     }
 
-    const result = await sendNewsletterEmails({
+    const result = await sendNewsletterDoubleOptIn({
       locale,
       email,
       company: company || undefined,
     });
 
     if (!result.ok) {
-      console.error("Newsletter email failed:", result.error);
+      console.error("Newsletter DOI email failed:", result.error);
       return emailSendFailedError(locale);
     }
 
-    return jsonResponse({ success: true });
+    await recordLead({
+      type: "newsletter",
+      email,
+      company: company || undefined,
+      locale,
+      newsletterConfirmed: false,
+    });
+
+    return jsonResponse({ success: true, pendingConfirmation: true });
   } catch (error) {
     console.error("Newsletter API error:", error);
     return serverError(locale);

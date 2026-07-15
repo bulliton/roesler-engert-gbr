@@ -338,25 +338,25 @@ export function CatalogFollowUp2Email({ locale }: { locale: AppLocale }) {
       locale={locale}
       preview={
         isEn
-          ? "Personal consultation — we are here for you"
-          : "Persönliche Beratung — wir sind für Sie da"
+          ? "Personal consultation from Würzburg"
+          : "Persönliche Beratung aus Würzburg"
       }
       eyebrowLabel={isEn ? "Catalog · Follow-up" : "Katalog · Follow-up"}
       title={
         isEn
-          ? "Personal consultation — we are here for you"
-          : "Persönliche Beratung — wir sind für Sie da"
+          ? "We are here if you have questions"
+          : "Wir sind für Sie da, wenn Fragen offen sind"
       }
     >
       <Text style={text}>
         {isEn
-          ? "As a jeweler partner, you benefit from our comprehensive B2B service: invoice purchasing, ring adjustments, engravings, nationwide shipping, and custom collection adaptations — all from our atelier in Würzburg."
-          : "Als Juwelierpartner profitieren Sie von unserem umfassenden B2B-Service: Rechnungsankauf, Ringanpassungen, Gravuren, deutschlandweiter Versand und individuelle Kollektionsanpassungen — alles aus einer Hand in Würzburg."}
+          ? "As a jeweler partner, you get invoice purchasing, ring adjustments, engravings, nationwide shipping, and collection adaptations from our atelier in Würzburg."
+          : "Als Juwelierpartner erhalten Sie Rechnungsankauf, Ringanpassungen, Gravuren, deutschlandweiten Versand und Kollektionsanpassungen aus unserem Atelier in Würzburg."}
       </Text>
       <EmailQuote>
         {isEn
-          ? "We see ourselves as the back office for independent jewelers — with in-house manufacturing, a licensed gemmologist, and personal field service."
-          : "„Wir verstehen uns als Backoffice für unabhängige Juweliere — mit eigener Manufaktur, lizenziertem Gemmologen und persönlichem Außendienst."}
+          ? "We work as the back office for independent jewelers: in-house manufacturing, a licensed gemologist, and field service when you need it."
+          : "Wir verstehen uns als Backoffice für unabhängige Juweliere: eigene Manufaktur, lizenzierter Gemmologe und Außendienst, wenn Sie ihn brauchen."}
       </EmailQuote>
       <EmailButton
         href={`${CONTACT.appointmentUrl}?utm_source=email&utm_medium=nurture&utm_campaign=nur-02`}
@@ -534,7 +534,7 @@ export function NewsletterConfirmationEmail({
           : "Newsletter-Anmeldung bestätigt"
       }
       eyebrowLabel="Newsletter"
-      title={isEn ? "Welcome to our newsletter" : "Willkommen beim Newsletter"}
+      title={isEn ? "Welcome to partner updates" : "Willkommen bei den Partner-Updates"}
       showUnsubscribe
     >
       <Text style={text}>
@@ -544,13 +544,13 @@ export function NewsletterConfirmationEmail({
       </Text>
       <Text style={text}>
         {isEn
-          ? `We have registered ${email} for our B2B updates. You will receive news about collections, trade fairs, and partnership opportunities.`
-          : `Wir haben ${email} für unsere B2B-Updates registriert. Sie erhalten Neuigkeiten zu Kollektionen, Messen und Partnerschaftsmöglichkeiten.`}
+          ? `We registered ${email} for partner updates: new collections, trade fairs, and partnership news.`
+          : `Wir haben ${email} für Partner-Updates registriert: neue Kollektionen, Messen und Neuigkeiten zur Partnerschaft.`}
       </Text>
       <Text style={{ ...mutedText, margin: "0", fontStyle: "italic" }}>
         {isEn
-          ? "We look forward to keeping you informed."
-          : "Wir freuen uns, Sie auf dem Laufenden zu halten."}
+          ? "You can unsubscribe at any time."
+          : "Sie können sich jederzeit wieder abmelden."}
       </Text>
     </EmailLayout>
   );

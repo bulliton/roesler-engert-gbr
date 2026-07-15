@@ -8,6 +8,7 @@ import {
   serverError,
   validationError,
 } from "@/lib/api/leads";
+import { recordLead } from "@/lib/leads/record";
 import { getResendClient } from "@/lib/resend/config";
 import { sendContactLeadEmails } from "@/lib/resend/send";
 
@@ -65,6 +66,18 @@ export async function POST(request: Request) {
       console.error("Contact lead email failed:", result.error);
       return emailSendFailedError(locale);
     }
+
+    await recordLead({
+      type: "contact",
+      email,
+      name,
+      company,
+      phone: phone || undefined,
+      message,
+      requestType: requestType || undefined,
+      source,
+      locale,
+    });
 
     return jsonResponse({ success: true });
   } catch (error) {

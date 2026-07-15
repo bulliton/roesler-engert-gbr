@@ -8,6 +8,7 @@ import {
   serverError,
   validationError,
 } from "@/lib/api/leads";
+import { recordLead } from "@/lib/leads/record";
 import { getCatalogDownloadUrl, getResendClient } from "@/lib/resend/config";
 import { sendBookletLeadEmails } from "@/lib/resend/send";
 
