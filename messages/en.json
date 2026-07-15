@@ -105,6 +105,15 @@
       "requestCollection": "Collection & jewelry",
       "requestGeneral": "General inquiry",
       "name": "Name",
+      "salutation": "Salutation",
+      "salutationPlaceholder": "Please select",
+      "salutationOptions": {
+        "frau": "Ms.",
+        "herr": "Mr.",
+        "divers": "Mx."
+      },
+      "firstName": "First name",
+      "lastName": "Last name",
       "company": "Company",
       "email": "Email",
       "message": "Message",
@@ -159,8 +168,8 @@
     },
     "proof": {
       "quote": {
-        "text": "When a customer questions a diamond, I need someone who gives me the answer right away. That is what Rösler & Engert is for.",
-        "attribution": "Partner jeweler, Franconia"
+        "text": "I have the simplest tastes. I am always satisfied with the best.",
+        "attribution": "Oscar Wilde"
       }
     },
     "stats": {
@@ -397,6 +406,15 @@
       "title": "Write to us",
       "subtitle": "Partnership, collection, or diamond selection: we will get back to you personally.",
       "name": "Name",
+      "salutation": "Salutation",
+      "salutationPlaceholder": "Please select",
+      "salutationOptions": {
+        "frau": "Ms.",
+        "herr": "Mr.",
+        "divers": "Mx."
+      },
+      "firstName": "First name",
+      "lastName": "Last name",
       "company": "Company",
       "email": "Email",
       "phone": "Phone",

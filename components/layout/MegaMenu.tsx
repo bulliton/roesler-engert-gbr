@@ -81,7 +81,7 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
         </MegaMenuColumn>
 
         <MegaMenuFeature
-          src={SITE_IMAGES.solderingTorch}
+          src={SITE_IMAGES.precisionMeasurement}
           alt=""
           caption={t("diamondsCaption")}
           href="/diamonds"

@@ -105,6 +105,15 @@
       "requestCollection": "Kollektion & Schmuck",
       "requestGeneral": "Allgemeine Anfrage",
       "name": "Name",
+      "salutation": "Anrede",
+      "salutationPlaceholder": "Bitte auswählen",
+      "salutationOptions": {
+        "frau": "Frau",
+        "herr": "Herr",
+        "divers": "Divers"
+      },
+      "firstName": "Vorname",
+      "lastName": "Nachname",
       "company": "Unternehmen",
       "email": "E-Mail",
       "message": "Nachricht",
@@ -159,8 +168,8 @@
     },
     "proof": {
       "quote": {
-        "text": "Wenn ein Kunde den Diamanten infrage stellt, brauche ich jemanden, der mir sofort die Antwort liefert. Genau dafür gibt es Rösler & Engert.",
-        "attribution": "Partner-Juwelier, Franken"
+        "text": "Ich habe den einfachsten Geschmack. Mir genügt stets das Beste.",
+        "attribution": "Oscar Wilde"
       }
     },
     "stats": {
@@ -397,6 +406,15 @@
       "title": "Schreiben Sie uns",
       "subtitle": "Partnerschaft, Kollektion oder Diamantauswahl: Wir melden uns persönlich bei Ihnen.",
       "name": "Name",
+      "salutation": "Anrede",
+      "salutationPlaceholder": "Bitte auswählen",
+      "salutationOptions": {
+        "frau": "Frau",
+        "herr": "Herr",
+        "divers": "Divers"
+      },
+      "firstName": "Vorname",
+      "lastName": "Nachname",
       "company": "Unternehmen",
       "email": "E-Mail",
       "phone": "Telefon",

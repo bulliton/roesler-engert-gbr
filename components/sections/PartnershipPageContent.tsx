@@ -26,8 +26,9 @@ export function PartnershipPageContent() {
 
       <FeatureSection
         image={{
-          src: SITE_IMAGES.leadership,
+          src: SITE_IMAGES.leadershipPhoto,
           objectPosition: "object-[center_20%]",
+          quality: 90,
         }}
         eyebrow={t("hero.eyebrow")}
         title={t("story.title")}

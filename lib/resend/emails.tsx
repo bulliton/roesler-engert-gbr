@@ -22,6 +22,10 @@ import {
   mutedText,
   text,
 } from "@/lib/resend/email-layout";
+import {
+  getPartnershipNurtureImageKey,
+  resolveEmailHero,
+} from "@/lib/resend/email-images";
 
 type ContactLeadEmailProps = {
   locale: AppLocale;
@@ -51,6 +55,7 @@ export function ContactLeadConfirmationEmail({
       }
       eyebrowLabel={isEn ? "B2B partnership" : "B2B Partnerschaft"}
       title={isEn ? "Thank you for your inquiry" : "Vielen Dank für Ihre Anfrage"}
+      heroImage={resolveEmailHero("contact", locale)}
     >
       <Text style={text}>
         {isEn ? `Dear ${name},` : `Guten Tag ${name},`}
@@ -95,6 +100,7 @@ export function ContactLeadFollowUpEmail({
         isEn ? "Your inquiry at Rösler & Engert" : "Ihre Anfrage bei Rösler & Engert"
       }
       title={isEn ? "Any questions about your inquiry?" : "Noch Fragen zu Ihrer Anfrage?"}
+      heroImage={resolveEmailHero("followUpContact", locale)}
     >
       <Text style={text}>
         {isEn ? `Dear ${name},` : `Guten Tag ${name},`}
@@ -234,6 +240,10 @@ export function BookletLeadConfirmationEmail({
       }
       eyebrowLabel={isEn ? "B2B Catalog 2026" : "B2B Katalog 2026"}
       title={isEn ? "Your catalog is ready" : "Ihr Katalog steht bereit"}
+      heroImage={{
+        ...resolveEmailHero("catalog", locale),
+        href: `${downloadUrl}?utm_source=email&utm_medium=transactional&utm_campaign=tx-03`,
+      }}
     >
       <Text style={text}>
         {isEn ? `Dear ${name},` : `Guten Tag ${name},`}
@@ -308,6 +318,7 @@ export function CatalogFollowUp1Email({
           ? "Questions about our collections?"
           : "Haben Sie Fragen zu unseren Kollektionen?"
       }
+      heroImage={resolveEmailHero("followUpCatalog", locale)}
     >
       <Text style={text}>
         {isEn ? `Dear ${name},` : `Guten Tag ${name},`}
@@ -347,6 +358,7 @@ export function CatalogFollowUp2Email({ locale }: { locale: AppLocale }) {
           ? "We are here if you have questions"
           : "Wir sind für Sie da, wenn Fragen offen sind"
       }
+      heroImage={resolveEmailHero("followUpServices", locale)}
     >
       <Text style={text}>
         {isEn
@@ -492,6 +504,7 @@ export function NewsletterDoubleOptInEmail({
           ? "Please confirm your subscription"
           : "Bitte bestätigen Sie Ihre Anmeldung"
       }
+      heroImage={resolveEmailHero("newsletter", locale)}
     >
       <Text style={text}>
         {isEn
@@ -536,6 +549,7 @@ export function NewsletterConfirmationEmail({
       eyebrowLabel="Newsletter"
       title={isEn ? "Welcome to partner updates" : "Willkommen bei den Partner-Updates"}
       showUnsubscribe
+      heroImage={resolveEmailHero("newsletter", locale)}
     >
       <Text style={text}>
         {isEn
@@ -642,6 +656,7 @@ export function PartnershipNurtureEmail({
       }
       title={content.title}
       showUnsubscribe
+      heroImage={resolveEmailHero(getPartnershipNurtureImageKey(step), locale)}
     >
       <Text style={text}>{content.body}</Text>
       <EmailButton href={links[step] ?? links[0]} label={content.cta} />

@@ -8,6 +8,7 @@ import {
   serverError,
   validationError,
 } from "@/lib/api/leads";
+import { parseContactNameFromBody } from "@/lib/leads/contact-name";
 import { recordLead } from "@/lib/leads/record";
 import { getResendClient } from "@/lib/resend/config";
 import { sendContactLeadEmails } from "@/lib/resend/send";
@@ -29,7 +30,10 @@ export async function POST(request: Request) {
     const body = await request.json();
     locale = parseLocale(body.locale);
 
-    const name = String(body.name ?? "").trim();
+    const nameResult = parseContactNameFromBody(body, locale);
+    if ("error" in nameResult) return validationError(locale, nameResult.error);
+
+    const { name, salutation, firstName, lastName } = nameResult;
     const company = String(body.company ?? "").trim();
     const email = String(body.email ?? "").trim();
     const phone = String(body.phone ?? "").trim();
@@ -38,7 +42,7 @@ export async function POST(request: Request) {
     const consent = Boolean(body.consent);
     const source = String(body.source ?? "contact-form").trim();
 
-    if (!name) return validationError(locale, "name");
+    if (!name) return validationError(locale, "firstName");
     if (!company) return validationError(locale, "company");
     if (!email || !isValidEmail(email)) return validationError(locale, "email");
     if (!consent) return consentError(locale);
@@ -71,6 +75,9 @@ export async function POST(request: Request) {
       type: "contact",
       email,
       name,
+      salutation,
+      firstName,
+      lastName,
       company,
       phone: phone || undefined,
       message,

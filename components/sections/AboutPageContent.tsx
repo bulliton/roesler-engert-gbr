@@ -84,7 +84,7 @@ export function AboutPageContent() {
               className="relative aspect-[3/2] overflow-hidden rounded-sm lg:order-2"
             >
               <Image
-                src={SITE_IMAGES.leadership}
+                src={SITE_IMAGES.leadershipPhoto}
                 alt={t("leadership.imageAlt")}
                 fill
                 className="object-cover object-[center_20%]"

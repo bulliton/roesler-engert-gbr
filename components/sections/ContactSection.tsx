@@ -136,10 +136,11 @@ export async function ContactSection() {
 
         <div className="contact-editorial-image relative min-h-[min(52vh,28rem)] lg:min-h-[calc(100svh-var(--header-offset))]">
           <Image
-            src={SITE_IMAGES.leadership}
+            src={SITE_IMAGES.leadershipPhoto}
             alt={t("imageAlt")}
             fill
             priority
+            quality={90}
             className="object-cover object-[center_22%]"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />

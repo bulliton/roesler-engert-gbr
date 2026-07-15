@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { submitLead } from "@/lib/forms/submit-lead";
+import { CONTACT_SALUTATIONS } from "@/lib/leads/contact-name";
 import { Link } from "@/lib/navigation";
 
 type ContactFormProps = {
@@ -42,7 +43,9 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
 
     const result = await submitLead("/api/leads/contact", {
       locale,
-      name: formData.get("name"),
+      salutation: formData.get("salutation"),
+      firstName: formData.get("firstName"),
+      lastName: formData.get("lastName"),
       company: formData.get("company"),
       email: formData.get("email"),
       phone: formData.get("phone"),
@@ -105,19 +108,47 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
         </select>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="grid gap-6 sm:grid-cols-[minmax(0,7.5rem)_1fr_1fr]">
         <div>
-          <label htmlFor="name" className={labelClass}>
-            {t("name")}
+          <label htmlFor="salutation" className={labelClass}>
+            {t("salutation")}
           </label>
-          <input id="name" name="name" required className={inputClass} />
+          <select
+            id="salutation"
+            name="salutation"
+            required
+            defaultValue=""
+            className={`${inputClass} cursor-pointer`}
+          >
+            <option value="" disabled>
+              {t("salutationPlaceholder")}
+            </option>
+            {CONTACT_SALUTATIONS.map((value) => (
+              <option key={value} value={value}>
+                {t(`salutationOptions.${value}`)}
+              </option>
+            ))}
+          </select>
         </div>
         <div>
-          <label htmlFor="company" className={labelClass}>
-            {t("company")}
+          <label htmlFor="firstName" className={labelClass}>
+            {t("firstName")}
           </label>
-          <input id="company" name="company" required className={inputClass} />
+          <input id="firstName" name="firstName" required autoComplete="given-name" className={inputClass} />
         </div>
+        <div>
+          <label htmlFor="lastName" className={labelClass}>
+            {t("lastName")}
+          </label>
+          <input id="lastName" name="lastName" required autoComplete="family-name" className={inputClass} />
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="company" className={labelClass}>
+          {t("company")}
+        </label>
+        <input id="company" name="company" required autoComplete="organization" className={inputClass} />
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2">

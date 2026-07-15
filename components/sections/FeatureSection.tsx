@@ -11,6 +11,7 @@ type FeatureSectionProps = {
     alt?: string;
     objectPosition?: string;
     priority?: boolean;
+    quality?: number;
   };
   eyebrow: string;
   title: string;
@@ -52,6 +53,7 @@ export function FeatureSection({
             className={`object-cover ${image.objectPosition ?? "object-center"}`}
             sizes="(max-width: 1024px) 100vw, 50vw"
             priority={image.priority}
+            quality={image.quality ?? 90}
           />
         </motion.div>
 

@@ -13,6 +13,8 @@ export const SITE_IMAGES = {
   qualityInspection: "/images/quality-inspection.webp",
   precisionTools: "/images/precision-tools.webp",
   heroCraftsmanship: "/images/hero-craftsmanship.webp",
+  /** Lossless source for large Next/Image displays (avoids double WebP compression). */
+  leadershipPhoto: "/images/leadership.png",
   leadership: "/images/leadership.webp",
   aboutHero: "/images/about-hero.jpg",
 } as const;

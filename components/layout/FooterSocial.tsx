@@ -25,6 +25,8 @@ function LinkedInIcon() {
   );
 }
 
+const SHOW_SOCIAL_LINKS = false;
+
 const socialLinks: SocialLink[] = [
   {
     label: "Instagram",
@@ -39,6 +41,8 @@ const socialLinks: SocialLink[] = [
 ];
 
 export function FooterSocial() {
+  if (!SHOW_SOCIAL_LINKS) return null;
+
   return (
     <div className="flex items-center gap-3">
       {socialLinks.map((link) => (

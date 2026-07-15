@@ -18,6 +18,9 @@ export type LeadRecord = {
   type: LeadType;
   email: string;
   name?: string;
+  salutation?: string;
+  firstName?: string;
+  lastName?: string;
   company?: string;
   phone?: string;
   source?: string;

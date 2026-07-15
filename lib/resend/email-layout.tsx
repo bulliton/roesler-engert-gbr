@@ -92,8 +92,48 @@ const link = {
   textDecoration: "none",
 };
 
+export const emailLogoWidth = 260;
+export const emailLogoHeight = 32;
+
 export function getLogoUrl() {
   return `${getSiteUrl()}/brand/logo-horizontal.svg`;
+}
+
+export type EmailHeroProps = {
+  src: string;
+  alt: string;
+  href?: string;
+};
+
+export function EmailHeroImage({ src, alt, href }: EmailHeroProps) {
+  const image = (
+    <Img
+      src={src}
+      width="600"
+      height="250"
+      alt={alt}
+      style={{
+        display: "block",
+        width: "100%",
+        maxWidth: "600px",
+        height: "auto",
+        border: 0,
+        outline: "none",
+      }}
+    />
+  );
+
+  return (
+    <Section style={{ margin: "0", padding: "0", lineHeight: "0", fontSize: "0" }}>
+      {href ? (
+        <Link href={href} style={{ textDecoration: "none" }}>
+          {image}
+        </Link>
+      ) : (
+        image
+      )}
+    </Section>
+  );
 }
 
 type EmailLayoutProps = {
@@ -103,6 +143,7 @@ type EmailLayoutProps = {
   title: string;
   children: ReactNode;
   showUnsubscribe?: boolean;
+  heroImage?: EmailHeroProps;
 };
 
 export function EmailLayout({
@@ -112,6 +153,7 @@ export function EmailLayout({
   title,
   children,
   showUnsubscribe = false,
+  heroImage,
 }: EmailLayoutProps) {
   const isEn = locale === "en";
 
@@ -124,18 +166,24 @@ export function EmailLayout({
           <Section style={logoSection}>
             <Img
               src={getLogoUrl()}
-              width="200"
-              height="24"
+              width={String(emailLogoWidth)}
+              height={String(emailLogoHeight)}
               alt="Rösler & Engert"
-              style={{ margin: "0 auto" }}
+              style={{ margin: "0 auto", display: "block", maxWidth: `${emailLogoWidth}px`, height: "auto" }}
             />
           </Section>
+          {heroImage ? <EmailHeroImage {...heroImage} /> : null}
           {eyebrowLabel ? (
-            <Section style={{ padding: "32px 48px 0" }}>
+            <Section style={{ padding: heroImage ? "24px 48px 0" : "32px 48px 0" }}>
               <Text style={eyebrow}>{eyebrowLabel}</Text>
             </Section>
           ) : null}
-          <Section style={contentSection}>
+          <Section
+            style={{
+              ...contentSection,
+              paddingTop: eyebrowLabel ? "20px" : heroImage ? "28px" : "32px",
+            }}
+          >
             <Heading style={heading}>{title}</Heading>
             {children}
           </Section>

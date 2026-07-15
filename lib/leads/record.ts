@@ -6,6 +6,9 @@ type RecordLeadInput = {
   email: string;
   locale: AppLocale;
   name?: string;
+  salutation?: string;
+  firstName?: string;
+  lastName?: string;
   company?: string;
   phone?: string;
   source?: string;

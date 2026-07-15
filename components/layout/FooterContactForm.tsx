@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/lib/navigation";
 import { submitLead } from "@/lib/forms/submit-lead";
+import { CONTACT_SALUTATIONS } from "@/lib/leads/contact-name";
 
 const inputClass =
   "w-full border-0 border-b border-white/25 bg-transparent py-3 text-sm text-white placeholder:text-white/40 outline-none transition-colors focus:border-secondary";
@@ -25,7 +26,9 @@ export function FooterContactForm() {
 
     const result = await submitLead("/api/leads/contact", {
       locale,
-      name: formData.get("name"),
+      salutation: formData.get("salutation"),
+      firstName: formData.get("firstName"),
+      lastName: formData.get("lastName"),
       company: formData.get("company"),
       email: formData.get("email"),
       message: formData.get("message"),
@@ -91,6 +94,28 @@ export function FooterContactForm() {
         </div>
 
         <div>
+          <label htmlFor="footer-salutation" className="sr-only">
+            {t("salutation")}
+          </label>
+          <select
+            id="footer-salutation"
+            name="salutation"
+            required
+            defaultValue=""
+            className={`${inputClass} cursor-pointer appearance-none`}
+          >
+            <option value="" disabled className="bg-primary-dark text-white/60">
+              {t("salutation")}
+            </option>
+            {CONTACT_SALUTATIONS.map((value) => (
+              <option key={value} value={value} className="bg-primary-dark">
+                {t(`salutationOptions.${value}`)}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div>
           <label htmlFor="footer-company" className="sr-only">
             {t("company")}
           </label>
@@ -104,18 +129,35 @@ export function FooterContactForm() {
           />
         </div>
 
-        <div>
-          <label htmlFor="footer-name" className="sr-only">
-            {t("name")}
-          </label>
-          <input
-            id="footer-name"
-            name="name"
-            type="text"
-            required
-            placeholder={t("name")}
-            className={inputClass}
-          />
+        <div className="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label htmlFor="footer-firstName" className="sr-only">
+              {t("firstName")}
+            </label>
+            <input
+              id="footer-firstName"
+              name="firstName"
+              type="text"
+              required
+              autoComplete="given-name"
+              placeholder={t("firstName")}
+              className={inputClass}
+            />
+          </div>
+          <div>
+            <label htmlFor="footer-lastName" className="sr-only">
+              {t("lastName")}
+            </label>
+            <input
+              id="footer-lastName"
+              name="lastName"
+              type="text"
+              required
+              autoComplete="family-name"
+              placeholder={t("lastName")}
+              className={inputClass}
+            />
+          </div>
         </div>
 
         <div>
