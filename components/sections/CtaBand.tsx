@@ -8,18 +8,22 @@ export async function CtaBand() {
   const t = await getTranslations("ctaBand");
 
   return (
-    <Section contrast className="!py-14 md:!py-16">
+    <Section contrast className="!py-16 md:!py-20">
       <Container>
-        <div className="flex flex-col items-center gap-6 text-center md:flex-row md:items-center md:justify-between md:text-left">
-          <div className="max-w-2xl">
-            <p className="font-display text-2xl text-white md:text-3xl">{t("title")}</p>
-            <p className="mt-3 text-sm leading-relaxed text-white/80 md:text-base">{t("text")}</p>
+        <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-xl">
+            <p className="font-display text-[clamp(1.5rem,2vw+0.5rem,2.25rem)] leading-snug text-white">
+              {t("title")}
+            </p>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-white/70">
+              {t("text")}
+            </p>
           </div>
-          <div className="flex shrink-0 flex-col items-center gap-3 sm:flex-row">
-            <Button href={CONTACT.appointmentUrl} external variant="primary" shape="pill" className="!border-accent-gold !bg-accent-gold !text-primary hover:!bg-accent-gold-light hover:!border-accent-gold-light">
+          <div className="flex shrink-0 flex-wrap gap-4">
+            <Button href={CONTACT.appointmentUrl} external variant="inverse">
               {t("appointment")}
             </Button>
-            <Button href="/catalog" variant="outline-contrast" shape="pill" className="text-sm opacity-90">
+            <Button href="/catalog" variant="outline-contrast">
               {t("catalog")}
             </Button>
           </div>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { Headline } from "@/components/ui/Headline";
+import { SectionIntro } from "@/components/ui/SectionIntro";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
 import { CONTACT } from "@/lib/constants";
@@ -24,64 +24,63 @@ export function VisitPageContent() {
         subtitle={t("hero.subtitle")}
       />
 
+      <Section className="!py-0">
+        <div className="relative aspect-[21/9] min-h-[14rem] w-full">
+          <Image
+            src={SITE_IMAGES.workshopInterior}
+            alt=""
+            fill
+            className="object-cover object-[center_40%]"
+            sizes="100vw"
+            priority
+          />
+        </div>
+      </Section>
+
       <Section>
         <Container>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="relative mb-12 aspect-[21/9] overflow-hidden rounded-sm md:mb-14"
-          >
-            <Image
-              src={SITE_IMAGES.workshopInterior}
-              alt=""
-              fill
-              className="object-cover object-[center_40%]"
-              sizes="100vw"
-              priority
-            />
-          </motion.div>
-
-          <div className="grid gap-10 lg:grid-cols-2">
+          <ul className="editorial-list">
             {optionKeys.map((key, i) => (
-              <motion.article
+              <motion.li
                 key={key}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="rounded-sm border border-primary/10 bg-primary-light p-8"
+                transition={{ delay: i * 0.06 }}
+                className="editorial-list-item"
               >
-                <Headline as="h2" bar={false}>
+                <p className="font-display text-[clamp(1.125rem,1.2vw+0.5rem,1.375rem)] leading-snug text-primary">
                   {t(`options.${key}.title`)}
-                </Headline>
-                <p className="mt-4 leading-relaxed text-muted">{t(`options.${key}.text`)}</p>
-                <ul className="mt-6 space-y-2 text-sm text-primary">
-                  {(["point1", "point2", "point3"] as const).map((point) => (
-                    <li key={point} className="flex gap--2">
-                      <span className="text-secondary">•</span>
-                      <span>{t(`options.${key}.${point}`)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.article>
+                </p>
+                <div>
+                  <p className="text-sm leading-relaxed text-muted md:text-base">
+                    {t(`options.${key}.text`)}
+                  </p>
+                  <ul className="mt-4 space-y-2 text-sm text-primary">
+                    {(["point1", "point2", "point3"] as const).map((point) => (
+                      <li key={point} className="flex gap-3">
+                        <span className="text-accent-gold">—</span>
+                        <span>{t(`options.${key}.${point}`)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.li>
             ))}
-          </div>
+          </ul>
 
-          <div className="mt-12 rounded-sm border border-primary/10 p-8 text-center">
-            <p className="text-sm font-semibold tracking-wide text-secondary uppercase">
-              {t("location.label")}
-            </p>
-            <p className="mt-3 text-lg text-primary">
+          <div className="mt-16 border-t border-primary/10 pt-12">
+            <SectionIntro title={t("location.label")} />
+            <p className="mt-4 text-primary">
               {CONTACT.address.street}
               <br />
               {CONTACT.address.city}, {CONTACT.address.country}
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Button href={CONTACT.appointmentUrl} external variant="primary" shape="pill">
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Button href={CONTACT.appointmentUrl} external variant="primary">
                 {t("cta.appointment")}
               </Button>
-              <Button href="/contact" variant="outline" shape="pill">
+              <Button href="/contact" variant="outline">
                 {t("cta.contact")}
               </Button>
             </div>

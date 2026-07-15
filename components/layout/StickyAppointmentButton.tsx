@@ -12,7 +12,7 @@ export function StickyAppointmentButton() {
         href={CONTACT.appointmentUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="pointer-events-auto flex min-h-12 w-full items-center justify-center rounded-full bg-secondary px-6 py-3 text-sm font-semibold tracking-wide text-white uppercase shadow-lg transition-colors hover:bg-primary"
+        className="pointer-events-auto flex min-h-10 w-full items-center justify-center rounded-sm border border-white bg-primary px-7 py-2 text-xs font-normal tracking-[0.14em] text-white uppercase transition-colors duration-500 hover:bg-primary-dark"
       >
         {t("bookAppointment")}
       </a>

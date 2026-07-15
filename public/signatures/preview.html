@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rösler &amp; Engert — E-Mail-Signaturen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #004646;
+        --primary-dark: #003333;
+        --primary-light: #f7f9f9;
+        --secondary: #009696;
+        --muted: #5a6b6b;
+        --line: #e2e8e8;
+        --black: #171717;
+        --white: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--primary-light);
+        color: var(--black);
+        font-family: "Lato", system-ui, sans-serif;
+        line-height: 1.6;
+      }
+
+      .page {
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem) 4rem;
+      }
+
+      .hero {
+        margin-bottom: 3rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 0.75rem;
+        color: var(--secondary);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        color: var(--primary);
+        font-family: "Lora", Georgia, serif;
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        font-weight: 400;
+        line-height: 1.15;
+      }
+
+      .intro {
+        max-width: 42rem;
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 2rem;
+      }
+
+      @media (min-width: 960px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .card {
+        background: var(--white);
+        border: 1px solid rgba(0, 70, 70, 0.08);
+        border-radius: 4px;
+        box-shadow: 0 8px 30px rgba(0, 70, 70, 0.05);
+        overflow: hidden;
+      }
+
+      .card-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+        border-bottom: 1px solid rgba(0, 70, 70, 0.08);
+        background: rgba(242, 250, 250, 0.7);
+      }
+
+      .card-header h2 {
+        margin: 0;
+        color: var(--primary);
+        font-family: "Lora", Georgia, serif;
+        font-size: 1.35rem;
+        font-weight: 400;
+      }
+
+      .copy-btn {
+        appearance: none;
+        border: 1px solid var(--primary);
+        border-radius: 2px;
+        background: var(--white);
+        color: var(--primary);
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        padding: 0.65rem 1rem;
+        text-transform: uppercase;
+        transition: background 0.2s ease, color 0.2s ease;
+      }
+
+      .copy-btn:hover {
+        background: var(--primary);
+        color: var(--white);
+      }
+
+      .copy-btn.copied {
+        background: var(--primary);
+        border-color: var(--primary);
+        color: var(--white);
+      }
+
+      .preview-shell {
+        padding: 2rem 1.5rem 1.5rem;
+      }
+
+      .preview-label {
+        margin: 0 0 1rem;
+        color: var(--muted);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .preview-stage {
+        padding: 1.75rem;
+        border: 1px dashed rgba(0, 70, 70, 0.14);
+        border-radius: 4px;
+        background: #fafafa;
+      }
+
+      .preview-stage.dark {
+        background: #2a2a2a;
+      }
+
+      .toggle-row {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .toggle-btn {
+        appearance: none;
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        background: transparent;
+        color: var(--muted);
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        padding: 0.45rem 0.85rem;
+        text-transform: uppercase;
+      }
+
+      .toggle-btn.active {
+        border-color: var(--primary);
+        background: var(--white);
+        color: var(--primary);
+      }
+
+      .notes {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(0, 70, 70, 0.08);
+      }
+
+      .notes h3 {
+        margin: 0 0 0.75rem;
+        color: var(--primary);
+        font-family: "Lora", Georgia, serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      .notes ul {
+        margin: 0;
+        padding-left: 1.2rem;
+        color: var(--muted);
+      }
+
+      .notes li + li {
+        margin-top: 0.45rem;
+      }
+
+      .notes code {
+        color: var(--primary);
+        font-size: 0.92em;
+      }
+
+      textarea.signature-source {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Rösler &amp; Engert GbR</p>
+        <h1>E-Mail-Signaturen</h1>
+        <p class="intro">
+          Klassische, reduzierte E-Mail-Signaturen für Markus Engert und Norbert Rösler —
+          mit Termin-Button und zweisprachigem Vertraulichkeitshinweis.
+        </p>
+      </header>
+
+      <section class="grid">
+        <article class="card" data-person="markus">
+          <div class="card-header">
+            <h2>Markus Engert</h2>
+            <button class="copy-btn" type="button" data-copy="markus">HTML kopieren</button>
+          </div>
+          <div class="preview-shell">
+            <p class="preview-label">Vorschau</p>
+            <div class="preview-stage" id="stage-markus"></div>
+            <div class="toggle-row">
+              <button class="toggle-btn active" type="button" data-theme="light" data-target="markus">Hell</button>
+              <button class="toggle-btn" type="button" data-theme="dark" data-target="markus">Dunkel</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-person="norbert">
+          <div class="card-header">
+            <h2>Norbert Rösler</h2>
+            <button class="copy-btn" type="button" data-copy="norbert">HTML kopieren</button>
+          </div>
+          <div class="preview-shell">
+            <p class="preview-label">Vorschau</p>
+            <div class="preview-stage" id="stage-norbert"></div>
+            <div class="toggle-row">
+              <button class="toggle-btn active" type="button" data-theme="light" data-target="norbert">Hell</button>
+              <button class="toggle-btn" type="button" data-theme="dark" data-target="norbert">Dunkel</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="notes">
+        <h3>Hinweise zur Verwendung</h3>
+        <ul>
+          <li>
+            Für den produktiven Einsatz die Bild-URLs auf absolute Pfade setzen, z.&nbsp;B.
+            <code>https://roesler-engert.de/signatures/RE_Markus_Engert_portrait.jpg</code>
+            und
+            <code>https://roesler-engert.de/signatures/RE_Norbert_Roesler_portrait.jpg</code>
+          </li>
+          <li>
+            Persönliche E-Mail-Adressen und Telefonnummern können in der kopierten Signatur
+            individuell angepasst werden.
+          </li>
+          <li>
+            In Outlook: Einstellungen → E-Mail → Signaturen → HTML einfügen. In Gmail:
+            Einstellungen → Signatur → Quellcode einfügen.
+          </li>
+          <li>
+            Die Profilbilder liegen unter <code>public/signatures/</code> im Projekt.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script>
+      const BRAND = {
+        company: "Rösler & Engert GbR",
+        street: "Domstr. 18",
+        city: "97070 Würzburg",
+        phone: "+49 (0) 931 45 25 28 92",
+        phoneHref: "tel:+4993145252892",
+        website: "roesler-engert.de",
+        websiteHref: "https://roesler-engert.de",
+        logo: "https://roesler-engert.de/brand/logo-horizontal.svg",
+        appointmentUrl: "https://roesler-engert.de/termin",
+        imprintUrl: "https://roesler-engert.de/de/impressum",
+        privacyUrl: "https://roesler-engert.de/de/datenschutz",
+        representatives: "Markus Engert, Norbert Rösler",
+      };
+
+      const LEGAL = {
+        confidentialDe:
+          "Diese Nachricht enthält vertrauliche und/oder rechtlich geschützte Informationen. Sie ist ausschließlich für den adressierten Empfänger bestimmt. Sind Sie nicht der beabsichtigte Empfänger, informieren Sie bitte sofort den Absender und löschen Sie diese Nachricht. Jede unbefugte Weitergabe, Vervielfältigung oder Verbreitung ist untersagt.",
+        confidentialEn:
+          "This e-mail may contain confidential and/or legally privileged information. It is intended solely for the addressee. If you are not the intended recipient, please notify the sender immediately and delete this e-mail. Any unauthorized copying, disclosure or distribution is prohibited.",
+      };
+
+      const PEOPLE = {
+        markus: {
+          name: "Markus Engert",
+          title: "Gesellschafter",
+          email: "info@roesler-engert.de",
+          photo: "RE_Markus_Engert_portrait.jpg",
+        },
+        norbert: {
+          name: "Norbert Rösler",
+          title: "Gesellschafter",
+          email: "info@roesler-engert.de",
+          photo: "RE_Norbert_Roesler_portrait.jpg",
+        },
+      };
+
+      function buildSignature(person, options = {}) {
+        const data = PEOPLE[person];
+        const photoSrc = options.production
+          ? `https://roesler-engert.de/signatures/${data.photo}`
+          : `./${data.photo}`;
+        const logoSrc = options.production ? BRAND.logo : "../brand/logo-horizontal.svg";
+
+        return `<!-- Rösler & Engert — ${data.name} -->
+<table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:Arial,Helvetica,sans-serif;color:#171717;max-width:520px;background-color:#ffffff;">
+  <tr>
+    <td bgcolor="#ffffff" style="padding:16px;background-color:#ffffff;">
+      <table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="border-collapse:collapse;background-color:#ffffff;">
+        <tr>
+          <td bgcolor="#ffffff" style="padding:0 20px 0 0;vertical-align:top;width:80px;background-color:#ffffff;">
+            <img src="${photoSrc}" alt="${data.name}" width="80" height="80" style="display:block;width:80px;height:80px;border-radius:2px;background-color:#ffffff;" />
+          </td>
+          <td bgcolor="#ffffff" style="padding:0 0 0 20px;vertical-align:top;border-left:1px solid #e2e8e8;background-color:#ffffff;">
+            <p style="margin:0 0 4px;font-family:Georgia,'Times New Roman',serif;font-size:19px;line-height:1.3;color:#004646;font-weight:400;letter-spacing:0.01em;">${data.name}</p>
+            <p style="margin:0 0 14px;font-size:13px;line-height:1.5;color:#5a6b6b;font-weight:400;font-style:italic;">${data.title}</p>
+            <p style="margin:0 0 14px;font-size:0;line-height:0;">
+              <img src="${logoSrc}" alt="Rösler &amp; Engert" width="168" height="20" style="display:block;width:168px;height:auto;max-width:168px;border:0;" />
+            </p>
+            <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:0 0 14px;">
+              <tr>
+                <td style="width:32px;height:1px;background-color:#e2e8e8;font-size:0;line-height:0;">&nbsp;</td>
+                <td style="font-size:0;line-height:0;">&nbsp;</td>
+              </tr>
+            </table>
+            <p style="margin:0 0 6px;font-size:12px;line-height:1.6;color:#5a6b6b;font-weight:400;">${BRAND.street} · ${BRAND.city}</p>
+            <p style="margin:0 0 14px;font-size:12px;line-height:1.7;color:#171717;font-weight:400;">
+              <a href="${BRAND.phoneHref}" style="color:#171717;text-decoration:none;">${BRAND.phone}</a>
+              <span style="color:#c8d0d0;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              <a href="mailto:${data.email}" style="color:#171717;text-decoration:none;">${data.email}</a>
+              <span style="color:#c8d0d0;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              <a href="${BRAND.websiteHref}" style="color:#004646;text-decoration:none;">${BRAND.website}</a>
+            </p>
+            <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+              <tr>
+                <td style="border:1px solid #004646;border-radius:2px;">
+                  <a href="${BRAND.appointmentUrl}" target="_blank" style="display:inline-block;padding:9px 16px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1;color:#004646;text-decoration:none;letter-spacing:0.05em;">Termin vereinbaren</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff" style="padding:0 16px 16px;background-color:#ffffff;">
+      <p style="margin:0 0 4px;font-size:9px;line-height:1.6;color:#8a9696;font-weight:400;">
+        ${BRAND.company} · ${BRAND.street} · ${BRAND.city} · Deutschland · Vertreten durch ${BRAND.representatives}
+      </p>
+      <p style="margin:0 0 12px;font-size:9px;line-height:1.6;color:#8a9696;font-weight:400;">
+        Tel. <a href="${BRAND.phoneHref}" style="color:#8a9696;text-decoration:underline;">${BRAND.phone}</a>
+        · <a href="mailto:${data.email}" style="color:#8a9696;text-decoration:underline;">${data.email}</a>
+        · <a href="${BRAND.websiteHref}" style="color:#8a9696;text-decoration:underline;">${BRAND.website}</a>
+        · <a href="${BRAND.imprintUrl}" style="color:#8a9696;text-decoration:underline;">Impressum</a>
+        · <a href="${BRAND.privacyUrl}" style="color:#8a9696;text-decoration:underline;">Datenschutz</a>
+      </p>
+      <p style="margin:0 0 10px;font-size:10px;line-height:1.55;color:#8a9696;font-weight:400;">${LEGAL.confidentialDe}</p>
+      <p style="margin:0;font-size:10px;line-height:1.55;color:#8a9696;font-weight:400;">${LEGAL.confidentialEn}</p>
+    </td>
+  </tr>
+</table>`;
+      }
+
+      function renderPreview(person) {
+        const stage = document.getElementById(`stage-${person}`);
+        stage.innerHTML = buildSignature(person, { production: false });
+      }
+
+      Object.keys(PEOPLE).forEach(renderPreview);
+
+      document.querySelectorAll("[data-copy]").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const person = button.dataset.copy;
+          const html = buildSignature(person, { production: true });
+
+          try {
+            await navigator.clipboard.writeText(html);
+            button.textContent = "Kopiert!";
+            button.classList.add("copied");
+            setTimeout(() => {
+              button.textContent = "HTML kopieren";
+              button.classList.remove("copied");
+            }, 2000);
+          } catch (error) {
+            const textarea = document.createElement("textarea");
+            textarea.value = html;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            button.textContent = "Kopiert!";
+            button.classList.add("copied");
+            setTimeout(() => {
+              button.textContent = "HTML kopieren";
+              button.classList.remove("copied");
+            }, 2000);
+          }
+        });
+      });
+
+      document.querySelectorAll(".toggle-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const target = button.dataset.target;
+          const stage = document.getElementById(`stage-${target}`);
+          const siblings = button.parentElement.querySelectorAll(".toggle-btn");
+
+          siblings.forEach((sibling) => sibling.classList.remove("active"));
+          button.classList.add("active");
+
+          if (button.dataset.theme === "dark") {
+            stage.classList.add("dark");
+          } else {
+            stage.classList.remove("dark");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -37,6 +37,9 @@ export function AboutPageContent() {
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
+        imageSrc={SITE_IMAGES.aboutHero}
+        imageAlt={t("leadership.imageAlt")}
+        imageClassName="object-cover object-[center_35%]"
       />
 
       <Section>

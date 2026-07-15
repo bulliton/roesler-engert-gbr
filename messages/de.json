@@ -18,6 +18,11 @@
     "visit": "Besuch",
     "faq": "FAQ",
     "bookAppointment": "Termin buchen",
+    "mobileTrustText": "Manufaktur in Würzburg · Seit Generationen",
+    "closeMenu": "Menü schließen",
+    "openMenu": "Menü öffnen",
+    "allDiamonds": "Alle Diamanten",
+    "allJewelry": "Alle Kollektionen",
     "shop": "B2B Shop",
     "store": "Store",
     "search": "Suchen",
@@ -142,15 +147,12 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Manufaktur Würzburg · seit 1898",
       "title": "Ihr Name vorne. Unsere Expertise dahinter.",
       "subtitle": "Wenn Ihre Kunden Fragen zum Stein stellen, stehen Sie nicht allein. Wir fertigen Schmuck in Würzburg und begleiten Sie mit lizenzierter Gemmologie — persönlich, verlässlich, auf Augenhöhe.",
       "ctaPrimary": "Termin buchen",
       "ctaSecondary": "Katalog anfordern"
     },
     "proof": {
-      "title": "Vertrauen, das Juweliere weiterempfehlen",
-      "subtitle": "Partner in ganz Deutschland verlassen sich auf unsere Manufaktur — wenn Qualität und Verlässlichkeit zählen.",
       "quote": {
         "text": "Wenn ein Kunde den Diamanten infrage stellt, brauche ich einen Partner, der mir sofort die Antwort liefert. Genau dafür gibt es Rösler & Engert.",
         "attribution": "Partner-Juwelier, Franken"
@@ -188,7 +190,7 @@
     },
     "partnerValue": {
       "title": "Was Sie als Partner erwarten können",
-      "subtitle": "Kein anonymes Großhandelsgeschäft — sondern ein Team, das Ihr Geschäft kennt.",
+      "subtitle": "Drei Säulen — persönlich, in Würzburg, auf Augenhöhe.",
       "items": {
         "gemology": {
           "title": "Stein-Sicherheit",
@@ -353,6 +355,28 @@
   },
   "contact": {
     "title": "Kontakt",
+    "imageAlt": "Die Gesellschafter von Rösler & Engert in der Manufaktur",
+    "sections": {
+      "visit": "Besuch",
+      "touch": "Kontakt",
+      "business": "Unternehmen",
+      "hours": "Erreichbarkeit",
+      "form": "Nachricht senden"
+    },
+    "inquiries": {
+      "general": "Allgemeine Anfragen",
+      "partnership": "B2B-Partnerschaft",
+      "diamonds": "Diamanten & Gemmologie"
+    },
+    "business": {
+      "company": "Rösler Engert UG (haftungsbeschränkt)",
+      "address": "Domstr. 18, 97070 Würzburg, Deutschland",
+      "imprint": "Impressum & rechtliche Angaben"
+    },
+    "hours": {
+      "text": "Montag bis Freitag, 9:00 bis 17:00 Uhr",
+      "appointment": "Termin online buchen"
+    },
     "hero": {
       "eyebrow": "Wir freuen uns auf Sie",
       "title": "Lassen Sie uns sprechen",
@@ -365,6 +389,8 @@
       "appointment": "Termin vereinbaren"
     },
     "form": {
+      "title": "Schreiben Sie uns",
+      "subtitle": "Partnerschaft, Kollektion oder Diamantauswahl — wir melden uns persönlich bei Ihnen.",
       "name": "Name",
       "company": "Unternehmen",
       "email": "E-Mail",

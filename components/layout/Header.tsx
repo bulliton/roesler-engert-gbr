@@ -150,14 +150,14 @@ export function Header() {
 
           <Link
             href="/"
-            className="relative col-start-2 flex h-10 shrink-0 items-center justify-self-center md:h-12"
+            className="relative col-start-2 flex h-10 shrink-0 items-center justify-center justify-self-center overflow-visible md:h-12"
           >
             <Image
               src="/brand/logo-horizontal.svg"
               alt="Rösler & Engert"
               width={884}
               height={108}
-              className={`h-full w-auto max-w-[11rem] sm:max-w-[13rem] md:max-w-[15rem] lg:max-w-[17rem] ${contentTransition} ${
+              className={`h-full w-auto max-w-[11rem] max-lg:scale-[1.2] sm:max-w-[13rem] md:max-w-[15rem] md:scale-100 lg:max-w-[17rem] ${contentTransition} ${
                 useLightNav ? "brightness-0 invert" : ""
               }`}
               priority
@@ -174,19 +174,29 @@ export function Header() {
 
           <button
             type="button"
-            className="col-start-3 flex h-11 w-11 flex-col items-center justify-center justify-self-end gap-1.5 lg:hidden"
-            onClick={() => setMobileOpen(true)}
-            aria-label="Open menu"
+            className="col-start-3 flex h-11 w-11 items-center justify-center justify-self-end lg:hidden"
+            onClick={() => setMobileOpen((value) => !value)}
+            aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation"
           >
-            <span
-              className={`block h-0.5 w-6 ${contentTransition} ${menuBarClass}`}
-            />
-            <span
-              className={`block h-0.5 w-6 ${contentTransition} ${menuBarClass}`}
-            />
-            <span
-              className={`block h-0.5 w-6 ${contentTransition} ${menuBarClass}`}
-            />
+            <span className="relative block h-3.5 w-6">
+              <span
+                className={`absolute left-0 block h-0.5 w-6 origin-center ${contentTransition} ${menuBarClass} ${
+                  mobileOpen ? "top-1.5 rotate-45" : "top-0"
+                }`}
+              />
+              <span
+                className={`absolute left-0 top-1.5 block h-0.5 w-6 ${contentTransition} ${menuBarClass} ${
+                  mobileOpen ? "scale-x-0 opacity-0" : "opacity-100"
+                }`}
+              />
+              <span
+                className={`absolute left-0 block h-0.5 w-6 origin-center ${contentTransition} ${menuBarClass} ${
+                  mobileOpen ? "top-1.5 -rotate-45" : "top-3"
+                }`}
+              />
+            </span>
           </button>
         </div>
 

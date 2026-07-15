@@ -89,12 +89,12 @@ export function CatalogPageContent() {
                   </Headline>
                   <p className="text-muted">{t("form.successText")}</p>
                   {downloadUrl ? (
-                    <Button href={downloadUrl} external variant="primary" shape="pill">
+                    <Button href={downloadUrl} external variant="primary">
                       {t("form.download")}
                     </Button>
                   ) : null}
                   <div>
-                    <Button href={CONTACT.appointmentUrl} external variant="outline" shape="pill">
+                    <Button href={CONTACT.appointmentUrl} external variant="outline">
                       {t("form.bookAppointment")}
                     </Button>
                   </div>
@@ -193,7 +193,7 @@ export function CatalogPageContent() {
                       </span>
                     </label>
 
-                    <Button type="submit" variant="primary" shape="pill" disabled={loading}>
+                    <Button type="submit" variant="primary" disabled={loading}>
                       {loading ? t("form.submitting") : t("form.submit")}
                     </Button>
                   </form>

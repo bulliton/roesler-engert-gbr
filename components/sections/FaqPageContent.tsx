@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
 import { CONTACT } from "@/lib/constants";
@@ -46,16 +45,16 @@ export function FaqPageContent() {
             ))}
           </div>
 
-          <div className="mx-auto mt-12 max-w-3xl rounded-sm bg-primary-light p-8 text-center">
-            <Headline as="h2" bar={false} className="!text-2xl">
+          <div className="mx-auto mt-16 max-w-3xl border-t border-primary/10 pt-12">
+            <h2 className="font-display text-[clamp(1.5rem,2vw+0.5rem,2rem)] text-primary">
               {t("cta.title")}
-            </Headline>
-            <p className="mt-4 text-muted">{t("cta.text")}</p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Button href="/contact" variant="primary" shape="pill">
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-muted">{t("cta.text")}</p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Button href="/contact" variant="primary">
                 {t("cta.contact")}
               </Button>
-              <Button href={CONTACT.appointmentUrl} external variant="outline" shape="pill">
+              <Button href={CONTACT.appointmentUrl} external variant="outline">
                 {t("cta.appointment")}
               </Button>
             </div>

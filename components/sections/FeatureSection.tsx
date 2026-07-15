@@ -62,7 +62,7 @@ export function FeatureSection({
           transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className={`flex flex-col items-center justify-center px-[var(--section-padding-x)] py-14 text-center lg:px-12 lg:py-20 xl:px-20 ${imageOnRight ? "lg:[direction:ltr]" : ""}`}
         >
-          <p className="mb-5 text-xs font-normal tracking-[0.14em] text-secondary uppercase">
+          <p className="mb-5 text-xs font-normal tracking-[0.14em] text-muted uppercase">
             {eyebrow}
           </p>
 

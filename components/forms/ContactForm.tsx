@@ -6,15 +6,31 @@ import { Button } from "@/components/ui/Button";
 import { submitLead } from "@/lib/forms/submit-lead";
 import { Link } from "@/lib/navigation";
 
-const inputClass =
+type ContactFormProps = {
+  variant?: "default" | "editorial";
+};
+
+const defaultInputClass =
   "w-full rounded-sm border border-primary/20 bg-white px-4 py-3 text-primary outline-none transition-colors focus:border-secondary";
 
-export function ContactForm() {
+const editorialInputClass =
+  "contact-editorial-input w-full border-0 border-b border-primary/20 bg-transparent px-0 py-3 text-primary outline-none transition-colors placeholder:text-primary/35 focus:border-secondary";
+
+const editorialLabelClass =
+  "mb-1 block font-body text-[10px] font-semibold tracking-[0.2em] text-primary/55 uppercase";
+
+const defaultLabelClass = "mb-1 block text-sm font-semibold text-primary";
+
+export function ContactForm({ variant = "default" }: ContactFormProps) {
   const t = useTranslations("contact.form");
   const locale = useLocale();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const isEditorial = variant === "editorial";
+  const inputClass = isEditorial ? editorialInputClass : defaultInputClass;
+  const labelClass = isEditorial ? editorialLabelClass : defaultLabelClass;
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -48,22 +64,28 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-sm bg-primary-light p-8 text-center text-primary">
+      <div
+        className={
+          isEditorial
+            ? "border border-primary/10 bg-primary-light/50 px-6 py-8 text-center text-primary"
+            : "rounded-sm bg-primary-light p-8 text-center text-primary"
+        }
+      >
         {t("success")}
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-6">
       {error ? (
-        <div className="rounded-sm border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
+        <div className="border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
           {error}
         </div>
       ) : null}
 
       <div>
-        <label htmlFor="requestType" className="mb-1 block text-sm font-semibold text-primary">
+        <label htmlFor="requestType" className={labelClass}>
           {t("requestType")}
         </label>
         <select
@@ -83,45 +105,41 @@ export function ContactForm() {
         </select>
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2">
+      <div className="grid gap-6 sm:grid-cols-2">
         <div>
-          <label htmlFor="name" className="mb-1 block text-sm font-semibold text-primary">
+          <label htmlFor="name" className={labelClass}>
             {t("name")}
           </label>
           <input id="name" name="name" required className={inputClass} />
         </div>
         <div>
-          <label htmlFor="company" className="mb-1 block text-sm font-semibold text-primary">
+          <label htmlFor="company" className={labelClass}>
             {t("company")}
           </label>
           <input id="company" name="company" required className={inputClass} />
         </div>
       </div>
-      <div className="grid gap-5 sm:grid-cols-2">
+
+      <div className="grid gap-6 sm:grid-cols-2">
         <div>
-          <label htmlFor="email" className="mb-1 block text-sm font-semibold text-primary">
+          <label htmlFor="email" className={labelClass}>
             {t("email")}
           </label>
           <input id="email" name="email" type="email" required className={inputClass} />
         </div>
         <div>
-          <label htmlFor="phone" className="mb-1 block text-sm font-semibold text-primary">
+          <label htmlFor="phone" className={labelClass}>
             {t("phone")}
           </label>
           <input id="phone" name="phone" type="tel" className={inputClass} />
         </div>
       </div>
+
       <div>
-        <label htmlFor="message" className="mb-1 block text-sm font-semibold text-primary">
+        <label htmlFor="message" className={labelClass}>
           {t("message")}
         </label>
-        <textarea
-          id="message"
-          name="message"
-          rows={5}
-          required
-          className={inputClass}
-        />
+        <textarea id="message" name="message" rows={5} required className={inputClass} />
       </div>
 
       <label className="flex items-start gap-3 text-sm leading-relaxed text-muted">
@@ -139,7 +157,13 @@ export function ContactForm() {
         </span>
       </label>
 
-      <Button type="submit" variant="primary" disabled={loading}>
+      <Button
+        type="submit"
+        variant="primary"
+        shape={isEditorial ? "pill" : "rect"}
+        disabled={loading}
+        className={isEditorial ? "!bg-primary hover:!bg-primary-dark" : undefined}
+      >
         {loading ? t("submitting") : t("submit")}
       </Button>
     </form>

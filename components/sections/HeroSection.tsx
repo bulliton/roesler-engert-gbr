@@ -24,26 +24,21 @@ export function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative max-w-xl md:max-w-2xl"
         >
-          <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-accent-gold uppercase hero-text-shadow">
-            {t("eyebrow")}
-          </p>
           <h1 className="font-display text-[clamp(2.25rem,3.8vw+0.75rem,3.75rem)] font-normal leading-[1.12] tracking-[-0.01em] !text-white hero-text-shadow">
             {t("title")}
           </h1>
           <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-white/70 md:mt-5 md:max-w-lg md:text-[0.9375rem]">
             {t("subtitle")}
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-4 md:mt-10">
+          <div className="mt-8 flex flex-wrap items-center gap-5 md:mt-10">
             <Button
               href={CONTACT.appointmentUrl}
               external
-              variant="primary"
-              shape="pill"
-              className="!border-white !bg-secondary !text-white hover:!bg-white hover:!text-primary"
+              variant="inverse"
             >
               {t("ctaPrimary")}
             </Button>
-            <Button href="/catalog" variant="outline-contrast" shape="pill">
+            <Button href="/catalog" variant="outline-contrast">
               {t("ctaSecondary")}
             </Button>
           </div>

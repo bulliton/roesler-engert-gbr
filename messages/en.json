@@ -18,6 +18,11 @@
     "visit": "Visit",
     "faq": "FAQ",
     "bookAppointment": "Book appointment",
+    "mobileTrustText": "Manufactory in Würzburg · For generations",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "allDiamonds": "All diamonds",
+    "allJewelry": "All collections",
     "shop": "B2B Shop",
     "store": "Store",
     "search": "Search",
@@ -142,15 +147,12 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Manufactory Würzburg · est. 1898",
       "title": "Your name out front. Our expertise behind you.",
       "subtitle": "When your customers question a stone, you are not on your own. We craft jewelry in Würzburg and support you with licensed gemology — personal, reliable, and on equal terms.",
       "ctaPrimary": "Book appointment",
       "ctaSecondary": "Request catalog"
     },
     "proof": {
-      "title": "Trust that jewelers recommend",
-      "subtitle": "Partners across Germany rely on our manufactory — when quality and reliability matter.",
       "quote": {
         "text": "When a customer questions a diamond, I need a partner who gives me the answer right away. That is what Rösler & Engert is for.",
         "attribution": "Partner jeweler, Franconia"
@@ -188,7 +190,7 @@
     },
     "partnerValue": {
       "title": "What you can expect as a partner",
-      "subtitle": "Not anonymous wholesale — a team that knows your business.",
+      "subtitle": "Three pillars — personal, in Würzburg, at eye level.",
       "items": {
         "gemology": {
           "title": "Stone confidence",
@@ -353,6 +355,28 @@
   },
   "contact": {
     "title": "Contact",
+    "imageAlt": "The partners of Rösler & Engert in the manufactory",
+    "sections": {
+      "visit": "Visit",
+      "touch": "Get in touch",
+      "business": "Business",
+      "hours": "Availability",
+      "form": "Send a message"
+    },
+    "inquiries": {
+      "general": "General inquiries",
+      "partnership": "B2B partnership",
+      "diamonds": "Diamonds & gemology"
+    },
+    "business": {
+      "company": "Rösler Engert UG (haftungsbeschränkt)",
+      "address": "Domstr. 18, 97070 Würzburg, Germany",
+      "imprint": "Imprint & legal information"
+    },
+    "hours": {
+      "text": "Monday to Friday, 9:00 am to 5:00 pm",
+      "appointment": "Book an appointment online"
+    },
     "hero": {
       "eyebrow": "We look forward to hearing from you",
       "title": "Let's talk",
@@ -365,6 +389,8 @@
       "appointment": "Book appointment"
     },
     "form": {
+      "title": "Write to us",
+      "subtitle": "Partnership, collection, or diamond selection — we will get back to you personally.",
       "name": "Name",
       "company": "Company",
       "email": "Email",

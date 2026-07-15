@@ -14,4 +14,5 @@ export const SITE_IMAGES = {
   precisionTools: "/images/precision-tools.webp",
   heroCraftsmanship: "/images/hero-craftsmanship.webp",
   leadership: "/images/leadership.webp",
+  aboutHero: "/images/about-hero.jpg",
 } as const;
