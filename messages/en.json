@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "siteName": "Rösler & Engert GbR",
+    "defaultDescription": "Handcrafted jewelry and diamonds for jewelers — licensed gemology and in-house manufacturing in Germany."
+  },
+  "nav": {
+    "diamonds": "Diamonds",
+    "jewelry": "Jewelry",
+    "earrings": "Earrings",
+    "rings": "Rings",
+    "necklaces": "Necklaces",
+    "about": "About",
+    "contact": "Contact",
+    "bookAppointment": "Book appointment",
+    "shop": "B2B Shop"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "products": "Products",
+    "company": "Company",
+    "contact": "Contact",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "copyright": "© {year} Rösler & Engert GbR. All rights reserved.",
+    "tagline": "Handcrafted jewelry and diamonds — Made in Germany."
+  },
+  "buttons": {
+    "learnMore": "Learn more",
+    "bookAppointment": "Book appointment",
+    "contactUs": "Get in touch",
+    "viewCollection": "Explore collection",
+    "send": "Send message"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Heritage Craftsmanship",
+      "title": "Handcrafted for Your Business",
+      "subtitle": "As a B2B partner for jewelers, we combine licensed gemology, in-house manufacturing in Germany, and generations of craftsmanship — for jewelry that delights your customers.",
+      "ctaPrimary": "Book appointment",
+      "ctaSecondary": "Learn more"
+    },
+    "stats": {
+      "years": { "value": "128", "label": "Years of experience" },
+      "pieces": { "value": "10K", "label": "Pieces crafted" },
+      "partners": { "value": "189+", "label": "Partner jewelers" },
+      "cuts": { "value": "20+", "label": "Diamond cuts" }
+    },
+    "aboutPreview": {
+      "eyebrow": "About us",
+      "title": "Craftsmanship Across Generations",
+      "text": "For generations, we have crafted exclusive jewelry in Germany for discerning jewelers. Our licensed gemologists and master goldsmiths unite precision, aesthetics, and trust — from rough diamond to finished piece.",
+      "link": "Our story"
+    },
+    "categories": {
+      "title": "Our Expertise",
+      "subtitle": "From diamond selection to finished collections — all under one roof.",
+      "diamonds": "Diamonds",
+      "earrings": "Earrings",
+      "rings": "Rings",
+      "necklaces": "Necklaces"
+    },
+    "expertise": {
+      "title": "Licensed Gemology & German Manufacturing",
+      "text": "Our in-house gemologist guarantees the highest quality standards in diamond selection. In our own manufactory in Germany, handcrafted collections are created — precise, timeless, and ready for your showroom.",
+      "cta": "Inquire about partnership"
+    }
+  },
+  "about": {
+    "title": "About us",
+    "hero": {
+      "eyebrow": "Rösler & Engert GbR",
+      "title": "Heritage Craftsmanship Across Generations",
+      "subtitle": "We are your B2B partner for handcrafted jewelry and diamonds — with our own manufactory in Germany and licensed gemology in-house."
+    },
+    "heritage": {
+      "title": "Craft with History",
+      "text": "Across generations, we have established ourselves as a manufactory for discerning jewelry. Every piece is created in our workshop in Germany — crafted by master goldsmiths who unite precision and aesthetics in every facet."
+    },
+    "gemology": {
+      "title": "Licensed Gemology",
+      "text": "Our in-house gemologist accompanies the entire process — from diamond selection and quality inspection to certification. This guarantees transparency and the highest standards for our partner jewelers."
+    },
+    "manufacturing": {
+      "title": "In-House Manufacturing in Germany",
+      "text": "In our manufactory, collections for earrings, rings, and necklaces are created — handcrafted, individually customizable, and ready for resale in your store."
+    }
+  },
+  "jewelry": {
+    "title": "Jewelry",
+    "hero": {
+      "eyebrow": "Own Manufactory",
+      "title": "Handcrafted Jewelry for Jewelers",
+      "subtitle": "Our collections are crafted in Germany — precise, timeless, and ready for your showroom."
+    },
+    "categories": {
+      "earrings": {
+        "title": "Earrings",
+        "description": "From classic studs to opulent hoops — handcrafted earrings in gold and with diamonds, tailored for your collection."
+      },
+      "rings": {
+        "title": "Rings",
+        "description": "Engagement rings, solitaires, and band rings — crafted with the highest precision and fine materials for your customers."
+      },
+      "necklaces": {
+        "title": "Necklaces",
+        "description": "Pendants, collars, and chains — elegant designs that integrate seamlessly into your assortment."
+      }
+    }
+  },
+  "diamonds": {
+    "title": "Diamonds",
+    "hero": {
+      "eyebrow": "Licensed Gemology",
+      "title": "Diamonds of the Highest Quality",
+      "subtitle": "Our in-house gemologist selects and certifies every stone — for transparency and trust in your partnership."
+    },
+    "expertise": {
+      "title": "Gemological Expertise",
+      "text": "From rough stone selection to cut evaluation, our licensed gemologist accompanies the entire process. We offer a wide range of cuts and quality grades for your assortment."
+    },
+    "cuts": {
+      "title": "Cut Shapes",
+      "brilliant": "Brilliant",
+      "princess": "Princess",
+      "cushion": "Cushion",
+      "baguette": "Baguette",
+      "pear": "Pear",
+      "carre": "Carré"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "hero": {
+      "eyebrow": "We look forward to hearing from you",
+      "title": "Let's talk",
+      "subtitle": "Whether partnership, collection, or diamond selection — our team will advise you personally."
+    },
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "appointment": "Book appointment"
+    },
+    "form": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send message",
+      "success": "Thank you — we will get back to you shortly."
+    }
+  },
+  "legal": {
+    "imprint": {
+      "title": "Imprint",
+      "content": "Information pursuant to § 5 TMG (German Telemedia Act)\n\nRösler & Engert GbR\nMusterstraße 1\n97070 Würzburg\nGermany\n\nPhone: +49 (0) 931 45 25 28 92\nEmail: info@roesler-engert.de\n\nRepresented by: Christian Roesler, [additional partner]\n\nVAT ID: [insert VAT ID]\n\nResponsible for content pursuant to § 55 Abs. 2 RStV:\nChristian Roesler, address as above."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "content": "1. Privacy at a glance\n\nGeneral information\nThe following notes provide a simple overview of what happens to your personal data when you visit this website.\n\n2. Data controller\nRösler & Engert GbR\nMusterstraße 1\n97070 Würzburg\nEmail: info@roesler-engert.de\n\n3. Data collection on this website\nWhen you visit our website, technically necessary data (e.g. IP address, browser type) is stored in server log files.\n\n4. Contact form\nIf you send us inquiries via the contact form, your details will be stored for processing the request.\n\n5. Your rights\nYou have the right to information, correction, deletion, and restriction of processing of your personal data.\n\nPlease have these placeholder texts reviewed and adapted by a legal professional."
+    }
+  }
+}

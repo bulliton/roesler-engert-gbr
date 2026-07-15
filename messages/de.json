@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "siteName": "Rösler & Engert GbR",
+    "defaultDescription": "Handgefertigter Schmuck und Diamanten für Juweliere — lizenzierte Gemmologie und eigene Fertigung in Deutschland."
+  },
+  "nav": {
+    "diamonds": "Diamanten",
+    "jewelry": "Schmuck",
+    "earrings": "Ohrringe",
+    "rings": "Ringe",
+    "necklaces": "Halsschmuck",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "bookAppointment": "Termin buchen",
+    "shop": "B2B Shop"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "products": "Produkte",
+    "company": "Unternehmen",
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "© {year} Rösler & Engert GbR. Alle Rechte vorbehalten.",
+    "tagline": "Handgefertigter Schmuck und Diamanten — Made in Germany."
+  },
+  "buttons": {
+    "learnMore": "Mehr erfahren",
+    "bookAppointment": "Termin buchen",
+    "contactUs": "Kontakt aufnehmen",
+    "viewCollection": "Kollektion entdecken",
+    "send": "Nachricht senden"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Heritage Craftsmanship",
+      "title": "Handgefertigt für Ihr Geschäft",
+      "subtitle": "Als B2B-Partner für Juweliere verbinden wir lizenzierte Gemmologie, eigene Fertigung in Deutschland und generationsübergreifendes Handwerk — für Schmuck, der Ihre Kunden begeistert.",
+      "ctaPrimary": "Termin buchen",
+      "ctaSecondary": "Mehr erfahren"
+    },
+    "stats": {
+      "years": { "value": "128", "label": "Jahre Erfahrung" },
+      "pieces": { "value": "10K", "label": "Gefertigte Stücke" },
+      "partners": { "value": "189+", "label": "Partner-Juweliere" },
+      "cuts": { "value": "20+", "label": "Diamantschliffe" }
+    },
+    "aboutPreview": {
+      "eyebrow": "Über uns",
+      "title": "Handwerk über Generationen",
+      "text": "Seit Generationen fertigen wir in Deutschland exklusiven Schmuck für anspruchsvolle Juweliere. Unsere lizenzierten Gemmologen und Meistergoldschmiede vereinen Präzision, Ästhetik und Vertrauen — vom Rohdiamanten bis zum fertigen Schmuckstück.",
+      "link": "Unsere Geschichte"
+    },
+    "categories": {
+      "title": "Unsere Expertise",
+      "subtitle": "Von der Diamantauswahl bis zur fertigen Kollektion — alles aus einer Hand.",
+      "diamonds": "Diamanten",
+      "earrings": "Ohrringe",
+      "rings": "Ringe",
+      "necklaces": "Halsschmuck"
+    },
+    "expertise": {
+      "title": "Lizenzierte Gemmologie & deutsche Fertigung",
+      "text": "Unser Inhouse-Gemmologe garantiert höchste Qualitätsstandards bei der Diamantauswahl. In unserer eigenen Manufaktur in Deutschland entstehen handgefertigte Kollektionen — präzise, zeitlos und bereit für Ihr Schaufenster.",
+      "cta": "Partnerschaft anfragen"
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "hero": {
+      "eyebrow": "Rösler & Engert GbR",
+      "title": "Heritage Craftsmanship seit Generationen",
+      "subtitle": "Wir sind Ihr B2B-Partner für handgefertigten Schmuck und Diamanten — mit eigener Manufaktur in Deutschland und lizenzierter Gemmologie im Haus."
+    },
+    "heritage": {
+      "title": "Handwerk mit Geschichte",
+      "text": "Über Generationen haben wir uns als Manufaktur für anspruchsvollen Schmuck etabliert. Jedes Stück entsteht in unserer Werkstatt in Deutschland — gefertigt von Meistergoldschmieden, die Präzision und Ästhetik in jeder Facette vereinen."
+    },
+    "gemology": {
+      "title": "Lizenzierte Gemmologie",
+      "text": "Unser Inhouse-Gemmologe begleitet den gesamten Prozess — von der Diamantauswahl über die Qualitätsprüfung bis zur Zertifizierung. So garantieren wir Transparenz und höchste Standards für unsere Partner-Juweliere."
+    },
+    "manufacturing": {
+      "title": "Eigene Fertigung in Deutschland",
+      "text": "In unserer Manufaktur entstehen Kollektionen für Ohrringe, Ringe und Halsschmuck — handgefertigt, individuell anpassbar und bereit für den Wiederverkauf in Ihrem Geschäft."
+    }
+  },
+  "jewelry": {
+    "title": "Schmuck",
+    "hero": {
+      "eyebrow": "Eigene Manufaktur",
+      "title": "Handgefertigter Schmuck für Juweliere",
+      "subtitle": "Unsere Kollektionen werden in Deutschland gefertigt — präzise, zeitlos und bereit für Ihr Schaufenster."
+    },
+    "categories": {
+      "earrings": {
+        "title": "Ohrringe",
+        "description": "Von klassischen Studs bis zu opulenten Creolen — handgefertigte Ohrringe in Gold und mit Diamanten, individuell für Ihre Kollektion."
+      },
+      "rings": {
+        "title": "Ringe",
+        "description": "Verlobungsringe, Solitäre und Bandringe — gefertigt mit höchster Präzision und edlen Materialien für Ihre Kunden."
+      },
+      "necklaces": {
+        "title": "Halsschmuck",
+        "description": "Anhänger, Colliers und Ketten — elegante Designs, die sich nahtlos in Ihr Sortiment integrieren."
+      }
+    }
+  },
+  "diamonds": {
+    "title": "Diamanten",
+    "hero": {
+      "eyebrow": "Lizenzierte Gemmologie",
+      "title": "Diamanten in höchster Qualität",
+      "subtitle": "Unser Inhouse-Gemmologe wählt und zertifiziert jeden Stein — für Transparenz und Vertrauen in Ihrer Partnerschaft."
+    },
+    "expertise": {
+      "title": "Gemmologische Expertise",
+      "text": "Von der Rohstein-Auswahl bis zur Schliffbewertung begleitet unser lizenzierter Gemmologe den gesamten Prozess. Wir bieten eine breite Palette an Schliffformen und Qualitätsstufen für Ihr Sortiment."
+    },
+    "cuts": {
+      "title": "Schliff-Formen",
+      "brilliant": "Brilliant",
+      "princess": "Princess",
+      "cushion": "Cushion",
+      "baguette": "Baguette",
+      "pear": "Tropfen",
+      "carre": "Carré"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "hero": {
+      "eyebrow": "Wir freuen uns auf Sie",
+      "title": "Lassen Sie uns sprechen",
+      "subtitle": "Ob Partnerschaft, Kollektion oder Diamantauswahl — unser Team berät Sie persönlich."
+    },
+    "info": {
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "address": "Adresse",
+      "appointment": "Termin vereinbaren"
+    },
+    "form": {
+      "name": "Name",
+      "company": "Unternehmen",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "success": "Vielen Dank — wir melden uns in Kürze bei Ihnen."
+    }
+  },
+  "legal": {
+    "imprint": {
+      "title": "Impressum",
+      "content": "Angaben gemäß § 5 TMG\n\nRösler & Engert GbR\nMusterstraße 1\n97070 Würzburg\nDeutschland\n\nTelefon: +49 (0) 931 45 25 28 92\nE-Mail: info@roesler-engert.de\n\nVertreten durch: Christian Roesler, [weiterer Gesellschafter]\n\nUmsatzsteuer-ID: [USt-IdNr. einfügen]\n\nVerantwortlich für den Inhalt nach § 55 Abs. 2 RStV:\nChristian Roesler, Anschrift wie oben."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "content": "1. Datenschutz auf einen Blick\n\nAllgemeine Hinweise\nDie folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.\n\n2. Verantwortliche Stelle\nRösler & Engert GbR\nMusterstraße 1\n97070 Würzburg\nE-Mail: info@roesler-engert.de\n\n3. Datenerfassung auf dieser Website\nBeim Besuch unserer Website werden technisch notwendige Daten (z. B. IP-Adresse, Browsertyp) in Server-Logfiles gespeichert.\n\n4. Kontaktformular\nWenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert.\n\n5. Ihre Rechte\nSie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten.\n\nBitte lassen Sie diese Platzhaltertexte von einem Rechtsanwalt prüfen und anpassen."
+    }
+  }
+}
