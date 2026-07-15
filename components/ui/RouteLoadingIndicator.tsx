@@ -1,4 +1,6 @@
-import Image from "next/image";
+"use client";
+
+import { AnimatedCircularLogo } from "@/components/ui/AnimatedCircularLogo";
 
 export function RouteLoadingIndicator() {
   return (
@@ -7,14 +9,7 @@ export function RouteLoadingIndicator() {
       aria-busy="true"
       aria-label="Loading"
     >
-      <div className="relative h-10 w-10 animate-spin motion-reduce:animate-none">
-        <Image
-          src="/brand/diamond-icon.png"
-          alt=""
-          fill
-          className="object-contain brightness-0 invert"
-        />
-      </div>
+      <AnimatedCircularLogo size={120} animate={false} />
     </div>
   );
 }

@@ -7,7 +7,7 @@ export const CONTACT = {
   instagramHref: "https://www.instagram.com/",
   linkedinHref: "https://www.linkedin.com/",
   address: {
-    street: "Musterstraße 1",
+    street: "Domstr. 18",
     city: "97070 Würzburg",
     country: "Deutschland",
   },

@@ -12,6 +12,11 @@
     "allCollections": "Alle Kollektionen",
     "about": "Über uns",
     "contact": "Kontakt",
+    "services": "Service",
+    "partnership": "Partnerschaft",
+    "catalog": "Katalog",
+    "visit": "Besuch",
+    "faq": "FAQ",
     "bookAppointment": "Termin buchen",
     "shop": "B2B Shop",
     "store": "Store",
@@ -73,6 +78,12 @@
     "copyright": "© {year} Rösler Engert UG (haftungsbeschränkt)",
     "tagline": "Handgefertigter Schmuck und Diamanten — Made in Germany.",
     "pages": "Seiten",
+    "navGroups": {
+      "collections": "Kollektionen",
+      "company": "Unternehmen",
+      "expertise": "Expertise",
+      "service": "Service"
+    },
     "mission": {
       "title": "Handwerk mit Verantwortung",
       "text": "Als Manufaktur für Juweliere verbinden wir lizenzierte Gemmologie, eigene Fertigung in Deutschland und generationsübergreifendes Handwerk — für Schmuck, der Vertrauen schafft."
@@ -89,12 +100,14 @@
       "requestCollection": "Kollektion & Schmuck",
       "requestGeneral": "Allgemeine Anfrage",
       "name": "Name",
+      "company": "Unternehmen",
       "email": "E-Mail",
       "message": "Nachricht",
       "optional": "Optional",
       "consent": "Ich stimme der Verarbeitung meiner Daten gemäß der",
       "privacyLink": "Datenschutzerklärung",
       "submit": "Nachricht senden",
+      "submitting": "Wird gesendet…",
       "success": "Vielen Dank — wir melden uns in Kürze bei Ihnen."
     },
     "newsletter": {
@@ -102,8 +115,23 @@
       "description": "Erhalten Sie exklusive Informationen über unsere Angebote.",
       "emailLabel": "E-Mail-Adresse",
       "submit": "Anmelden",
+      "submitting": "Wird angemeldet…",
+      "consent": "Ich stimme der Verarbeitung meiner Daten gemäß der",
+      "privacyLink": "Datenschutzerklärung",
       "success": "Vielen Dank für Ihre Anmeldung."
     }
+  },
+  "forms": {
+    "errors": {
+      "generic": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+      "unavailable": "Das Formular ist vorübergehend nicht verfügbar."
+    }
+  },
+  "ctaBand": {
+    "title": "Bereit für eine B2B-Partnerschaft?",
+    "text": "Vereinbaren Sie einen persönlichen Termin oder laden Sie unseren Katalog herunter — unser Team berät Sie gerne.",
+    "appointment": "Termin buchen",
+    "catalog": "Katalog herunterladen"
   },
   "buttons": {
     "learnMore": "Mehr erfahren",
@@ -117,8 +145,9 @@
       "eyebrow": "Heritage Craftsmanship",
       "title": "Handgefertigt für Ihr Geschäft",
       "subtitle": "Als B2B-Partner für Juweliere verbinden wir lizenzierte Gemmologie, eigene Fertigung in Deutschland und generationsübergreifendes Handwerk — für Schmuck, der Ihre Kunden begeistert.",
+      "servicesStrip": "Kauf auf Rechnung · Ringanpassungen · Gravuren · Bundesweiter Versand",
       "ctaPrimary": "Termin buchen",
-      "ctaSecondary": "Mehr erfahren"
+      "ctaSecondary": "Katalog herunterladen"
     },
     "stats": {
       "years": { "value": "128", "label": "Jahre Erfahrung" },
@@ -159,22 +188,40 @@
     "showroom": {
       "craftsmanship": {
         "title": "Besuchen Sie unsere Manufaktur",
-        "cta": "Standort anzeigen",
+        "cta": "Besuch planen",
         "text": "Erleben Sie handgefertigten Schmuck aus deutscher Fertigung — präzise, zeitlos und bereit für Ihr Schaufenster."
       },
       "diamonds": {
         "title": "Diamanten auswählen",
-        "cta": "Kollektion ansehen",
+        "cta": "Diamanten entdecken",
         "text": "Unser lizenzierter Gemmologe begleitet Sie bei der Auswahl — für Transparenz und höchste Qualität in Ihrer Partnerschaft."
       },
       "showroom": {
         "title": "Showroom besuchen",
-        "cta": "Standort anzeigen",
-        "text": "Vereinbaren Sie einen Termin in unserem Showroom und entdecken Sie Kollektionen, die Ihre Kunden begeistern."
+        "cta": "Termin buchen",
+        "text": "Vereinbaren Sie einen Termin in unserem Showroom in Würzburg und entdecken Sie Kollektionen, die Ihre Kunden begeistern."
       }
     },
     "partners": {
-      "title": "Partner und Marken"
+      "title": "Vertrauen von Juwelieren",
+      "signals": {
+        "signal1": {
+          "title": "189+ Partner",
+          "text": "Juweliere in ganz Deutschland vertrauen auf unsere Manufaktur."
+        },
+        "signal2": {
+          "title": "Made in Germany",
+          "text": "Eigene Fertigung in Würzburg — handgefertigt und qualitätsgesichert."
+        },
+        "signal3": {
+          "title": "Lizenzierte Gemmologie",
+          "text": "Inhouse-Gemmologe für transparente Diamantauswahl."
+        },
+        "signal4": {
+          "title": "128 Jahre Erfahrung",
+          "text": "Generationsübergreifendes Handwerk für anspruchsvolle Kollektionen."
+        }
+      }
     }
   },
   "about": {
@@ -265,18 +312,221 @@
       "email": "E-Mail",
       "phone": "Telefon",
       "message": "Nachricht",
+      "requestType": "Art der Anfrage",
+      "requestTypePlaceholder": "Bitte auswählen",
+      "requestPartnership": "B2B-Partnerschaft",
+      "requestDiamonds": "Diamanten & Gemmologie",
+      "requestCollection": "Kollektion & Schmuck",
+      "requestGeneral": "Allgemeine Anfrage",
+      "consent": "Ich stimme der Verarbeitung meiner Daten gemäß der",
+      "privacyLink": "Datenschutzerklärung",
       "submit": "Nachricht senden",
+      "submitting": "Wird gesendet…",
       "success": "Vielen Dank — wir melden uns in Kürze bei Ihnen."
+    }
+  },
+  "catalog": {
+    "hero": {
+      "eyebrow": "B2B-Katalog",
+      "title": "Kollektionen für Ihr Geschäft",
+      "subtitle": "Laden Sie unseren digitalen Katalog herunter und entdecken Sie handgefertigten Schmuck, Diamanten und Services für Juweliere."
+    },
+    "preview": {
+      "title": "Was Sie im Katalog finden",
+      "text": "Unser B2B-Katalog bietet einen Überblick über Kollektionen, Materialien, Individualisierungsoptionen und unsere Services für Partner-Juweliere.",
+      "noteLabel": "Hinweis",
+      "note": "Die aktuelle PDF-Datei ist ein Platzhalter. Bitte ersetzen Sie public/downloads/katalog-2026.pdf durch den finalen Katalog."
+    },
+    "valueProps": {
+      "collections": {
+        "title": "Aktuelle Kollektionen",
+        "text": "Ohrringe, Ringe und Halsschmuck — handgefertigt in Deutschland."
+      },
+      "services": {
+        "title": "B2B-Services",
+        "text": "Kauf auf Rechnung, Anpassungen, Gravuren und bundesweiter Versand."
+      },
+      "partnership": {
+        "title": "Persönliche Beratung",
+        "text": "Vertriebsmitarbeiter und Showroom-Besuche für Ihre Partnerschaft."
+      }
+    },
+    "form": {
+      "title": "Katalog anfordern",
+      "subtitle": "Bitte füllen Sie das Formular aus — wir senden Ihnen den Download-Link per E-Mail.",
+      "company": "Unternehmen",
+      "name": "Ansprechpartner",
+      "email": "Geschäftliche E-Mail",
+      "phone": "Telefon",
+      "postalCode": "PLZ / Region",
+      "businessType": "Geschäftsart",
+      "businessTypePlaceholder": "Bitte auswählen",
+      "businessTypes": {
+        "jeweler": "Juwelier",
+        "goldsmith": "Goldschmied",
+        "retail": "Einzelhandel",
+        "other": "Sonstiges"
+      },
+      "interests": "Interessen",
+      "interestsPlaceholder": "z. B. Ohrringe, Verlobungsringe, Diamanten",
+      "consent": "Ich stimme der Verarbeitung meiner Daten gemäß der",
+      "privacyLink": "Datenschutzerklärung",
+      "submit": "Katalog herunterladen",
+      "submitting": "Wird gesendet…",
+      "successTitle": "Vielen Dank!",
+      "successText": "Ihr Katalog steht bereit. Sie erhalten zusätzlich eine E-Mail mit dem Download-Link.",
+      "download": "PDF herunterladen",
+      "bookAppointment": "Termin buchen",
+      "emailNote": "Prüfen Sie auch Ihren Spam-Ordner, falls die E-Mail nicht ankommt."
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "B2B-Service",
+      "title": "Services für Juweliere",
+      "subtitle": "Von der Bestellung bis zur Individualisierung — wir unterstützen Ihr Geschäft mit effizienten B2B-Services."
+    },
+    "items": {
+      "invoice": {
+        "title": "Kauf auf Rechnung",
+        "text": "Verlässliche B2B-Konditionen mit Rechnungskauf für registrierte Partner-Juweliere."
+      },
+      "ringAdjustments": {
+        "title": "Anpassungen von Ringen",
+        "text": "Professionelle Ringanpassungen in unserer Manufaktur — präzise und termingerecht."
+      },
+      "engraving": {
+        "title": "Gravuren",
+        "text": "Individuelle Gravuren für Ringe und Schmuckstücke — für persönliche Kundenwünsche."
+      },
+      "shipping": {
+        "title": "Schneller bundesweiter Versand",
+        "text": "Zuverlässiger Versand deutschlandweit — sicher verpackt und schnell bei Ihnen."
+      },
+      "customization": {
+        "title": "Effiziente Individualisierung",
+        "text": "Anpassungen von Kollektionen und Materialien — effizient umgesetzt für Ihr Sortiment."
+      }
+    },
+    "cta": {
+      "appointment": "Termin buchen",
+      "catalog": "Katalog herunterladen"
+    }
+  },
+  "partnership": {
+    "hero": {
+      "eyebrow": "B2B-Partnerschaft",
+      "title": "Ihr Partner für Schmuck & Diamanten",
+      "subtitle": "Wir begleiten Juweliere langfristig — mit persönlicher Betreuung, eigener Fertigung und lizenzierter Gemmologie."
+    },
+    "story": {
+      "title": "Partnerschaft auf Augenhöhe",
+      "text": "Als Manufaktur verstehen wir die Anforderungen von Juwelieren. Unser Vertriebsmitarbeiter-Modell sorgt für direkten Kontakt, schnelle Entscheidungen und verlässliche Lieferungen."
+    },
+    "steps": {
+      "intro": {
+        "eyebrow": "Schritt 1",
+        "title": "Kennenlernen",
+        "text": "Im Erstgespräch lernen wir Ihr Geschäft, Ihre Zielgruppe und Ihr Sortiment kennen."
+      },
+      "advisor": {
+        "eyebrow": "Schritt 2",
+        "title": "Persönlicher Ansprechpartner",
+        "text": "Ein dedizierter Vertriebsmitarbeiter begleitet Sie bei Kollektionen, Diamanten und Bestellungen."
+      },
+      "support": {
+        "eyebrow": "Schritt 3",
+        "title": "Laufende Betreuung",
+        "text": "Von der Beratung bis zur Nachbestellung — wir sind für Sie erreichbar."
+      },
+      "growth": {
+        "eyebrow": "Schritt 4",
+        "title": "Gemeinsam wachsen",
+        "text": "Mit neuen Kollektionen, Individualisierung und Events stärken wir Ihr Schaufenster."
+      }
+    },
+    "cta": {
+      "contact": "Partnerschaft anfragen",
+      "appointment": "Termin buchen"
+    }
+  },
+  "visit": {
+    "hero": {
+      "eyebrow": "Showroom Würzburg",
+      "title": "Besuchen Sie uns",
+      "subtitle": "Erleben Sie unsere Manufaktur und Kollektionen persönlich — im Showroom oder durch unseren Außendienst."
+    },
+    "options": {
+      "showroom": {
+        "title": "Showroom in Würzburg",
+        "text": "Vereinbaren Sie einen Termin in unserem Showroom und entdecken Sie Kollektionen hautnah.",
+        "point1": "Persönliche Beratung durch unser Team",
+        "point2": "Kollektionen und Diamanten live erleben",
+        "point3": "Terminvereinbarung online oder telefonisch"
+      },
+      "fieldService": {
+        "title": "Außendienst-Besuche",
+        "text": "Unser Vertriebsteam besucht Sie auf Wunsch in Ihrem Geschäft.",
+        "point1": "Beratung vor Ort in Ihrem Juweliergeschäft",
+        "point2": "Muster und Kollektionen direkt mitbringen",
+        "point3": "Individuelle Terminplanung nach Region"
+      }
+    },
+    "location": {
+      "label": "Adresse"
+    },
+    "cta": {
+      "appointment": "Termin buchen",
+      "contact": "Kontakt aufnehmen"
+    }
+  },
+  "faq": {
+    "hero": {
+      "eyebrow": "FAQ",
+      "title": "Häufige Fragen",
+      "subtitle": "Antworten auf die wichtigsten Fragen zur B2B-Partnerschaft mit Rösler & Engert."
+    },
+    "items": {
+      "partnership": {
+        "question": "Wie werde ich B2B-Partner?",
+        "answer": "Kontaktieren Sie uns über das Kontaktformular oder buchen Sie einen Termin. Wir besprechen Ihr Geschäft und die passenden Konditionen persönlich."
+      },
+      "minimumOrder": {
+        "question": "Gibt es Mindestbestellmengen?",
+        "answer": "Die Konditionen hängen von Kollektion und Partnerschaft ab. Im persönlichen Gespräch finden wir die passende Lösung für Ihr Geschäft."
+      },
+      "catalog": {
+        "question": "Wie erhalte ich den Katalog?",
+        "answer": "Laden Sie unseren digitalen Katalog auf der Katalog-Seite herunter. Nach dem Ausfüllen des Formulars erhalten Sie den PDF-Link per E-Mail."
+      },
+      "customization": {
+        "question": "Sind Individualisierungen möglich?",
+        "answer": "Ja — von Ringanpassungen über Gravuren bis zu kollektionsspezifischen Anpassungen unterstützen wir Sie effizient."
+      },
+      "shipping": {
+        "question": "Wie funktioniert der Versand?",
+        "answer": "Wir liefern schnell und bundesweit — sicher verpackt und zuverlässig an Ihr Geschäft."
+      },
+      "appointment": {
+        "question": "Wie buche ich einen Termin?",
+        "answer": "Nutzen Sie den Termin-Link auf unserer Website oder rufen Sie uns an. Wir freuen uns auf Ihren Besuch in Würzburg oder bei Ihnen vor Ort."
+      }
+    },
+    "cta": {
+      "title": "Noch Fragen?",
+      "text": "Unser Team berät Sie gerne persönlich.",
+      "contact": "Kontakt aufnehmen",
+      "appointment": "Termin buchen"
     }
   },
   "legal": {
     "imprint": {
       "title": "Impressum",
-      "content": "Angaben gemäß § 5 TMG\n\nRösler & Engert GbR\nMusterstraße 1\n97070 Würzburg\nDeutschland\n\nTelefon: +49 (0) 931 45 25 28 92\nE-Mail: info@roesler-engert.de\n\nVertreten durch: Christian Roesler, [weiterer Gesellschafter]\n\nUmsatzsteuer-ID: [USt-IdNr. einfügen]\n\nVerantwortlich für den Inhalt nach § 55 Abs. 2 RStV:\nChristian Roesler, Anschrift wie oben."
+      "content": "Angaben gemäß § 5 TMG\n\nRösler & Engert GbR\nDomstr. 18\n97070 Würzburg\nDeutschland\n\nTelefon: +49 (0) 931 45 25 28 92\nE-Mail: info@roesler-engert.de\n\nVertreten durch: Christian Roesler, [weiterer Gesellschafter]\n\nUmsatzsteuer-ID: [USt-IdNr. einfügen]\n\nVerantwortlich für den Inhalt nach § 55 Abs. 2 RStV:\nChristian Roesler, Anschrift wie oben."
     },
     "privacy": {
       "title": "Datenschutzerklärung",
-      "content": "1. Datenschutz auf einen Blick\n\nAllgemeine Hinweise\nDie folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.\n\n2. Verantwortliche Stelle\nRösler & Engert GbR\nMusterstraße 1\n97070 Würzburg\nE-Mail: info@roesler-engert.de\n\n3. Datenerfassung auf dieser Website\nBeim Besuch unserer Website werden technisch notwendige Daten (z. B. IP-Adresse, Browsertyp) in Server-Logfiles gespeichert.\n\n4. Kontaktformular\nWenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert.\n\n5. Ihre Rechte\nSie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten.\n\nBitte lassen Sie diese Platzhaltertexte von einem Rechtsanwalt prüfen und anpassen."
+      "content": "1. Datenschutz auf einen Blick\n\nAllgemeine Hinweise\nDie folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.\n\n2. Verantwortliche Stelle\nRösler & Engert GbR\nDomstr. 18\n97070 Würzburg\nE-Mail: info@roesler-engert.de\n\n3. Datenerfassung auf dieser Website\nBeim Besuch unserer Website werden technisch notwendige Daten (z. B. IP-Adresse, Browsertyp) in Server-Logfiles gespeichert.\n\n4. Kontaktformular\nWenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert.\n\n5. Ihre Rechte\nSie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten.\n\nBitte lassen Sie diese Platzhaltertexte von einem Rechtsanwalt prüfen und anpassen."
     }
   }
 }

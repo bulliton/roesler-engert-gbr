@@ -4,11 +4,8 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { VideoBackground } from "@/components/ui/VideoBackground";
-import { Link } from "@/lib/navigation";
+import { Button } from "@/components/ui/Button";
 import { CONTACT } from "@/lib/constants";
-
-const heroCtaClass =
-  "inline-block border-b border-white/50 pb-0.5 text-xs font-normal tracking-[0.16em] text-white uppercase transition-colors duration-300 hover:border-white";
 
 export function HeroSection() {
   const t = useTranslations("home.hero");
@@ -32,18 +29,22 @@ export function HeroSection() {
           <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-white/70 md:mt-5 md:max-w-lg md:text-[0.9375rem]">
             {t("subtitle")}
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-6 md:mt-10 md:gap-8">
-            <a
+          <p className="mt-3 max-w-lg text-xs font-medium tracking-wide text-white/60 uppercase md:text-sm">
+            {t("servicesStrip")}
+          </p>
+          <div className="mt-8 flex flex-wrap items-center gap-4 md:mt-10">
+            <Button
               href={CONTACT.appointmentUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={heroCtaClass}
+              external
+              variant="primary"
+              shape="pill"
+              className="!border-white !bg-secondary !text-white hover:!bg-white hover:!text-primary"
             >
               {t("ctaPrimary")}
-            </a>
-            <Link href="/about" className={heroCtaClass}>
+            </Button>
+            <Button href="/catalog" variant="outline-contrast" shape="pill">
               {t("ctaSecondary")}
-            </Link>
+            </Button>
           </div>
         </motion.div>
       </Container>

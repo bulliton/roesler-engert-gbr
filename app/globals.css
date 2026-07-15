@@ -198,3 +198,17 @@ h4 {
 .mega-menu-link:hover::after {
   transform: scaleX(1);
 }
+
+@keyframes logo-text-orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-text-orbit {
+  animation: logo-text-orbit 22s linear infinite;
+  transform-origin: 0 0;
+}

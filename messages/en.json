@@ -12,6 +12,11 @@
     "allCollections": "All collections",
     "about": "About",
     "contact": "Contact",
+    "services": "Services",
+    "partnership": "Partnership",
+    "catalog": "Catalog",
+    "visit": "Visit",
+    "faq": "FAQ",
     "bookAppointment": "Book appointment",
     "shop": "B2B Shop",
     "store": "Store",
@@ -73,6 +78,12 @@
     "copyright": "© {year} Rösler Engert UG (haftungsbeschränkt)",
     "tagline": "Handcrafted jewelry and diamonds — Made in Germany.",
     "pages": "Pages",
+    "navGroups": {
+      "collections": "Collections",
+      "company": "Company",
+      "expertise": "Expertise",
+      "service": "Service"
+    },
     "mission": {
       "title": "Craftsmanship with integrity",
       "text": "As a manufactory for jewelers, we combine licensed gemology, in-house manufacturing in Germany, and generations of craftsmanship — for jewelry that builds trust."
@@ -89,12 +100,14 @@
       "requestCollection": "Collection & jewelry",
       "requestGeneral": "General inquiry",
       "name": "Name",
+      "company": "Company",
       "email": "Email",
       "message": "Message",
       "optional": "Optional",
       "consent": "I agree to the processing of my data in accordance with the",
       "privacyLink": "Privacy Policy",
       "submit": "Send message",
+      "submitting": "Sending…",
       "success": "Thank you — we will get back to you shortly."
     },
     "newsletter": {
@@ -102,8 +115,23 @@
       "description": "Receive exclusive information about our offers.",
       "emailLabel": "Email address",
       "submit": "Sign up",
+      "submitting": "Signing up…",
+      "consent": "I agree to the processing of my data in accordance with the",
+      "privacyLink": "Privacy Policy",
       "success": "Thank you for subscribing."
     }
+  },
+  "forms": {
+    "errors": {
+      "generic": "An error occurred. Please try again.",
+      "unavailable": "The form is temporarily unavailable."
+    }
+  },
+  "ctaBand": {
+    "title": "Ready for a B2B partnership?",
+    "text": "Book a personal appointment or download our catalog — our team is happy to advise you.",
+    "appointment": "Book appointment",
+    "catalog": "Download catalog"
   },
   "buttons": {
     "learnMore": "Learn more",
@@ -117,8 +145,9 @@
       "eyebrow": "Heritage Craftsmanship",
       "title": "Handcrafted for Your Business",
       "subtitle": "As a B2B partner for jewelers, we combine licensed gemology, in-house manufacturing in Germany, and generations of craftsmanship — for jewelry that delights your customers.",
+      "servicesStrip": "Invoice purchase · Ring adjustments · Engraving · Nationwide shipping",
       "ctaPrimary": "Book appointment",
-      "ctaSecondary": "Learn more"
+      "ctaSecondary": "Download catalog"
     },
     "stats": {
       "years": { "value": "128", "label": "Years of experience" },
@@ -159,22 +188,40 @@
     "showroom": {
       "craftsmanship": {
         "title": "Visit our manufactory",
-        "cta": "Show location",
+        "cta": "Plan your visit",
         "text": "Experience handcrafted jewelry made in Germany — precise, timeless, and ready for your showroom."
       },
       "diamonds": {
         "title": "Select diamonds",
-        "cta": "View collection",
+        "cta": "Discover diamonds",
         "text": "Our licensed gemologist guides your selection — for transparency and the highest quality in your partnership."
       },
       "showroom": {
         "title": "Visit our showroom",
-        "cta": "Show location",
-        "text": "Book an appointment at our showroom and discover collections that delight your customers."
+        "cta": "Book appointment",
+        "text": "Book an appointment at our showroom in Würzburg and discover collections that delight your customers."
       }
     },
     "partners": {
-      "title": "Partners and brands"
+      "title": "Trusted by jewelers",
+      "signals": {
+        "signal1": {
+          "title": "189+ partners",
+          "text": "Jewelers across Germany trust our manufactory."
+        },
+        "signal2": {
+          "title": "Made in Germany",
+          "text": "In-house production in Würzburg — handcrafted and quality assured."
+        },
+        "signal3": {
+          "title": "Licensed gemology",
+          "text": "In-house gemologist for transparent diamond selection."
+        },
+        "signal4": {
+          "title": "128 years of experience",
+          "text": "Generations of craftsmanship for discerning collections."
+        }
+      }
     }
   },
   "about": {
@@ -265,18 +312,221 @@
       "email": "Email",
       "phone": "Phone",
       "message": "Message",
+      "requestType": "Type of request",
+      "requestTypePlaceholder": "Please select",
+      "requestPartnership": "B2B partnership",
+      "requestDiamonds": "Diamonds & gemology",
+      "requestCollection": "Collection & jewelry",
+      "requestGeneral": "General inquiry",
+      "consent": "I agree to the processing of my data in accordance with the",
+      "privacyLink": "Privacy Policy",
       "submit": "Send message",
+      "submitting": "Sending…",
       "success": "Thank you — we will get back to you shortly."
+    }
+  },
+  "catalog": {
+    "hero": {
+      "eyebrow": "B2B Catalog",
+      "title": "Collections for your business",
+      "subtitle": "Download our digital catalog and discover handcrafted jewelry, diamonds, and services for jewelers."
+    },
+    "preview": {
+      "title": "What you'll find in the catalog",
+      "text": "Our B2B catalog provides an overview of collections, materials, customization options, and our services for partner jewelers.",
+      "noteLabel": "Note",
+      "note": "The current PDF is a placeholder. Please replace public/downloads/katalog-2026.pdf with the final catalog."
+    },
+    "valueProps": {
+      "collections": {
+        "title": "Current collections",
+        "text": "Earrings, rings, and necklaces — handcrafted in Germany."
+      },
+      "services": {
+        "title": "B2B services",
+        "text": "Invoice purchase, adjustments, engraving, and nationwide shipping."
+      },
+      "partnership": {
+        "title": "Personal advice",
+        "text": "Sales representatives and showroom visits for your partnership."
+      }
+    },
+    "form": {
+      "title": "Request catalog",
+      "subtitle": "Please complete the form — we will send you the download link by email.",
+      "company": "Company",
+      "name": "Contact person",
+      "email": "Business email",
+      "phone": "Phone",
+      "postalCode": "Postal code / region",
+      "businessType": "Business type",
+      "businessTypePlaceholder": "Please select",
+      "businessTypes": {
+        "jeweler": "Jeweler",
+        "goldsmith": "Goldsmith",
+        "retail": "Retail",
+        "other": "Other"
+      },
+      "interests": "Interests",
+      "interestsPlaceholder": "e.g. earrings, engagement rings, diamonds",
+      "consent": "I agree to the processing of my data in accordance with the",
+      "privacyLink": "Privacy Policy",
+      "submit": "Download catalog",
+      "submitting": "Sending…",
+      "successTitle": "Thank you!",
+      "successText": "Your catalog is ready. You will also receive an email with the download link.",
+      "download": "Download PDF",
+      "bookAppointment": "Book appointment",
+      "emailNote": "Please check your spam folder if the email does not arrive."
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "B2B Service",
+      "title": "Services for jewelers",
+      "subtitle": "From ordering to customization — we support your business with efficient B2B services."
+    },
+    "items": {
+      "invoice": {
+        "title": "Invoice purchase",
+        "text": "Reliable B2B terms with invoice purchase for registered partner jewelers."
+      },
+      "ringAdjustments": {
+        "title": "Ring adjustments",
+        "text": "Professional ring sizing in our manufactory — precise and on schedule."
+      },
+      "engraving": {
+        "title": "Engraving",
+        "text": "Individual engravings for rings and jewelry — for personal customer requests."
+      },
+      "shipping": {
+        "title": "Fast nationwide shipping",
+        "text": "Reliable shipping across Germany — securely packed and delivered quickly."
+      },
+      "customization": {
+        "title": "Efficient customization",
+        "text": "Collection and material adaptations — implemented efficiently for your assortment."
+      }
+    },
+    "cta": {
+      "appointment": "Book appointment",
+      "catalog": "Download catalog"
+    }
+  },
+  "partnership": {
+    "hero": {
+      "eyebrow": "B2B Partnership",
+      "title": "Your partner for jewelry & diamonds",
+      "subtitle": "We support jewelers long term — with personal service, in-house manufacturing, and licensed gemology."
+    },
+    "story": {
+      "title": "Partnership at eye level",
+      "text": "As a manufactory, we understand the needs of jewelers. Our sales representative model ensures direct contact, fast decisions, and reliable deliveries."
+    },
+    "steps": {
+      "intro": {
+        "eyebrow": "Step 1",
+        "title": "Getting to know you",
+        "text": "In an initial conversation, we learn about your business, target audience, and assortment."
+      },
+      "advisor": {
+        "eyebrow": "Step 2",
+        "title": "Personal contact",
+        "text": "A dedicated sales representative supports you with collections, diamonds, and orders."
+      },
+      "support": {
+        "eyebrow": "Step 3",
+        "title": "Ongoing support",
+        "text": "From consultation to reorders — we are here for you."
+      },
+      "growth": {
+        "eyebrow": "Step 4",
+        "title": "Grow together",
+        "text": "With new collections, customization, and events, we strengthen your showroom."
+      }
+    },
+    "cta": {
+      "contact": "Inquire about partnership",
+      "appointment": "Book appointment"
+    }
+  },
+  "visit": {
+    "hero": {
+      "eyebrow": "Showroom Würzburg",
+      "title": "Visit us",
+      "subtitle": "Experience our manufactory and collections in person — at the showroom or through our field service."
+    },
+    "options": {
+      "showroom": {
+        "title": "Showroom in Würzburg",
+        "text": "Book an appointment at our showroom and discover collections up close.",
+        "point1": "Personal advice from our team",
+        "point2": "Experience collections and diamonds live",
+        "point3": "Book appointments online or by phone"
+      },
+      "fieldService": {
+        "title": "Field service visits",
+        "text": "Our sales team visits your store on request.",
+        "point1": "On-site consultation in your jewelry store",
+        "point2": "Samples and collections brought directly to you",
+        "point3": "Individual scheduling by region"
+      }
+    },
+    "location": {
+      "label": "Address"
+    },
+    "cta": {
+      "appointment": "Book appointment",
+      "contact": "Get in touch"
+    }
+  },
+  "faq": {
+    "hero": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "subtitle": "Answers to the most important questions about B2B partnership with Rösler & Engert."
+    },
+    "items": {
+      "partnership": {
+        "question": "How do I become a B2B partner?",
+        "answer": "Contact us via the contact form or book an appointment. We will discuss your business and suitable terms in person."
+      },
+      "minimumOrder": {
+        "question": "Are there minimum order quantities?",
+        "answer": "Terms depend on collection and partnership. In a personal conversation, we find the right solution for your business."
+      },
+      "catalog": {
+        "question": "How do I get the catalog?",
+        "answer": "Download our digital catalog on the catalog page. After completing the form, you will receive the PDF link by email."
+      },
+      "customization": {
+        "question": "Is customization possible?",
+        "answer": "Yes — from ring adjustments and engraving to collection-specific adaptations, we support you efficiently."
+      },
+      "shipping": {
+        "question": "How does shipping work?",
+        "answer": "We deliver quickly nationwide — securely packed and reliably to your store."
+      },
+      "appointment": {
+        "question": "How do I book an appointment?",
+        "answer": "Use the appointment link on our website or call us. We look forward to your visit in Würzburg or at your location."
+      }
+    },
+    "cta": {
+      "title": "Still have questions?",
+      "text": "Our team is happy to advise you personally.",
+      "contact": "Get in touch",
+      "appointment": "Book appointment"
     }
   },
   "legal": {
     "imprint": {
       "title": "Imprint",
-      "content": "Information pursuant to § 5 TMG (German Telemedia Act)\n\nRösler & Engert GbR\nMusterstraße 1\n97070 Würzburg\nGermany\n\nPhone: +49 (0) 931 45 25 28 92\nEmail: info@roesler-engert.de\n\nRepresented by: Christian Roesler, [additional partner]\n\nVAT ID: [insert VAT ID]\n\nResponsible for content pursuant to § 55 Abs. 2 RStV:\nChristian Roesler, address as above."
+      "content": "Information pursuant to § 5 TMG (German Telemedia Act)\n\nRösler & Engert GbR\nDomstr. 18\n97070 Würzburg\nGermany\n\nPhone: +49 (0) 931 45 25 28 92\nEmail: info@roesler-engert.de\n\nRepresented by: Christian Roesler, [additional partner]\n\nVAT ID: [insert VAT ID]\n\nResponsible for content pursuant to § 55 Abs. 2 RStV:\nChristian Roesler, address as above."
     },
     "privacy": {
       "title": "Privacy Policy",
-      "content": "1. Privacy at a glance\n\nGeneral information\nThe following notes provide a simple overview of what happens to your personal data when you visit this website.\n\n2. Data controller\nRösler & Engert GbR\nMusterstraße 1\n97070 Würzburg\nEmail: info@roesler-engert.de\n\n3. Data collection on this website\nWhen you visit our website, technically necessary data (e.g. IP address, browser type) is stored in server log files.\n\n4. Contact form\nIf you send us inquiries via the contact form, your details will be stored for processing the request.\n\n5. Your rights\nYou have the right to information, correction, deletion, and restriction of processing of your personal data.\n\nPlease have these placeholder texts reviewed and adapted by a legal professional."
+      "content": "1. Privacy at a glance\n\nGeneral information\nThe following notes provide a simple overview of what happens to your personal data when you visit this website.\n\n2. Data controller\nRösler & Engert GbR\nDomstr. 18\n97070 Würzburg\nEmail: info@roesler-engert.de\n\n3. Data collection on this website\nWhen you visit our website, technically necessary data (e.g. IP address, browser type) is stored in server log files.\n\n4. Contact form\nIf you send us inquiries via the contact form, your details will be stored for processing the request.\n\n5. Your rights\nYou have the right to information, correction, deletion, and restriction of processing of your personal data.\n\nPlease have these placeholder texts reviewed and adapted by a legal professional."
     }
   }
 }

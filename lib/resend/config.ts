@@ -1,0 +1,39 @@
+import { Resend } from "resend";
+
+export type AppLocale = "de" | "en";
+
+export function getResendClient() {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return null;
+  return new Resend(apiKey);
+}
+
+export function getFromEmail() {
+  return process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev";
+}
+
+export function getSalesNotificationEmail() {
+  return (
+    process.env.SALES_NOTIFICATION_EMAIL ??
+    process.env.RESEND_FROM_EMAIL ??
+    "info@roesler-engert.de"
+  );
+}
+
+export function getResendAudienceId() {
+  return process.env.RESEND_AUDIENCE_ID;
+}
+
+export function getSiteUrl() {
+  if (process.env.NEXT_PUBLIC_SITE_URL) {
+    return process.env.NEXT_PUBLIC_SITE_URL;
+  }
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}`;
+  }
+  return "http://localhost:3000";
+}
+
+export function getCatalogDownloadUrl() {
+  return `${getSiteUrl()}/downloads/katalog-2026.pdf`;
+}

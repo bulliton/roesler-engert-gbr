@@ -1,19 +1,47 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/lib/navigation";
+import { submitLead } from "@/lib/forms/submit-lead";
 
 const inputClass =
   "w-full border-0 border-b border-white/25 bg-transparent py-3 text-sm text-white placeholder:text-white/40 outline-none transition-colors focus:border-secondary";
 
 export function FooterContactForm() {
   const t = useTranslations("footer.form");
+  const locale = useLocale();
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const result = await submitLead("/api/leads/contact", {
+      locale,
+      name: formData.get("name"),
+      company: formData.get("company"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+      requestType: formData.get("requestType"),
+      consent: formData.get("consent") === "on",
+      source: "footer-form",
+    });
+
+    setLoading(false);
+
+    if (result.success) {
+      setSubmitted(true);
+      return;
+    }
+
+    setError(result.message);
   };
 
   if (submitted) {
@@ -25,8 +53,14 @@ export function FooterContactForm() {
   }
 
   return (
-    <div className="rounded-lg border border-white/10 bg-primary/70 p-6 lg:p-8">
-      <form onSubmit={handleSubmit} className="space-y-5">
+    <div className="h-full rounded-lg border border-white/10 bg-primary/50 p-6 lg:p-7">
+      <form onSubmit={handleSubmit} className="flex h-full flex-col space-y-5">
+        {error ? (
+          <p className="rounded-sm border border-red-300/40 bg-red-950/30 px-3 py-2 text-xs text-red-100">
+            {error}
+          </p>
+        ) : null}
+
         <div>
           <label htmlFor="footer-request" className="sr-only">
             {t("requestType")}
@@ -54,6 +88,20 @@ export function FooterContactForm() {
               {t("requestGeneral")}
             </option>
           </select>
+        </div>
+
+        <div>
+          <label htmlFor="footer-company" className="sr-only">
+            {t("company")}
+          </label>
+          <input
+            id="footer-company"
+            name="company"
+            type="text"
+            required
+            placeholder={t("company")}
+            className={inputClass}
+          />
         </div>
 
         <div>
@@ -115,12 +163,13 @@ export function FooterContactForm() {
           </span>
         </label>
 
-        <div className="flex justify-end pt-2">
+        <div className="mt-auto flex justify-end pt-2">
           <button
             type="submit"
-            className="rounded-full bg-secondary px-8 py-2.5 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white hover:text-primary"
+            disabled={loading}
+            className="rounded-full bg-secondary px-8 py-2.5 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white hover:text-primary disabled:opacity-60"
           >
-            {t("submit")}
+            {loading ? t("submitting") : t("submit")}
           </button>
         </div>
       </form>

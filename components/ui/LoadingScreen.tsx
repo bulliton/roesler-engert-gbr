@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+import { AnimatedCircularLogo } from "@/components/ui/AnimatedCircularLogo";
 
 const EASE_OUT = [0.22, 1, 0.36, 1] as const;
 
@@ -55,44 +55,7 @@ export function LoadingScreen() {
           aria-hidden={!isLoading}
           aria-busy="true"
         >
-          <div className="flex flex-col items-center gap-5">
-            <motion.div
-              className="relative h-11 w-11"
-              animate={reducedMotion ? undefined : { rotate: 360 }}
-              transition={
-                reducedMotion
-                  ? undefined
-                  : { duration: 2.8, repeat: Infinity, ease: "linear" }
-              }
-            >
-              <Image
-                src="/brand/diamond-icon.png"
-                alt="Rösler & Engert"
-                fill
-                priority
-                className="object-contain brightness-0 invert"
-              />
-            </motion.div>
-
-            <motion.div
-              className="relative h-4 w-36 sm:h-5 sm:w-44"
-              initial={{ opacity: 0, y: 4 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.5,
-                delay: reducedMotion ? 0 : 0.7,
-                ease: EASE_OUT,
-              }}
-            >
-              <Image
-                src="/brand/wordmark.png"
-                alt=""
-                fill
-                priority
-                className="object-contain brightness-0 invert opacity-90"
-              />
-            </motion.div>
-          </div>
+          <AnimatedCircularLogo size={120} reducedMotion={reducedMotion} />
         </motion.div>
       )}
     </AnimatePresence>

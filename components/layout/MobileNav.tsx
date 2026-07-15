@@ -7,10 +7,10 @@ import {
   jewelrySubItems,
   leftNavItems,
   rightNavItems,
+  utilityNavItems,
 } from "@/lib/nav-config";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { LocaleSwitcher } from "@/components/ui/LocaleSwitcher";
-import { BagIcon, UserIcon } from "@/components/ui/Icons";
 
 type MobileNavProps = {
   open: boolean;
@@ -79,6 +79,12 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
           </Link>
         ))}
 
+        {utilityNavItems.map((item) => (
+          <Link key={item.key} href={item.href} className={linkClass} onClick={onClose}>
+            {t(item.key)}
+          </Link>
+        ))}
+
         <a
           href={CONTACT.appointmentUrl}
           target="_blank"
@@ -88,25 +94,6 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
         >
           {t("bookAppointment")}
         </a>
-
-        <div className="mt-6 flex items-center gap-4">
-          <Link
-            href="/contact"
-            className="flex items-center gap-2 text-sm text-primary"
-            onClick={onClose}
-          >
-            <UserIcon />
-            {t("account")}
-          </Link>
-          <Link
-            href="/contact"
-            className="flex items-center gap-2 text-sm text-primary"
-            onClick={onClose}
-          >
-            <BagIcon />
-            {t("cart")}
-          </Link>
-        </div>
 
         <div className="mt-auto pt-6">
           <LocaleSwitcher />

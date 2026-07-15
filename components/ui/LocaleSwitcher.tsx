@@ -29,16 +29,16 @@ export function LocaleSwitcher({ inverted = false, compact = false }: LocaleSwit
           key={loc}
           type="button"
           onClick={() => switchLocale(loc)}
-          className={`rounded px-1.5 transition-colors duration-300 ${
-            compact ? "min-h-6 min-w-6" : "min-h-8 min-w-8 px-2"
+          className={`px-1 transition-colors duration-300 ${
+            compact ? "py-0.5" : "py-1"
           } ${
             locale === loc
               ? inverted
-                ? "bg-white text-primary"
-                : "bg-primary text-white"
+                ? "text-white underline decoration-white underline-offset-[3px]"
+                : "text-primary underline decoration-primary underline-offset-[3px]"
               : inverted
-                ? "text-white/80 hover:bg-white/10"
-                : "text-primary hover:bg-primary-light"
+                ? "text-white/65 hover:text-white/90"
+                : "text-primary/55 hover:text-primary"
           }`}
           aria-current={locale === loc ? "true" : undefined}
         >

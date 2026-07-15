@@ -7,6 +7,7 @@ import { ShowroomSection } from "@/components/sections/ShowroomSection";
 import { CategoriesSection } from "@/components/sections/CategoriesSection";
 import { ExpertiseSection } from "@/components/sections/ExpertiseSection";
 import { PartnerLogosSection } from "@/components/sections/PartnerLogosSection";
+import { CtaBand } from "@/components/sections/CtaBand";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -26,6 +27,7 @@ export default async function HomePage({ params }: Props) {
       <CategoriesSection />
       <ExpertiseSection />
       <PartnerLogosSection />
+      <CtaBand />
     </>
   );
 }

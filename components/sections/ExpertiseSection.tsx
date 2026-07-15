@@ -32,7 +32,7 @@ export function ExpertiseSection() {
             {t("text")}
           </p>
           <div className="mt-10">
-            <Button variant="outline-contrast" href="/contact">
+            <Button variant="outline-contrast" href="/partnership">
               {t("cta")}
             </Button>
           </div>

@@ -7,14 +7,11 @@ import { Link, usePathname } from "@/lib/navigation";
 import { CONTACT } from "@/lib/constants";
 import { leftNavItems, rightNavItems } from "@/lib/nav-config";
 import { LocaleSwitcher } from "@/components/ui/LocaleSwitcher";
-import { SearchInput } from "@/components/ui/SearchInput";
 import {
-  BagIcon,
   BookmarkIcon,
   ChevronDownIcon,
   PhoneIcon,
   StoreIcon,
-  UserIcon,
 } from "@/components/ui/Icons";
 import { JewelryMegaMenu } from "./JewelryMegaMenu";
 import { MegaMenu } from "./MegaMenu";
@@ -91,10 +88,6 @@ export function Header() {
     ? `inline-flex items-center gap-1 text-xs font-normal tracking-[0.14em] uppercase !text-white hover:!text-white/80 ${contentTransition} nav-link-underline`
     : `inline-flex items-center gap-1 text-xs font-normal tracking-[0.14em] uppercase !text-primary hover:!text-secondary ${contentTransition} nav-link-underline`;
 
-  const iconButtonClass = useLightNav
-    ? `flex h-9 w-9 items-center justify-center rounded-sm text-white transition-opacity hover:opacity-70 ${contentTransition}`
-    : `flex h-9 w-9 items-center justify-center rounded-sm text-primary transition-colors hover:text-secondary ${contentTransition}`;
-
   const menuBarClass = useLightNav ? "bg-white" : "bg-primary";
 
   return (
@@ -106,29 +99,24 @@ export function Header() {
               <PhoneIcon className="h-3.5 w-3.5" />
               <span className="hidden sm:inline">{CONTACT.phone}</span>
             </a>
-            <Link href="/contact" className={utilityLinkClass}>
-              <StoreIcon className="h-3.5 w-3.5" />
-              <span>{t("store")}</span>
+            <Link href="/visit" className={utilityLinkClass}>
+              <StoreIcon className="h-3.5 w-3.5 shrink-0" />
+              <span>
+                {CONTACT.address.street}, {CONTACT.address.city}
+              </span>
             </Link>
+          </div>
+
+          <div className="flex items-center gap-3 md:gap-4">
             <a
               href={CONTACT.appointmentUrl}
               target="_blank"
               rel="noopener noreferrer"
               className={utilityLinkClass}
             >
-              <BookmarkIcon className="h-3.5 w-3.5" />
-              <span className="hidden md:inline">{t("bookAppointment")}</span>
+              <BookmarkIcon className="h-3.5 w-3.5 shrink-0" />
+              <span className="hidden sm:inline">{t("bookAppointment")}</span>
             </a>
-          </div>
-
-          <div className="hidden items-center gap-2 md:flex">
-            <SearchInput inverted={useLightNav && !scrolled} className="w-36 lg:w-44" compact />
-            <Link href="/contact" className={`${iconButtonClass} h-7 w-7`} aria-label={t("account")}>
-              <UserIcon className="h-4 w-4" />
-            </Link>
-            <Link href="/contact" className={`${iconButtonClass} h-7 w-7`} aria-label={t("cart")}>
-              <BagIcon className="h-4 w-4" />
-            </Link>
             <LocaleSwitcher inverted={scrolled || useLightNav} compact />
           </div>
         </div>
@@ -144,7 +132,7 @@ export function Header() {
               <div
                 key={item.key}
                 className="relative"
-                onMouseEnter={() => setOpenMenu(item.key)}
+                onMouseEnter={() => "mega" in item && item.mega ? setOpenMenu(item.key) : undefined}
               >
                 <Link
                   href={item.href}
@@ -152,7 +140,9 @@ export function Header() {
                   data-open={openMenu === item.key ? "true" : undefined}
                 >
                   {t(item.key)}
-                  <ChevronDownIcon className="h-2.5 w-2.5 opacity-60" />
+                  {"mega" in item && item.mega ? (
+                    <ChevronDownIcon className="h-2.5 w-2.5 opacity-60" />
+                  ) : null}
                 </Link>
               </div>
             ))}
