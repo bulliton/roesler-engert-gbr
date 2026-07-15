@@ -24,6 +24,9 @@ export function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative max-w-xl md:max-w-2xl"
         >
+          <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-accent-gold uppercase hero-text-shadow">
+            {t("eyebrow")}
+          </p>
           <h1 className="font-display text-[clamp(2.25rem,3.8vw+0.75rem,3.75rem)] font-normal leading-[1.12] tracking-[-0.01em] !text-white hero-text-shadow">
             {t("title")}
           </h1>

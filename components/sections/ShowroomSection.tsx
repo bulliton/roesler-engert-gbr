@@ -13,20 +13,23 @@ const cards = [
   {
     key: "craftsmanship" as const,
     image: SITE_IMAGES.handsCrafting,
+    imageClassName: "object-cover object-[center_40%] scale-[1.22]",
     href: "/visit" as const,
   },
   {
     key: "diamonds" as const,
-    image: SITE_IMAGES.workbenchDetail,
+    image: SITE_IMAGES.precisionMeasurement,
+    imageClassName: "object-cover object-[center_35%]",
     href: "/diamonds" as const,
   },
   {
     key: "showroom" as const,
     image: SITE_IMAGES.workshopInterior,
+    imageClassName: "object-cover object-[68%_45%] scale-[1.22]",
     href: CONTACT.appointmentUrl,
     external: true,
   },
-];
+] as const;
 
 export function ShowroomSection() {
   const t = useTranslations("home.showroom");
@@ -43,12 +46,12 @@ export function ShowroomSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <div className="relative mb-5 aspect-[4/3] overflow-hidden rounded-sm bg-primary-light">
+              <div className="relative mb-5 aspect-[3/4] overflow-hidden rounded-sm bg-primary-light">
                 <Image
                   src={card.image}
                   alt=""
                   fill
-                  className="object-cover"
+                  className={card.imageClassName ?? "object-cover"}
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>

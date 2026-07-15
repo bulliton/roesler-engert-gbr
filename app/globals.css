@@ -8,6 +8,8 @@
   --color-white: #ffffff;
   --color-black: #171717;
   --color-muted: #5a6b6b;
+  --color-accent-gold: #b8956b;
+  --color-accent-gold-light: #d4b896;
 
   --font-display: var(--font-lora);
   --font-body: var(--font-lato);
@@ -24,6 +26,8 @@
   --color-primary-light: var(--color-primary-light);
   --color-secondary: var(--color-secondary);
   --color-muted: var(--color-muted);
+  --color-accent-gold: var(--color-accent-gold);
+  --color-accent-gold-light: var(--color-accent-gold-light);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
 }
@@ -105,8 +109,20 @@ h4 {
   display: block;
   width: 3rem;
   height: 2px;
-  background: var(--color-secondary);
+  background: linear-gradient(
+    90deg,
+    var(--color-accent-gold),
+    var(--color-secondary)
+  );
   margin-top: 1rem;
+}
+
+.headline-bar-gold::after {
+  background: var(--color-accent-gold);
+}
+
+.text-accent-gold {
+  color: var(--color-accent-gold);
 }
 
 .hero-text-shadow {

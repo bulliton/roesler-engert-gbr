@@ -7,6 +7,8 @@ export const SITE_IMAGES = {
   solderingTorch: "/images/soldering-torch.webp",
   ringSetting: "/images/ring-setting.webp",
   ringFinishing: "/images/ring-finishing.webp",
+  earringsCraft: "/images/ring-finishing.webp",
+  necklaceCraft: "/images/workbench-detail.webp",
   precisionMeasurement: "/images/precision-measurement.webp",
   qualityInspection: "/images/quality-inspection.webp",
   precisionTools: "/images/precision-tools.webp",

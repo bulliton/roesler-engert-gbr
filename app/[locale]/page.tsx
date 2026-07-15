@@ -1,12 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { DiamondCutsSection } from "@/components/sections/DiamondCutsSection";
-import { StatsSection } from "@/components/sections/StatsSection";
-import { AboutPreviewSection } from "@/components/sections/AboutPreviewSection";
-import { ShowroomSection } from "@/components/sections/ShowroomSection";
-import { CategoriesSection } from "@/components/sections/CategoriesSection";
-import { ExpertiseSection } from "@/components/sections/ExpertiseSection";
-import { PartnerLogosSection } from "@/components/sections/PartnerLogosSection";
+import { ProofSection } from "@/components/sections/ProofSection";
+import { AtelierSection } from "@/components/sections/AtelierSection";
+import { PartnerValueSection } from "@/components/sections/PartnerValueSection";
 import { CtaBand } from "@/components/sections/CtaBand";
 
 type Props = {
@@ -20,13 +16,9 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <HeroSection />
-      <DiamondCutsSection />
-      <StatsSection />
-      <AboutPreviewSection />
-      <ShowroomSection />
-      <CategoriesSection />
-      <ExpertiseSection />
-      <PartnerLogosSection />
+      <ProofSection />
+      <AtelierSection />
+      <PartnerValueSection />
       <CtaBand />
     </>
   );

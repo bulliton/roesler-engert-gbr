@@ -19,8 +19,7 @@ const categories = [
   {
     key: "earrings" as const,
     href: { pathname: "/jewelry" as const, hash: "earrings" },
-    image:
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80",
+    image: SITE_IMAGES.earringsCraft,
   },
   {
     key: "rings" as const,
@@ -30,8 +29,7 @@ const categories = [
   {
     key: "necklaces" as const,
     href: { pathname: "/jewelry" as const, hash: "necklaces" },
-    image:
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80",
+    image: SITE_IMAGES.necklaceCraft,
   },
 ];
 

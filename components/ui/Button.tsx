@@ -34,7 +34,7 @@ export function Button({
   children,
   ...props
 }: ButtonProps) {
-  const classes = `inline-flex min-h-11 items-center justify-center border px-6 py-2.5 text-sm font-semibold tracking-wide uppercase transition-colors duration-300 ${shapes[shape]} ${variants[variant]} ${className}`;
+  const classes = `inline-flex min-h-11 items-center justify-center border px-6 py-2.5 text-xs font-normal tracking-[0.14em] uppercase transition-colors duration-300 ${shapes[shape]} ${variants[variant]} ${className}`;
 
   if (href) {
     if (external) {

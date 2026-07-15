@@ -1,7 +1,7 @@
 {
   "metadata": {
     "siteName": "Rösler & Engert GbR",
-    "defaultDescription": "Handgefertigter Schmuck und Diamanten für Juweliere — lizenzierte Gemmologie und eigene Fertigung in Deutschland."
+    "defaultDescription": "Ihr B2B-Partner für Schmuck und Diamanten — Manufaktur in Würzburg mit lizenzierter Gemmologie und eigener Fertigung."
   },
   "nav": {
     "diamonds": "Diamanten",
@@ -24,7 +24,7 @@
     "account": "Konto",
     "cart": "Warenkorb",
     "megaMenu": {
-      "shopByShape": "Diamanten nach Form einkaufen",
+      "shopByShape": "Schliff-Formen für Ihr Sortiment",
       "customDesign": "Individuelles Schmuckdesign",
       "service": "Unser Service",
       "learnMore": "Mehr erfahren",
@@ -86,7 +86,7 @@
     },
     "mission": {
       "title": "Handwerk mit Verantwortung",
-      "text": "Als Manufaktur für Juweliere verbinden wir lizenzierte Gemmologie, eigene Fertigung in Deutschland und generationsübergreifendes Handwerk — für Schmuck, der Vertrauen schafft."
+      "text": "Wir sind der verlässliche Hintermann für anspruchsvolle Juweliere — mit Gemmologie, Manufaktur und persönlicher Betreuung aus Würzburg."
     },
     "inquiries": {
       "general": "Allgemeine Anfragen",
@@ -111,8 +111,8 @@
       "success": "Vielen Dank — wir melden uns in Kürze bei Ihnen."
     },
     "newsletter": {
-      "title": "E-Mail Newsletter beitreten",
-      "description": "Erhalten Sie exklusive Informationen über unsere Angebote.",
+      "title": "Partner-Updates",
+      "description": "Neue Kollektionen, Lieferhinweise und Messetermine — nur für registrierte Partner.",
       "emailLabel": "E-Mail-Adresse",
       "submit": "Anmelden",
       "submitting": "Wird angemeldet…",
@@ -128,10 +128,10 @@
     }
   },
   "ctaBand": {
-    "title": "Bereit für eine B2B-Partnerschaft?",
-    "text": "Vereinbaren Sie einen persönlichen Termin oder laden Sie unseren Katalog herunter — unser Team berät Sie gerne.",
+    "title": "Lernen wir uns kennen",
+    "text": "In einem persönlichen Gespräch besprechen wir Ihr Sortiment, Ihre Region und wie wir Sie unterstützen können.",
     "appointment": "Termin buchen",
-    "catalog": "Katalog herunterladen"
+    "catalog": "Katalog anfordern"
   },
   "buttons": {
     "learnMore": "Mehr erfahren",
@@ -142,17 +142,72 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Heritage Craftsmanship",
-      "title": "Handgefertigt für Ihr Geschäft",
-      "subtitle": "Als B2B-Partner für Juweliere verbinden wir lizenzierte Gemmologie, eigene Fertigung in Deutschland und generationsübergreifendes Handwerk — für Schmuck, der Ihre Kunden begeistert.",
+      "eyebrow": "Manufaktur Würzburg · seit 1898",
+      "title": "Ihr Name vorne. Unsere Expertise dahinter.",
+      "subtitle": "Wenn Ihre Kunden Fragen zum Stein stellen, stehen Sie nicht allein. Wir fertigen Schmuck in Würzburg und begleiten Sie mit lizenzierter Gemmologie — persönlich, verlässlich, auf Augenhöhe.",
       "ctaPrimary": "Termin buchen",
-      "ctaSecondary": "Katalog herunterladen"
+      "ctaSecondary": "Katalog anfordern"
+    },
+    "proof": {
+      "title": "Vertrauen, das Juweliere weiterempfehlen",
+      "subtitle": "Partner in ganz Deutschland verlassen sich auf unsere Manufaktur — wenn Qualität und Verlässlichkeit zählen.",
+      "quote": {
+        "text": "Wenn ein Kunde den Diamanten infrage stellt, brauche ich einen Partner, der mir sofort die Antwort liefert. Genau dafür gibt es Rösler & Engert.",
+        "attribution": "Partner-Juwelier, Franken"
+      }
     },
     "stats": {
       "years": { "value": "128", "label": "Jahre Erfahrung" },
       "pieces": { "value": "10K", "label": "Gefertigte Stücke" },
       "partners": { "value": "189+", "label": "Partner-Juweliere" },
       "cuts": { "value": "20+", "label": "Diamantschliffe" }
+    },
+    "atelier": {
+      "eyebrow": "Unser Atelier",
+      "title": "Vom Rohstein bis ins Schaufenster",
+      "subtitle": "Alles unter einem Dach in Würzburg — damit Sie Ihren Kunden eine klare Antwort geben können.",
+      "steps": {
+        "inspect": {
+          "title": "Steinprüfung",
+          "text": "Unser Gemmologe prüft jeden Diamanten — Schliff, Reinheit, Farbe. Sie wissen, was Sie verkaufen."
+        },
+        "craft": {
+          "title": "Fertigung",
+          "text": "Meistergoldschmiede fertigen Ihre Kollektion in unserer Manufaktur — präzise, termingerecht, anpassbar."
+        },
+        "finish": {
+          "title": "Feinprüfung",
+          "text": "Jedes Stück wird unter der Lupe geprüft, bevor es Ihre Werkstatt verlässt."
+        },
+        "deliver": {
+          "title": "Übergabe",
+          "text": "Persönlich im Showroom, per Außendienst oder zuverlässig versendet — wie es zu Ihrem Geschäft passt."
+        }
+      },
+      "cta": "Manufaktur besuchen"
+    },
+    "partnerValue": {
+      "title": "Was Sie als Partner erwarten können",
+      "subtitle": "Kein anonymes Großhandelsgeschäft — sondern ein Team, das Ihr Geschäft kennt.",
+      "items": {
+        "gemology": {
+          "title": "Stein-Sicherheit",
+          "text": "Lizenzierter Gemmologe im Haus — für transparente Auswahl und belastbare Verkaufsgespräche."
+        },
+        "manufacturing": {
+          "title": "Eigene Fertigung",
+          "text": "Ohrringe, Ringe und Halsschmuck aus deutscher Manufaktur — individualisierbar für Ihr Sortiment."
+        },
+        "advisor": {
+          "title": "Persönlicher Ansprechpartner",
+          "text": "Ein fester Vertriebsmitarbeiter kennt Ihr Geschäft, Ihre Region und Ihre Kollektionen."
+        },
+        "service": {
+          "title": "Service, der mitdenkt",
+          "text": "Rechnungskauf, Ringanpassungen, Gravuren und bundesweiter Versand — effizient und verlässlich."
+        }
+      },
+      "cta": "Partnerschaft anfragen"
     },
     "aboutPreview": {
       "eyebrow": "Über uns",
@@ -170,7 +225,7 @@
     },
     "expertise": {
       "title": "Lizenzierte Gemmologie & deutsche Fertigung",
-      "text": "Unser Inhouse-Gemmologe garantiert höchste Qualitätsstandards bei der Diamantauswahl. In unserer eigenen Manufaktur in Deutschland entstehen handgefertigte Kollektionen — präzise, zeitlos und bereit für Ihr Schaufenster.",
+      "text": "Unser Inhouse-Gemmologe begleitet die Diamantauswahl. In Würzburg fertigen wir Kollektionen, die zu Ihrem Sortiment passen — mit klaren Qualitätsstandards, die Sie vertreten können.",
       "cta": "Partnerschaft anfragen"
     },
     "diamondCuts": {
@@ -188,7 +243,7 @@
       "craftsmanship": {
         "title": "Besuchen Sie unsere Manufaktur",
         "cta": "Besuch planen",
-        "text": "Erleben Sie handgefertigten Schmuck aus deutscher Fertigung — präzise, zeitlos und bereit für Ihr Schaufenster."
+        "text": "Erleben Sie unsere Manufaktur in Würzburg — Schmuck entstehen sehen, Kollektionen anfassen, Fragen direkt klären."
       },
       "diamonds": {
         "title": "Diamanten auswählen",
@@ -227,7 +282,7 @@
     "title": "Über uns",
     "hero": {
       "eyebrow": "Rösler & Engert GbR",
-      "title": "Heritage Craftsmanship seit Generationen",
+      "title": "Handwerk mit Geschichte seit Generationen",
       "subtitle": "Wir sind Ihr B2B-Partner für handgefertigten Schmuck und Diamanten — mit eigener Manufaktur in Deutschland und lizenzierter Gemmologie im Haus."
     },
     "heritage": {
@@ -258,7 +313,7 @@
     "hero": {
       "eyebrow": "Eigene Manufaktur",
       "title": "Handgefertigter Schmuck für Juweliere",
-      "subtitle": "Unsere Kollektionen werden in Deutschland gefertigt — präzise, zeitlos und bereit für Ihr Schaufenster."
+      "subtitle": "Kollektionen aus unserer Manufaktur in Würzburg — für Juweliere, die Qualität am Schaufenster erkennen lassen wollen."
     },
     "categories": {
       "earrings": {
@@ -336,9 +391,7 @@
     },
     "preview": {
       "title": "Was Sie im Katalog finden",
-      "text": "Unser B2B-Katalog bietet einen Überblick über Kollektionen, Materialien, Individualisierungsoptionen und unsere Services für Partner-Juweliere.",
-      "noteLabel": "Hinweis",
-      "note": "Die aktuelle PDF-Datei ist ein Platzhalter. Bitte ersetzen Sie public/downloads/katalog-2026.pdf durch den finalen Katalog."
+      "text": "Unser B2B-Katalog bietet einen Überblick über Kollektionen, Materialien, Individualisierungsoptionen und Services für Partner-Juweliere."
     },
     "valueProps": {
       "collections": {

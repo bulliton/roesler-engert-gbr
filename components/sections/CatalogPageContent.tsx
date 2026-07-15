@@ -79,13 +79,6 @@ export function CatalogPageContent() {
                   </li>
                 ))}
               </ul>
-
-              <div className="mt-10 rounded-sm border border-primary/15 bg-primary-light p-6">
-                <p className="text-sm font-semibold tracking-wide text-secondary uppercase">
-                  {t("preview.noteLabel")}
-                </p>
-                <p className="mt-2 text-sm text-muted">{t("preview.note")}</p>
-              </div>
             </div>
 
             <div className="rounded-sm border border-primary/10 bg-white p-6 shadow-sm md:p-8">

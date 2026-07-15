@@ -10,16 +10,16 @@ export async function CtaBand() {
   return (
     <Section contrast className="!py-14 md:!py-16">
       <Container>
-        <div className="flex flex-col items-center gap-6 text-center md:flex-row md:justify-between md:text-left">
+        <div className="flex flex-col items-center gap-6 text-center md:flex-row md:items-center md:justify-between md:text-left">
           <div className="max-w-2xl">
             <p className="font-display text-2xl text-white md:text-3xl">{t("title")}</p>
             <p className="mt-3 text-sm leading-relaxed text-white/80 md:text-base">{t("text")}</p>
           </div>
-          <div className="flex shrink-0 flex-wrap justify-center gap-4">
-            <Button href={CONTACT.appointmentUrl} external variant="primary" shape="pill">
+          <div className="flex shrink-0 flex-col items-center gap-3 sm:flex-row">
+            <Button href={CONTACT.appointmentUrl} external variant="primary" shape="pill" className="!border-accent-gold !bg-accent-gold !text-primary hover:!bg-accent-gold-light hover:!border-accent-gold-light">
               {t("appointment")}
             </Button>
-            <Button href="/catalog" variant="outline-contrast" shape="pill">
+            <Button href="/catalog" variant="outline-contrast" shape="pill" className="text-sm opacity-90">
               {t("catalog")}
             </Button>
           </div>

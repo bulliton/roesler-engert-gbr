@@ -1,7 +1,7 @@
 {
   "metadata": {
     "siteName": "Rösler & Engert GbR",
-    "defaultDescription": "Handcrafted jewelry and diamonds for jewelers — licensed gemology and in-house manufacturing in Germany."
+    "defaultDescription": "Your B2B partner for jewelry and diamonds — manufactory in Würzburg with licensed gemology and in-house production."
   },
   "nav": {
     "diamonds": "Diamonds",
@@ -24,7 +24,7 @@
     "account": "Account",
     "cart": "Cart",
     "megaMenu": {
-      "shopByShape": "Shop diamonds by shape",
+      "shopByShape": "Cut shapes for your assortment",
       "customDesign": "Custom jewelry design",
       "service": "Our service",
       "learnMore": "Learn more",
@@ -86,7 +86,7 @@
     },
     "mission": {
       "title": "Craftsmanship with integrity",
-      "text": "As a manufactory for jewelers, we combine licensed gemology, in-house manufacturing in Germany, and generations of craftsmanship — for jewelry that builds trust."
+      "text": "We are the reliable partner behind discerning jewelers — with gemology, manufacturing, and personal support from Würzburg."
     },
     "inquiries": {
       "general": "General inquiries",
@@ -111,8 +111,8 @@
       "success": "Thank you — we will get back to you shortly."
     },
     "newsletter": {
-      "title": "Join our email newsletter",
-      "description": "Receive exclusive information about our offers.",
+      "title": "Partner updates",
+      "description": "New collections, delivery notes, and trade fair dates — for registered partners only.",
       "emailLabel": "Email address",
       "submit": "Sign up",
       "submitting": "Signing up…",
@@ -128,10 +128,10 @@
     }
   },
   "ctaBand": {
-    "title": "Ready for a B2B partnership?",
-    "text": "Book a personal appointment or download our catalog — our team is happy to advise you.",
+    "title": "Let's get acquainted",
+    "text": "In a personal conversation, we discuss your assortment, your region, and how we can support your business.",
     "appointment": "Book appointment",
-    "catalog": "Download catalog"
+    "catalog": "Request catalog"
   },
   "buttons": {
     "learnMore": "Learn more",
@@ -142,17 +142,72 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Heritage Craftsmanship",
-      "title": "Handcrafted for Your Business",
-      "subtitle": "As a B2B partner for jewelers, we combine licensed gemology, in-house manufacturing in Germany, and generations of craftsmanship — for jewelry that delights your customers.",
+      "eyebrow": "Manufactory Würzburg · est. 1898",
+      "title": "Your name out front. Our expertise behind you.",
+      "subtitle": "When your customers question a stone, you are not on your own. We craft jewelry in Würzburg and support you with licensed gemology — personal, reliable, and on equal terms.",
       "ctaPrimary": "Book appointment",
-      "ctaSecondary": "Download catalog"
+      "ctaSecondary": "Request catalog"
+    },
+    "proof": {
+      "title": "Trust that jewelers recommend",
+      "subtitle": "Partners across Germany rely on our manufactory — when quality and reliability matter.",
+      "quote": {
+        "text": "When a customer questions a diamond, I need a partner who gives me the answer right away. That is what Rösler & Engert is for.",
+        "attribution": "Partner jeweler, Franconia"
+      }
     },
     "stats": {
       "years": { "value": "128", "label": "Years of experience" },
       "pieces": { "value": "10K", "label": "Pieces crafted" },
       "partners": { "value": "189+", "label": "Partner jewelers" },
       "cuts": { "value": "20+", "label": "Diamond cuts" }
+    },
+    "atelier": {
+      "eyebrow": "Our atelier",
+      "title": "From rough stone to your showroom",
+      "subtitle": "Everything under one roof in Würzburg — so you can give your customers a clear answer.",
+      "steps": {
+        "inspect": {
+          "title": "Stone inspection",
+          "text": "Our gemologist examines every diamond — cut, clarity, color. You know what you are selling."
+        },
+        "craft": {
+          "title": "Manufacturing",
+          "text": "Master goldsmiths craft your collections in our manufactory — precise, on schedule, customizable."
+        },
+        "finish": {
+          "title": "Final inspection",
+          "text": "Every piece is checked under the loupe before it leaves our workshop."
+        },
+        "deliver": {
+          "title": "Handover",
+          "text": "In person at the showroom, via field service, or shipped reliably — whatever suits your business."
+        }
+      },
+      "cta": "Visit the manufactory"
+    },
+    "partnerValue": {
+      "title": "What you can expect as a partner",
+      "subtitle": "Not anonymous wholesale — a team that knows your business.",
+      "items": {
+        "gemology": {
+          "title": "Stone confidence",
+          "text": "Licensed in-house gemologist — for transparent selection and credible sales conversations."
+        },
+        "manufacturing": {
+          "title": "In-house production",
+          "text": "Earrings, rings, and necklaces from our German manufactory — customizable for your assortment."
+        },
+        "advisor": {
+          "title": "Personal contact",
+          "text": "A dedicated sales advisor who knows your business, your region, and your collections."
+        },
+        "service": {
+          "title": "Service that thinks ahead",
+          "text": "Invoice purchase, ring adjustments, engravings, and nationwide shipping — efficient and reliable."
+        }
+      },
+      "cta": "Inquire about partnership"
     },
     "aboutPreview": {
       "eyebrow": "About us",
@@ -170,7 +225,7 @@
     },
     "expertise": {
       "title": "Licensed Gemology & German Manufacturing",
-      "text": "Our in-house gemologist guarantees the highest quality standards in diamond selection. In our own manufactory in Germany, handcrafted collections are created — precise, timeless, and ready for your showroom.",
+      "text": "Our in-house gemologist guides diamond selection. In Würzburg we craft collections that fit your assortment — with clear quality standards you can stand behind.",
       "cta": "Inquire about partnership"
     },
     "diamondCuts": {
@@ -188,7 +243,7 @@
       "craftsmanship": {
         "title": "Visit our manufactory",
         "cta": "Plan your visit",
-        "text": "Experience handcrafted jewelry made in Germany — precise, timeless, and ready for your showroom."
+        "text": "Experience our manufactory in Würzburg — see jewelry being made, handle collections, get answers directly."
       },
       "diamonds": {
         "title": "Select diamonds",
@@ -227,7 +282,7 @@
     "title": "About us",
     "hero": {
       "eyebrow": "Rösler & Engert GbR",
-      "title": "Heritage Craftsmanship Across Generations",
+      "title": "Craftsmanship Across Generations",
       "subtitle": "We are your B2B partner for handcrafted jewelry and diamonds — with our own manufactory in Germany and licensed gemology in-house."
     },
     "heritage": {
@@ -258,7 +313,7 @@
     "hero": {
       "eyebrow": "Own Manufactory",
       "title": "Handcrafted Jewelry for Jewelers",
-      "subtitle": "Our collections are crafted in Germany — precise, timeless, and ready for your showroom."
+      "subtitle": "Collections from our manufactory in Würzburg — for jewelers who let quality speak in the showroom."
     },
     "categories": {
       "earrings": {
@@ -336,9 +391,7 @@
     },
     "preview": {
       "title": "What you'll find in the catalog",
-      "text": "Our B2B catalog provides an overview of collections, materials, customization options, and our services for partner jewelers.",
-      "noteLabel": "Note",
-      "note": "The current PDF is a placeholder. Please replace public/downloads/katalog-2026.pdf with the final catalog."
+      "text": "Our B2B catalog provides an overview of collections, materials, customization options, and services for partner jewelers."
     },
     "valueProps": {
       "collections": {
