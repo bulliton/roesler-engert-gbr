@@ -12,7 +12,7 @@ export function Headline({
   children,
   as: Tag = "h2",
   className = "",
-  bar = true,
+  bar = false,
   contrast = false,
 }: HeadlineProps) {
   const size =

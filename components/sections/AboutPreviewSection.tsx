@@ -44,7 +44,9 @@ export function AboutPreviewSection() {
             <Headline as="h2">{t("title")}</Headline>
             <p className="mt-6 text-muted leading-relaxed">{t("text")}</p>
             <div className="mt-8">
-              <Button href="/about">{t("link")}</Button>
+              <Button href="/about" variant="primary">
+                {t("link")}
+              </Button>
             </div>
           </motion.div>
         </div>

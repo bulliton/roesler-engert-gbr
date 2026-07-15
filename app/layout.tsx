@@ -1,14 +1,15 @@
-import { Playfair_Display, Source_Sans_3 } from "next/font/google";
+import { Lato, Lora } from "next/font/google";
 
-const playfair = Playfair_Display({
+const lora = Lora({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-lora",
   display: "swap",
 });
 
-const sourceSans = Source_Sans_3({
+const lato = Lato({
   subsets: ["latin"],
-  variable: "--font-source-sans",
+  weight: ["400", "700"],
+  variable: "--font-lato",
   display: "swap",
 });
 
@@ -20,4 +21,4 @@ export default function RootLayout({
   return children;
 }
 
-export { playfair, sourceSans };
+export { lora, lato };

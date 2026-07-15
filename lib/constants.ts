@@ -4,6 +4,8 @@ export const CONTACT = {
   email: "info@roesler-engert.de",
   emailHref: "mailto:info@roesler-engert.de",
   appointmentUrl: "https://roesler-engert.de/termin",
+  instagramHref: "https://www.instagram.com/",
+  linkedinHref: "https://www.linkedin.com/",
   address: {
     street: "Musterstraße 1",
     city: "97070 Würzburg",

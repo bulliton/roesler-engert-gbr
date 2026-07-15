@@ -1,135 +1,213 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Link } from "@/lib/navigation";
+import { Link, usePathname } from "@/lib/navigation";
 import { CONTACT } from "@/lib/constants";
+import { leftNavItems, rightNavItems } from "@/lib/nav-config";
 import { LocaleSwitcher } from "@/components/ui/LocaleSwitcher";
+import { SearchInput } from "@/components/ui/SearchInput";
+import {
+  BagIcon,
+  BookmarkIcon,
+  ChevronDownIcon,
+  PhoneIcon,
+  StoreIcon,
+  UserIcon,
+} from "@/components/ui/Icons";
+import { JewelryMegaMenu } from "./JewelryMegaMenu";
+import { MegaMenu } from "./MegaMenu";
 import { MobileNav } from "./MobileNav";
+
+const headerTransition =
+  "transition-[background-color,box-shadow,border-color,backdrop-filter] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]";
+
+const contentTransition = "transition-colors duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]";
+
+type OpenMenu = "diamonds" | "jewelry" | null;
 
 export function Header() {
   const t = useTranslations("nav");
+  const pathname = usePathname();
+  const headerRef = useRef<HTMLElement>(null);
   const [scrolled, setScrolled] = useState(false);
-  const [jewelryOpen, setJewelryOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<OpenMenu>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const isHome = pathname === "/";
+  const isTransparent = !scrolled;
+  const useLightNav = isTransparent && isHome;
+
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
+    const onScroll = () => setScrolled(window.scrollY > 16);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    setOpenMenu(null);
+    setMobileOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+
+    const syncHeaderOffset = () => {
+      document.documentElement.style.setProperty(
+        "--header-offset",
+        `${el.offsetHeight}px`,
+      );
+    };
+
+    syncHeaderOffset();
+    const observer = new ResizeObserver(syncHeaderOffset);
+    observer.observe(el);
+    window.addEventListener("resize", syncHeaderOffset);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", syncHeaderOffset);
+    };
+  }, [openMenu]);
+
+  const topBarClass = scrolled
+    ? "bg-primary text-white"
+    : useLightNav
+      ? "bg-transparent text-white/90"
+      : "bg-white text-primary border-b border-primary/10";
+
+  const mainBarClass = scrolled
+    ? "border-primary/10 bg-white/95 shadow-sm backdrop-blur-md"
+    : useLightNav
+      ? "border-transparent bg-transparent"
+      : "border-b border-primary/10 bg-white";
+
+  const utilityLinkClass = `inline-flex items-center gap-1.5 text-xs font-normal ${contentTransition} transition-opacity hover:opacity-80`;
+
+  const navLinkClass = useLightNav
+    ? `inline-flex items-center gap-1 text-xs font-normal tracking-[0.14em] uppercase !text-white hover:!text-white/80 ${contentTransition} nav-link-underline`
+    : `inline-flex items-center gap-1 text-xs font-normal tracking-[0.14em] uppercase !text-primary hover:!text-secondary ${contentTransition} nav-link-underline`;
+
+  const iconButtonClass = useLightNav
+    ? `flex h-9 w-9 items-center justify-center rounded-sm text-white transition-opacity hover:opacity-70 ${contentTransition}`
+    : `flex h-9 w-9 items-center justify-center rounded-sm text-primary transition-colors hover:text-secondary ${contentTransition}`;
+
+  const menuBarClass = useLightNav ? "bg-white" : "bg-primary";
+
   return (
-    <header className="sticky top-0 z-50">
-      <div className="bg-primary text-white">
-        <div className="mx-auto flex max-w-[var(--page-max-width)] items-center justify-between px-[var(--section-padding-x)] py-2 text-sm">
-          <a
-            href={CONTACT.phoneHref}
-            className="transition-opacity hover:opacity-80"
-          >
-            {CONTACT.phone}
-          </a>
-          <a
-            href={CONTACT.appointmentUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold tracking-wide uppercase transition-opacity hover:opacity-80"
-          >
-            {t("bookAppointment")}
-          </a>
+    <header ref={headerRef} className="fixed inset-x-0 top-0 z-50">
+      <div className={`${headerTransition} ${topBarClass}`}>
+        <div className="mx-auto flex max-w-[var(--page-max-width)] items-center justify-between gap-4 px-[var(--section-padding-x)] py-1">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-0.5">
+            <a href={CONTACT.phoneHref} className={utilityLinkClass}>
+              <PhoneIcon className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">{CONTACT.phone}</span>
+            </a>
+            <Link href="/contact" className={utilityLinkClass}>
+              <StoreIcon className="h-3.5 w-3.5" />
+              <span>{t("store")}</span>
+            </Link>
+            <a
+              href={CONTACT.appointmentUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={utilityLinkClass}
+            >
+              <BookmarkIcon className="h-3.5 w-3.5" />
+              <span className="hidden md:inline">{t("bookAppointment")}</span>
+            </a>
+          </div>
+
+          <div className="hidden items-center gap-2 md:flex">
+            <SearchInput inverted={useLightNav && !scrolled} className="w-36 lg:w-44" compact />
+            <Link href="/contact" className={`${iconButtonClass} h-7 w-7`} aria-label={t("account")}>
+              <UserIcon className="h-4 w-4" />
+            </Link>
+            <Link href="/contact" className={`${iconButtonClass} h-7 w-7`} aria-label={t("cart")}>
+              <BagIcon className="h-4 w-4" />
+            </Link>
+            <LocaleSwitcher inverted={scrolled || useLightNav} compact />
+          </div>
         </div>
       </div>
 
       <div
-        className={`border-b transition-all duration-300 ${
-          scrolled
-            ? "border-primary/10 bg-white/95 shadow-sm backdrop-blur-md"
-            : "border-transparent bg-white"
-        }`}
+        className={`relative ${headerTransition} ${mainBarClass}`}
+        onMouseLeave={() => setOpenMenu(null)}
       >
-        <div className="mx-auto flex max-w-[var(--page-max-width)] items-center justify-between px-[var(--section-padding-x)] py-4">
-          <nav className="hidden flex-1 items-center gap-6 lg:flex">
-            <Link
-              href="/diamonds"
-              className="text-sm font-semibold tracking-wide text-primary uppercase transition-colors hover:text-secondary"
-            >
-              {t("diamonds")}
-            </Link>
-            <div
-              className="relative"
-              onMouseEnter={() => setJewelryOpen(true)}
-              onMouseLeave={() => setJewelryOpen(false)}
-            >
-              <Link
-                href="/jewelry"
-                className="text-sm font-semibold tracking-wide text-primary uppercase transition-colors hover:text-secondary"
+        <div className="mx-auto grid max-w-[var(--page-max-width)] grid-cols-3 items-center gap-4 px-[var(--section-padding-x)] py-3 lg:grid-cols-[1fr_auto_1fr]">
+          <nav className="hidden items-center gap-8 lg:flex xl:gap-10">
+            {leftNavItems.map((item) => (
+              <div
+                key={item.key}
+                className="relative"
+                onMouseEnter={() => setOpenMenu(item.key)}
               >
-                {t("jewelry")} ▾
-              </Link>
-              {jewelryOpen && (
-                <div className="absolute top-full left-0 z-50 mt-2 min-w-44 rounded-lg border border-primary/10 bg-white py-2 shadow-lg">
-                  <Link
-                    href={{ pathname: "/jewelry", hash: "earrings" }}
-                    className="block px-4 py-2 text-sm text-primary hover:bg-primary-light"
-                  >
-                    {t("earrings")}
-                  </Link>
-                  <Link
-                    href={{ pathname: "/jewelry", hash: "rings" }}
-                    className="block px-4 py-2 text-sm text-primary hover:bg-primary-light"
-                  >
-                    {t("rings")}
-                  </Link>
-                  <Link
-                    href={{ pathname: "/jewelry", hash: "necklaces" }}
-                    className="block px-4 py-2 text-sm text-primary hover:bg-primary-light"
-                  >
-                    {t("necklaces")}
-                  </Link>
-                </div>
-              )}
-            </div>
+                <Link
+                  href={item.href}
+                  className={navLinkClass}
+                  data-open={openMenu === item.key ? "true" : undefined}
+                >
+                  {t(item.key)}
+                  <ChevronDownIcon className="h-2.5 w-2.5 opacity-60" />
+                </Link>
+              </div>
+            ))}
           </nav>
 
-          <Link href="/" className="relative mx-4 h-12 w-36 shrink-0 md:h-14 md:w-44">
+          <Link
+            href="/"
+            className="relative col-start-2 flex h-10 shrink-0 items-center justify-self-center md:h-12"
+          >
             <Image
-              src="/brand/wordmark.png"
+              src="/brand/logo-horizontal.svg"
               alt="Rösler & Engert"
-              fill
-              className="object-contain object-center"
+              width={884}
+              height={108}
+              className={`h-full w-auto max-w-[11rem] sm:max-w-[13rem] md:max-w-[15rem] lg:max-w-[17rem] ${contentTransition} ${
+                useLightNav ? "brightness-0 invert" : ""
+              }`}
               priority
             />
           </Link>
 
-          <div className="hidden flex-1 items-center justify-end gap-6 lg:flex">
-            <Link
-              href="/about"
-              className="text-sm font-semibold tracking-wide text-primary uppercase transition-colors hover:text-secondary"
-            >
-              {t("about")}
-            </Link>
-            <Link
-              href="/contact"
-              className="text-sm font-semibold tracking-wide text-primary uppercase transition-colors hover:text-secondary"
-            >
-              {t("contact")}
-            </Link>
-            <LocaleSwitcher />
-          </div>
+          <nav className="hidden items-center justify-end gap-8 lg:flex xl:gap-10">
+            {rightNavItems.map((item) => (
+              <Link key={item.key} href={item.href} className={navLinkClass}>
+                {t(item.key)}
+              </Link>
+            ))}
+          </nav>
 
           <button
             type="button"
-            className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 lg:hidden"
+            className="col-start-3 flex h-11 w-11 flex-col items-center justify-center justify-self-end gap-1.5 lg:hidden"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
-            <span className="block h-0.5 w-6 bg-primary" />
-            <span className="block h-0.5 w-6 bg-primary" />
-            <span className="block h-0.5 w-6 bg-primary" />
+            <span
+              className={`block h-0.5 w-6 ${contentTransition} ${menuBarClass}`}
+            />
+            <span
+              className={`block h-0.5 w-6 ${contentTransition} ${menuBarClass}`}
+            />
+            <span
+              className={`block h-0.5 w-6 ${contentTransition} ${menuBarClass}`}
+            />
           </button>
         </div>
+
+        <MegaMenu
+          open={openMenu === "diamonds"}
+          onClose={() => setOpenMenu(null)}
+        />
+        <JewelryMegaMenu
+          open={openMenu === "jewelry"}
+          onClose={() => setOpenMenu(null)}
+        />
       </div>
 
       <MobileNav open={mobileOpen} onClose={() => setMobileOpen(false)} />

@@ -2,7 +2,15 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/navigation";
+import { CONTACT } from "@/lib/constants";
+import {
+  jewelrySubItems,
+  leftNavItems,
+  rightNavItems,
+} from "@/lib/nav-config";
+import { SearchInput } from "@/components/ui/SearchInput";
 import { LocaleSwitcher } from "@/components/ui/LocaleSwitcher";
+import { BagIcon, UserIcon } from "@/components/ui/Icons";
 
 type MobileNavProps = {
   open: boolean;
@@ -15,7 +23,10 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
   if (!open) return null;
 
   const linkClass =
-    "block py-3 text-lg font-display text-primary border-b border-primary/10";
+    "flex items-center justify-between py-3 text-base font-display text-primary border-b border-primary/10";
+
+  const subLinkClass =
+    "block py-2.5 pl-4 text-sm font-normal text-primary/80 border-b border-primary/5";
 
   return (
     <div className="fixed inset-0 z-[60] lg:hidden">
@@ -28,44 +39,75 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
         <button
           type="button"
           onClick={onClose}
-          className="mb-8 self-end text-2xl text-primary"
+          className="mb-6 self-end text-2xl text-primary"
           aria-label="Close menu"
         >
           ×
         </button>
-        <Link href="/diamonds" className={linkClass} onClick={onClose}>
-          {t("diamonds")}
-        </Link>
-        <Link href="/jewelry" className={linkClass} onClick={onClose}>
-          {t("jewelry")}
-        </Link>
-        <Link
-          href={{ pathname: "/jewelry", hash: "earrings" }}
-          className="block py-2 pl-4 text-sm text-muted hover:text-primary"
+
+        <SearchInput className="mb-6" />
+
+        {leftNavItems.map((item) =>
+          item.key === "jewelry" ? (
+            <div key={item.key} className="border-b border-primary/10">
+              <Link href={item.href} className={linkClass} onClick={onClose}>
+                {t(item.key)}
+              </Link>
+              <div className="pb-2">
+                {jewelrySubItems.map((sub) => (
+                  <Link
+                    key={sub.key}
+                    href={sub.href}
+                    className={subLinkClass}
+                    onClick={onClose}
+                  >
+                    {t(sub.key)}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <Link key={item.key} href={item.href} className={linkClass} onClick={onClose}>
+              {t(item.key)}
+            </Link>
+          ),
+        )}
+
+        {rightNavItems.map((item) => (
+          <Link key={item.key} href={item.href} className={linkClass} onClick={onClose}>
+            {t(item.key)}
+          </Link>
+        ))}
+
+        <a
+          href={CONTACT.appointmentUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={linkClass}
           onClick={onClose}
         >
-          {t("earrings")}
-        </Link>
-        <Link
-          href={{ pathname: "/jewelry", hash: "rings" }}
-          className="block py-2 pl-4 text-sm text-muted hover:text-primary"
-          onClick={onClose}
-        >
-          {t("rings")}
-        </Link>
-        <Link
-          href={{ pathname: "/jewelry", hash: "necklaces" }}
-          className="mb-2 block py-2 pl-4 text-sm text-muted hover:text-primary"
-          onClick={onClose}
-        >
-          {t("necklaces")}
-        </Link>
-        <Link href="/about" className={linkClass} onClick={onClose}>
-          {t("about")}
-        </Link>
-        <Link href="/contact" className={linkClass} onClick={onClose}>
-          {t("contact")}
-        </Link>
+          {t("bookAppointment")}
+        </a>
+
+        <div className="mt-6 flex items-center gap-4">
+          <Link
+            href="/contact"
+            className="flex items-center gap-2 text-sm text-primary"
+            onClick={onClose}
+          >
+            <UserIcon />
+            {t("account")}
+          </Link>
+          <Link
+            href="/contact"
+            className="flex items-center gap-2 text-sm text-primary"
+            onClick={onClose}
+          >
+            <BagIcon />
+            {t("cart")}
+          </Link>
+        </div>
+
         <div className="mt-auto pt-6">
           <LocaleSwitcher />
         </div>

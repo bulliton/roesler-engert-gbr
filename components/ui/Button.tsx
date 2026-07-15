@@ -2,9 +2,11 @@ import { type ComponentProps } from "react";
 import { Link } from "@/lib/navigation";
 
 type ButtonVariant = "primary" | "outline" | "outline-contrast";
+type ButtonShape = "rect" | "pill";
 
 type ButtonProps = ComponentProps<"button"> & {
   variant?: ButtonVariant;
+  shape?: ButtonShape;
   href?: string;
   external?: boolean;
 };
@@ -18,15 +20,21 @@ const variants: Record<ButtonVariant, string> = {
     "bg-transparent text-white border-white hover:bg-white hover:text-primary",
 };
 
+const shapes: Record<ButtonShape, string> = {
+  rect: "rounded-sm",
+  pill: "rounded-full",
+};
+
 export function Button({
-  variant = "outline",
+  variant = "primary",
+  shape = "rect",
   href,
   external,
   className = "",
   children,
   ...props
 }: ButtonProps) {
-  const classes = `inline-flex min-h-11 items-center justify-center rounded-full border px-6 py-2.5 text-sm font-semibold tracking-wide uppercase transition-colors duration-300 ${variants[variant]} ${className}`;
+  const classes = `inline-flex min-h-11 items-center justify-center border px-6 py-2.5 text-sm font-semibold tracking-wide uppercase transition-colors duration-300 ${shapes[shape]} ${variants[variant]} ${className}`;
 
   if (href) {
     if (external) {

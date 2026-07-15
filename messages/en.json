@@ -9,20 +9,101 @@
     "earrings": "Earrings",
     "rings": "Rings",
     "necklaces": "Necklaces",
+    "allCollections": "All collections",
     "about": "About",
     "contact": "Contact",
     "bookAppointment": "Book appointment",
-    "shop": "B2B Shop"
+    "shop": "B2B Shop",
+    "store": "Store",
+    "search": "Search",
+    "account": "Account",
+    "cart": "Cart",
+    "megaMenu": {
+      "shopByShape": "Shop diamonds by shape",
+      "customDesign": "Custom jewelry design",
+      "service": "Our service",
+      "learnMore": "Learn more",
+      "rings": "Rings",
+      "earrings": "Earrings",
+      "pendants": "Pendants",
+      "production": "Production",
+      "quality": "Quality assurance",
+      "features": "Highlights",
+      "gemology": "Gemology",
+      "ethical": "Ethical sourcing",
+      "partnership": "Partnership",
+      "diamondsCaption": "Diamonds of the highest quality",
+      "cuts": {
+        "brilliant": "Brilliant",
+        "princess": "Princess",
+        "cushion": "Cushion",
+        "baguette": "Baguette",
+        "pear": "Pear",
+        "carre": "Carré"
+      }
+    },
+    "jewelryMenu": {
+      "collections": "Collections",
+      "craft": "Manufactory",
+      "manufacturing": "In-house production",
+      "heritage": "Heritage craftsmanship",
+      "partnership": "B2B partnership",
+      "imageCaption": "Handcrafted in Germany"
+    }
   },
   "footer": {
     "navigation": "Navigation",
     "products": "Products",
     "company": "Company",
     "contact": "Contact",
+    "customerService": "Customer service",
+    "aboutUs": "About us",
+    "whyUs": "Why us",
+    "email": "Email",
+    "faq": "FAQ",
+    "returns": "Returns",
+    "heritage": "Heritage craftsmanship",
+    "gemology": "Licensed gemology",
+    "manufacturing": "In-house manufacturing",
+    "partnership": "Partnership",
     "imprint": "Imprint",
-    "privacy": "Privacy",
-    "copyright": "© {year} Rösler & Engert GbR. All rights reserved.",
-    "tagline": "Handcrafted jewelry and diamonds — Made in Germany."
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "cookies": "Cookie policy",
+    "copyright": "© {year} Rösler Engert UG (haftungsbeschränkt)",
+    "tagline": "Handcrafted jewelry and diamonds — Made in Germany.",
+    "pages": "Pages",
+    "mission": {
+      "title": "Craftsmanship with integrity",
+      "text": "As a manufactory for jewelers, we combine licensed gemology, in-house manufacturing in Germany, and generations of craftsmanship — for jewelry that builds trust."
+    },
+    "inquiries": {
+      "general": "General inquiries",
+      "appointment": "Book an appointment",
+      "visit": "Visit us"
+    },
+    "form": {
+      "requestType": "Select type of request",
+      "requestPartnership": "B2B partnership",
+      "requestDiamonds": "Diamonds & gemology",
+      "requestCollection": "Collection & jewelry",
+      "requestGeneral": "General inquiry",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "optional": "Optional",
+      "consent": "I agree to the processing of my data in accordance with the",
+      "privacyLink": "Privacy Policy",
+      "submit": "Send message",
+      "success": "Thank you — we will get back to you shortly."
+    },
+    "newsletter": {
+      "title": "Join our email newsletter",
+      "description": "Receive exclusive information about our offers.",
+      "emailLabel": "Email address",
+      "submit": "Sign up",
+      "success": "Thank you for subscribing."
+    }
   },
   "buttons": {
     "learnMore": "Learn more",
@@ -63,6 +144,37 @@
       "title": "Licensed Gemology & German Manufacturing",
       "text": "Our in-house gemologist guarantees the highest quality standards in diamond selection. In our own manufactory in Germany, handcrafted collections are created — precise, timeless, and ready for your showroom.",
       "cta": "Inquire about partnership"
+    },
+    "diamondCuts": {
+      "title": "Discover diamonds",
+      "cuts": {
+        "brilliant": "Brilliant",
+        "princess": "Princess",
+        "cushion": "Cushion",
+        "baguette": "Baguette",
+        "pear": "Pear",
+        "carre": "Carré"
+      }
+    },
+    "showroom": {
+      "craftsmanship": {
+        "title": "Visit our manufactory",
+        "cta": "Show location",
+        "text": "Experience handcrafted jewelry made in Germany — precise, timeless, and ready for your showroom."
+      },
+      "diamonds": {
+        "title": "Select diamonds",
+        "cta": "View collection",
+        "text": "Our licensed gemologist guides your selection — for transparency and the highest quality in your partnership."
+      },
+      "showroom": {
+        "title": "Visit our showroom",
+        "cta": "Show location",
+        "text": "Book an appointment at our showroom and discover collections that delight your customers."
+      }
+    },
+    "partners": {
+      "title": "Partners and brands"
     }
   },
   "about": {
@@ -75,6 +187,12 @@
     "heritage": {
       "title": "Craft with History",
       "text": "Across generations, we have established ourselves as a manufactory for discerning jewelry. Every piece is created in our workshop in Germany — crafted by master goldsmiths who unite precision and aesthetics in every facet."
+    },
+    "leadership": {
+      "eyebrow": "Leadership",
+      "title": "The People Behind Rösler & Engert",
+      "text": "Behind our manufactory are the partners themselves — with a passion for jewelry, diamonds, and honest partnerships. In our workshop in Germany, we combine traditional craftsmanship with a commitment to supporting jewelers reliably over the long term.",
+      "imageAlt": "The partners of Rösler & Engert in the manufactory"
     },
     "gemology": {
       "title": "Licensed Gemology",

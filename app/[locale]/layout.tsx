@@ -3,9 +3,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { playfair, sourceSans } from "../layout";
+import { lora, lato } from "../layout";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { LoadingScreen } from "@/components/ui/LoadingScreen";
 import "../globals.css";
 
 type Props = {
@@ -56,12 +57,13 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
-      className={`${playfair.variable} ${sourceSans.variable} h-full antialiased`}
+      className={`${lora.variable} ${lato.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider messages={messages}>
+          <LoadingScreen />
           <Header />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 pt-[var(--header-offset)]">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

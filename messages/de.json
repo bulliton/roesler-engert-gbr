@@ -9,20 +9,101 @@
     "earrings": "Ohrringe",
     "rings": "Ringe",
     "necklaces": "Halsschmuck",
+    "allCollections": "Alle Kollektionen",
     "about": "Über uns",
     "contact": "Kontakt",
     "bookAppointment": "Termin buchen",
-    "shop": "B2B Shop"
+    "shop": "B2B Shop",
+    "store": "Store",
+    "search": "Suchen",
+    "account": "Konto",
+    "cart": "Warenkorb",
+    "megaMenu": {
+      "shopByShape": "Diamanten nach Form einkaufen",
+      "customDesign": "Individuelles Schmuckdesign",
+      "service": "Unser Service",
+      "learnMore": "Mehr erfahren",
+      "rings": "Ring",
+      "earrings": "Ohrringe",
+      "pendants": "Anhänger",
+      "production": "Produktion",
+      "quality": "Qualitätssicherung",
+      "features": "Besonderheiten",
+      "gemology": "Steinkunde",
+      "ethical": "Ethische Beschaffung",
+      "partnership": "Partnerschaft",
+      "diamondsCaption": "Diamanten in höchster Qualität",
+      "cuts": {
+        "brilliant": "Brilliant",
+        "princess": "Princess",
+        "cushion": "Cushion",
+        "baguette": "Baguette",
+        "pear": "Tropfen",
+        "carre": "Carré"
+      }
+    },
+    "jewelryMenu": {
+      "collections": "Kollektionen",
+      "craft": "Manufaktur",
+      "manufacturing": "Eigene Fertigung",
+      "heritage": "Handwerk mit Geschichte",
+      "partnership": "B2B-Partnerschaft",
+      "imageCaption": "Handgefertigt in Deutschland"
+    }
   },
   "footer": {
     "navigation": "Navigation",
     "products": "Produkte",
     "company": "Unternehmen",
     "contact": "Kontakt",
+    "customerService": "Kundenservice",
+    "aboutUs": "Über Uns",
+    "whyUs": "Warum Wir",
+    "email": "E-Mail",
+    "faq": "FAQ",
+    "returns": "Rückgabe",
+    "heritage": "Handwerk mit Geschichte",
+    "gemology": "Lizenzierte Gemmologie",
+    "manufacturing": "Eigene Fertigung",
+    "partnership": "Partnerschaft",
     "imprint": "Impressum",
-    "privacy": "Datenschutz",
-    "copyright": "© {year} Rösler & Engert GbR. Alle Rechte vorbehalten.",
-    "tagline": "Handgefertigter Schmuck und Diamanten — Made in Germany."
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookie Policy",
+    "copyright": "© {year} Rösler Engert UG (haftungsbeschränkt)",
+    "tagline": "Handgefertigter Schmuck und Diamanten — Made in Germany.",
+    "pages": "Seiten",
+    "mission": {
+      "title": "Handwerk mit Verantwortung",
+      "text": "Als Manufaktur für Juweliere verbinden wir lizenzierte Gemmologie, eigene Fertigung in Deutschland und generationsübergreifendes Handwerk — für Schmuck, der Vertrauen schafft."
+    },
+    "inquiries": {
+      "general": "Allgemeine Anfragen",
+      "appointment": "Termin vereinbaren",
+      "visit": "Besuchen Sie uns"
+    },
+    "form": {
+      "requestType": "Art der Anfrage auswählen",
+      "requestPartnership": "B2B-Partnerschaft",
+      "requestDiamonds": "Diamanten & Gemmologie",
+      "requestCollection": "Kollektion & Schmuck",
+      "requestGeneral": "Allgemeine Anfrage",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "optional": "Optional",
+      "consent": "Ich stimme der Verarbeitung meiner Daten gemäß der",
+      "privacyLink": "Datenschutzerklärung",
+      "submit": "Nachricht senden",
+      "success": "Vielen Dank — wir melden uns in Kürze bei Ihnen."
+    },
+    "newsletter": {
+      "title": "E-Mail Newsletter beitreten",
+      "description": "Erhalten Sie exklusive Informationen über unsere Angebote.",
+      "emailLabel": "E-Mail-Adresse",
+      "submit": "Anmelden",
+      "success": "Vielen Dank für Ihre Anmeldung."
+    }
   },
   "buttons": {
     "learnMore": "Mehr erfahren",
@@ -63,6 +144,37 @@
       "title": "Lizenzierte Gemmologie & deutsche Fertigung",
       "text": "Unser Inhouse-Gemmologe garantiert höchste Qualitätsstandards bei der Diamantauswahl. In unserer eigenen Manufaktur in Deutschland entstehen handgefertigte Kollektionen — präzise, zeitlos und bereit für Ihr Schaufenster.",
       "cta": "Partnerschaft anfragen"
+    },
+    "diamondCuts": {
+      "title": "Diamanten entdecken",
+      "cuts": {
+        "brilliant": "Brilliant",
+        "princess": "Princess",
+        "cushion": "Cushion",
+        "baguette": "Baguette",
+        "pear": "Tropfen",
+        "carre": "Carré"
+      }
+    },
+    "showroom": {
+      "craftsmanship": {
+        "title": "Besuchen Sie unsere Manufaktur",
+        "cta": "Standort anzeigen",
+        "text": "Erleben Sie handgefertigten Schmuck aus deutscher Fertigung — präzise, zeitlos und bereit für Ihr Schaufenster."
+      },
+      "diamonds": {
+        "title": "Diamanten auswählen",
+        "cta": "Kollektion ansehen",
+        "text": "Unser lizenzierter Gemmologe begleitet Sie bei der Auswahl — für Transparenz und höchste Qualität in Ihrer Partnerschaft."
+      },
+      "showroom": {
+        "title": "Showroom besuchen",
+        "cta": "Standort anzeigen",
+        "text": "Vereinbaren Sie einen Termin in unserem Showroom und entdecken Sie Kollektionen, die Ihre Kunden begeistern."
+      }
+    },
+    "partners": {
+      "title": "Partner und Marken"
     }
   },
   "about": {
@@ -75,6 +187,12 @@
     "heritage": {
       "title": "Handwerk mit Geschichte",
       "text": "Über Generationen haben wir uns als Manufaktur für anspruchsvollen Schmuck etabliert. Jedes Stück entsteht in unserer Werkstatt in Deutschland — gefertigt von Meistergoldschmieden, die Präzision und Ästhetik in jeder Facette vereinen."
+    },
+    "leadership": {
+      "eyebrow": "Führung",
+      "title": "Die Menschen hinter Rösler & Engert",
+      "text": "Hinter unserer Manufaktur stehen die Gesellschafter persönlich — mit Leidenschaft für Schmuck, Diamanten und ehrliche Partnerschaften. In unserer Werkstatt in Deutschland verbinden wir traditionelles Handwerk mit dem Anspruch, Juweliere langfristig und verlässlich zu begleiten.",
+      "imageAlt": "Die Gesellschafter von Rösler & Engert in der Manufaktur"
     },
     "gemology": {
       "title": "Lizenzierte Gemmologie",
