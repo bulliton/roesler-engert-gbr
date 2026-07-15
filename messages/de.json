@@ -123,8 +123,13 @@
       "submitting": "Wird angemeldet…",
       "consent": "Ich stimme der Verarbeitung meiner Daten gemäß der",
       "privacyLink": "Datenschutzerklärung",
-      "success": "Vielen Dank für Ihre Anmeldung."
+      "success": "Vielen Dank — bitte bestätigen Sie Ihre Anmeldung über den Link in unserer E-Mail."
     }
+  },
+  "newsletterConfirmed": {
+    "title": "Anmeldung bestätigt",
+    "description": "Vielen Dank — Sie erhalten ab sofort unsere B2B-Updates zu Kollektionen, Messen und Partnerschaftsmöglichkeiten.",
+    "backHome": "Zur Startseite"
   },
   "forms": {
     "errors": {

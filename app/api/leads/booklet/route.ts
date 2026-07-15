@@ -53,6 +53,18 @@ export async function POST(request: Request) {
       return emailSendFailedError(locale);
     }
 
+    await recordLead({
+      type: "catalog",
+      email,
+      name,
+      company,
+      phone: phone || undefined,
+      postalCode: postalCode || undefined,
+      businessType: businessType || undefined,
+      interests: interests || undefined,
+      locale,
+    });
+
     return jsonResponse({
       success: true,
       downloadUrl: getCatalogDownloadUrl(),

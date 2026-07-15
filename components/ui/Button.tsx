@@ -20,7 +20,7 @@ const variants: Record<ButtonVariant, string> = {
   primary:
     "bg-primary text-white border-primary hover:bg-primary-dark hover:border-primary-dark",
   inverse:
-    "bg-white text-primary border-white hover:bg-transparent hover:text-white",
+    "bg-white text-primary border-white hover:bg-primary hover:text-white hover:border-primary",
   accent:
     "bg-accent-gold text-primary border-accent-gold hover:bg-accent-gold-light hover:border-accent-gold-light",
   outline:

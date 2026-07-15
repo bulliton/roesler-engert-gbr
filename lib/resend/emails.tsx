@@ -569,55 +569,55 @@ export function PartnershipNurtureEmail({
   const steps = isEn
     ? [
         {
-          title: "Your back office for exquisite jewelry",
-          body: `Dear ${name}, thank you for your interest in a B2B partnership with Rösler & Engert. For over 128 years, we have crafted jewelry in Würzburg and supported jewelers across Germany.`,
+          title: "Your back office for jewelry",
+          body: `Dear ${name}, thank you for your interest in a B2B partnership with Rösler & Engert. For 128 years, we have crafted jewelry in Würzburg and worked with jewelers across Germany.`,
           cta: "Visit our showroom",
         },
         {
           title: "How we work with jewelers",
-          body: "As your B2B partner, we support you with in-house manufacturing, invoice purchasing, ring adjustments, engravings, and personal field service.",
+          body: "Invoice purchasing, ring adjustments, engravings, field service, and in-house manufacturing. All from Würzburg.",
           cta: "Learn more",
         },
         {
-          title: "Diamonds & gemmology in Würzburg",
-          body: "Our licensed in-house gemmologist advises on 20+ diamond cuts — from brilliant to princess, cushion, and pear.",
+          title: "Diamonds and gemology in Würzburg",
+          body: "Our gemologist advises on 20+ diamond cuts: brilliant, princess, cushion, pear, and more.",
           cta: "Explore diamonds",
         },
         {
-          title: "Collections & customization",
-          body: "Made in Germany — we adapt collections to your brand and clientele, from classic elegance to contemporary design.",
+          title: "Collections and customization",
+          body: "Made in Germany. We adapt collections to your brand and clientele.",
           cta: "View collections",
         },
         {
-          title: "Your next step — a personal appointment",
-          body: `Dear ${name}, we would be delighted to welcome you to our showroom and discuss how Rösler & Engert can support your business.`,
+          title: "Your next step: a visit to Würzburg",
+          body: `Dear ${name}, we would be glad to welcome you to our showroom and talk about how Rösler & Engert can support your business.`,
           cta: "Book an appointment",
         },
       ]
     : [
         {
-          title: "Ihr Backoffice für exquisiten Schmuck",
-          body: `Guten Tag ${name}, schön, dass Sie sich für eine B2B-Partnerschaft mit Rösler & Engert interessieren. Seit über 128 Jahren fertigen wir in Würzburg handgefertigten Schmuck und beraten Juweliere deutschlandweit.`,
+          title: "Ihr Backoffice für Schmuck",
+          body: `Guten Tag ${name}, schön, dass Sie sich für eine B2B-Partnerschaft mit Rösler & Engert interessieren. Seit 128 Jahren fertigen wir in Würzburg Schmuck und arbeiten mit Juwelieren deutschlandweit zusammen.`,
           cta: "Showroom besuchen",
         },
         {
           title: "So arbeiten wir mit Juwelieren zusammen",
-          body: "Als B2B-Partner unterstützen wir Sie mit eigener Manufaktur, Rechnungsankauf, Ringanpassungen, Gravuren und persönlichem Außendienst.",
+          body: "Rechnungsankauf, Ringanpassungen, Gravuren, Außendienst und eigene Fertigung. Alles aus Würzburg.",
           cta: "Mehr erfahren",
         },
         {
-          title: "Diamanten & Gemmologie in Würzburg",
-          body: "Unser lizenzierter Hausgemmologe berät zu über 20 Diamant-Schliffen — von Brilliant über Princess bis Cushion und Birne.",
+          title: "Diamanten und Gemmologie in Würzburg",
+          body: "Unser Gemmologe berät zu über 20 Diamantschliffen: Brilliant, Princess, Cushion, Birne und mehr.",
           cta: "Diamanten entdecken",
         },
         {
-          title: "Kollektionen & Individualisierung",
-          body: "Made in Germany — wir passen Kollektionen an Ihre Marke und Kundschaft an, von klassischer Eleganz bis zeitgenössischem Design.",
+          title: "Kollektionen und Individualisierung",
+          body: "Made in Germany. Wir passen Kollektionen an Ihre Marke und Kundschaft an.",
           cta: "Kollektionen ansehen",
         },
         {
-          title: "Ihr nächster Schritt — ein persönlicher Termin",
-          body: `Guten Tag ${name}, wir freuen uns, Sie in unserem Showroom begrüßen zu dürfen und gemeinsam zu besprechen, wie Rösler & Engert Ihr Geschäft unterstützen kann.`,
+          title: "Ihr nächster Schritt: ein Besuch in Würzburg",
+          body: `Guten Tag ${name}, wir freuen uns, Sie in unserem Showroom begrüßen zu dürfen und zu besprechen, wie Rösler & Engert Ihr Geschäft unterstützen kann.`,
           cta: "Termin buchen",
         },
       ];

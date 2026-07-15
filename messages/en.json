@@ -123,8 +123,13 @@
       "submitting": "Signing up…",
       "consent": "I agree to the processing of my data in accordance with the",
       "privacyLink": "Privacy Policy",
-      "success": "Thank you for subscribing."
+      "success": "Thank you — please confirm your subscription via the link in our email."
     }
+  },
+  "newsletterConfirmed": {
+    "title": "Subscription confirmed",
+    "description": "Thank you — you will now receive our B2B updates on collections, trade fairs, and partnership opportunities.",
+    "backHome": "Back to home"
   },
   "forms": {
     "errors": {

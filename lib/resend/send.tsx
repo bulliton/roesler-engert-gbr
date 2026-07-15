@@ -73,8 +73,8 @@ export async function sendContactLeadEmails({
   const confirmation = await sendEmail({
     to: email,
     subject: isEn
-      ? "We received your inquiry — Rösler & Engert"
-      : "Wir haben Ihre Anfrage erhalten — Rösler & Engert",
+      ? "We received your inquiry | Rösler & Engert"
+      : "Wir haben Ihre Anfrage erhalten | Rösler & Engert",
     react: (
       <ContactLeadConfirmationEmail locale={locale} name={name} company={company} />
     ),
@@ -125,8 +125,8 @@ export async function sendBookletLeadEmails({
   const confirmation = await sendEmail({
     to: email,
     subject: isEn
-      ? "Your B2B catalog — Rösler & Engert"
-      : "Ihr B2B-Katalog — Rösler & Engert",
+      ? "Your B2B catalog | Rösler & Engert"
+      : "Ihr B2B-Katalog | Rösler & Engert",
     react: (
       <BookletLeadConfirmationEmail
         locale={locale}
@@ -179,8 +179,8 @@ export async function sendNewsletterDoubleOptIn({
   return sendEmail({
     to: email,
     subject: isEn
-      ? "Please confirm your newsletter subscription — Rösler & Engert"
-      : "Bitte bestätigen Sie Ihre Newsletter-Anmeldung — Rösler & Engert",
+      ? "Please confirm your subscription | Rösler & Engert"
+      : "Bitte bestätigen Sie Ihre Anmeldung | Rösler & Engert",
     react: (
       <NewsletterDoubleOptInEmail
         locale={locale}
@@ -222,8 +222,8 @@ export async function sendNewsletterConfirmation({
   return sendEmail({
     to: email,
     subject: isEn
-      ? "Newsletter subscription confirmed — Rösler & Engert"
-      : "Newsletter-Anmeldung bestätigt — Rösler & Engert",
+      ? "Partner updates confirmed | Rösler & Engert"
+      : "Partner-Updates bestätigt | Rösler & Engert",
     react: <NewsletterConfirmationEmail locale={locale} email={email} />,
   });
 }
