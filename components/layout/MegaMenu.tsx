@@ -48,7 +48,7 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
               </MegaMenuLink>
             </li>
             <li>
-              <MegaMenuLink href="/diamonds" onClick={onClose}>
+              <MegaMenuLink href={{ pathname: "/about", hash: "gemology" }} onClick={onClose}>
                 {t("gemology")}
               </MegaMenuLink>
             </li>
@@ -63,12 +63,12 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
         <MegaMenuColumn title={t("service")}>
           <ul className="space-y-2.5">
             <li>
-              <MegaMenuLink href="/about" onClick={onClose}>
+              <MegaMenuLink href={{ pathname: "/about", hash: "manufacturing" }} onClick={onClose}>
                 {t("production")}
               </MegaMenuLink>
             </li>
             <li>
-              <MegaMenuLink href="/about" onClick={onClose}>
+              <MegaMenuLink href={{ pathname: "/about", hash: "quality" }} onClick={onClose}>
                 {t("quality")}
               </MegaMenuLink>
             </li>

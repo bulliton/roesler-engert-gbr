@@ -30,9 +30,6 @@ export function HeroSection() {
           <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-white/70 md:mt-5 md:max-w-lg md:text-[0.9375rem]">
             {t("subtitle")}
           </p>
-          <p className="mt-3 max-w-lg text-xs font-medium tracking-wide text-white/60 uppercase md:text-sm">
-            {t("servicesStrip")}
-          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4 md:mt-10">
             <Button
               href={CONTACT.appointmentUrl}

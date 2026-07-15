@@ -8,6 +8,8 @@ export const SITE_IMAGES = {
   ringSetting: "/images/ring-setting.webp",
   ringFinishing: "/images/ring-finishing.webp",
   precisionMeasurement: "/images/precision-measurement.webp",
+  qualityInspection: "/images/quality-inspection.webp",
+  precisionTools: "/images/precision-tools.webp",
   heroCraftsmanship: "/images/hero-craftsmanship.webp",
   leadership: "/images/leadership.webp",
 } as const;

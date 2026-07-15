@@ -145,7 +145,6 @@
       "eyebrow": "Heritage Craftsmanship",
       "title": "Handcrafted for Your Business",
       "subtitle": "As a B2B partner for jewelers, we combine licensed gemology, in-house manufacturing in Germany, and generations of craftsmanship — for jewelry that delights your customers.",
-      "servicesStrip": "Invoice purchase · Ring adjustments · Engraving · Nationwide shipping",
       "ctaPrimary": "Book appointment",
       "ctaSecondary": "Download catalog"
     },
@@ -244,6 +243,10 @@
     "gemology": {
       "title": "Licensed Gemology",
       "text": "Our in-house gemologist accompanies the entire process — from diamond selection and quality inspection to certification. This guarantees transparency and the highest standards for our partner jewelers."
+    },
+    "quality": {
+      "title": "Quality Assurance",
+      "text": "Every piece undergoes careful inspection in our manufactory — from cut evaluation to final examination under the loupe. This ensures only jewelry and diamonds of the highest grade leave our workshop."
     },
     "manufacturing": {
       "title": "In-House Manufacturing in Germany",
@@ -423,6 +426,10 @@
       "title": "Partnership at eye level",
       "text": "As a manufactory, we understand the needs of jewelers. Our sales representative model ensures direct contact, fast decisions, and reliable deliveries."
     },
+    "journey": {
+      "eyebrow": "The journey",
+      "title": "Four steps to partnership"
+    },
     "steps": {
       "intro": {
         "eyebrow": "Step 1",
@@ -446,6 +453,8 @@
       }
     },
     "cta": {
+      "title": "Start your partnership",
+      "text": "Schedule a personal conversation — we'll learn about your business and support you from the first collection onward.",
       "contact": "Inquire about partnership",
       "appointment": "Book appointment"
     }

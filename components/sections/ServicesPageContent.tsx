@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
@@ -8,6 +9,7 @@ import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
 import { CONTACT } from "@/lib/constants";
+import { SITE_IMAGES } from "@/lib/site-images";
 
 const serviceKeys = [
   "invoice",
@@ -30,6 +32,21 @@ export function ServicesPageContent() {
 
       <Section>
         <Container>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative mb-12 aspect-[21/9] overflow-hidden rounded-sm md:mb-14"
+          >
+            <Image
+              src={SITE_IMAGES.precisionTools}
+              alt=""
+              fill
+              className="object-cover object-[center_35%]"
+              sizes="100vw"
+            />
+          </motion.div>
+
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
             {serviceKeys.map((key, i) => (
               <motion.article

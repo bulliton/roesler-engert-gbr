@@ -22,6 +22,10 @@ export function AboutPageContent() {
       image: SITE_IMAGES.precisionMeasurement,
     },
     {
+      key: "quality" as const,
+      image: SITE_IMAGES.qualityInspection,
+    },
+    {
       key: "manufacturing" as const,
       image: SITE_IMAGES.craftsmanAtWork,
     },
@@ -107,7 +111,11 @@ export function AboutPageContent() {
       </Section>
 
       {blocks.slice(1).map((block, i) => (
-        <Section key={block.key} className={i % 2 === 0 ? "" : "bg-primary-light"}>
+        <Section
+          key={block.key}
+          id={block.key}
+          className={i % 2 === 0 ? "" : "bg-primary-light"}
+        >
           <Container>
             <div
               className={`grid items-center gap-12 lg:grid-cols-2 ${i % 2 === 0 ? "lg:[direction:rtl]" : ""}`}

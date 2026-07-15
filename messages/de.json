@@ -145,7 +145,6 @@
       "eyebrow": "Heritage Craftsmanship",
       "title": "Handgefertigt für Ihr Geschäft",
       "subtitle": "Als B2B-Partner für Juweliere verbinden wir lizenzierte Gemmologie, eigene Fertigung in Deutschland und generationsübergreifendes Handwerk — für Schmuck, der Ihre Kunden begeistert.",
-      "servicesStrip": "Kauf auf Rechnung · Ringanpassungen · Gravuren · Bundesweiter Versand",
       "ctaPrimary": "Termin buchen",
       "ctaSecondary": "Katalog herunterladen"
     },
@@ -244,6 +243,10 @@
     "gemology": {
       "title": "Lizenzierte Gemmologie",
       "text": "Unser Inhouse-Gemmologe begleitet den gesamten Prozess — von der Diamantauswahl über die Qualitätsprüfung bis zur Zertifizierung. So garantieren wir Transparenz und höchste Standards für unsere Partner-Juweliere."
+    },
+    "quality": {
+      "title": "Qualitätssicherung",
+      "text": "Jedes Stück durchläuft eine sorgfältige Prüfung in unserer Manufaktur — von der Schliffkontrolle bis zur finalen Inspektion unter der Lupe. So stellen wir sicher, dass nur Schmuck und Diamanten höchster Güte unsere Werkstatt verlassen."
     },
     "manufacturing": {
       "title": "Eigene Fertigung in Deutschland",
@@ -423,6 +426,10 @@
       "title": "Partnerschaft auf Augenhöhe",
       "text": "Als Manufaktur verstehen wir die Anforderungen von Juwelieren. Unser Vertriebsmitarbeiter-Modell sorgt für direkten Kontakt, schnelle Entscheidungen und verlässliche Lieferungen."
     },
+    "journey": {
+      "eyebrow": "Der Weg",
+      "title": "In vier Schritten zur Partnerschaft"
+    },
     "steps": {
       "intro": {
         "eyebrow": "Schritt 1",
@@ -446,6 +453,8 @@
       }
     },
     "cta": {
+      "title": "Starten Sie Ihre Partnerschaft",
+      "text": "Vereinbaren Sie ein persönliches Gespräch — wir lernen Ihr Geschäft kennen und begleiten Sie von der ersten Kollektion an.",
       "contact": "Partnerschaft anfragen",
       "appointment": "Termin buchen"
     }
