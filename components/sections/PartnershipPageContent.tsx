@@ -42,7 +42,7 @@ export function PartnershipPageContent() {
             title={t("journey.title")}
           />
 
-          <ol className="editorial-list mt-12 md:mt-16">
+          <ol className="editorial-list">
             {steps.map((key, index) => (
               <motion.li
                 key={key}

@@ -20,7 +20,7 @@ export function PartnerValueSection() {
           subtitle={t("subtitle")}
         />
 
-        <ul className="editorial-list mt-12 md:mt-16">
+        <ul className="editorial-list">
           {items.map((key, index) => (
             <motion.li
               key={key}
@@ -40,7 +40,7 @@ export function PartnerValueSection() {
           ))}
         </ul>
 
-        <div className="mt-14">
+        <div className="section-actions">
           <Button href="/partnership" variant="outline">
             {t("cta")}
           </Button>

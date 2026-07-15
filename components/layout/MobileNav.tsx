@@ -265,19 +265,21 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
                   <LocaleSwitcher inverted />
                 </div>
 
-                <a
-                  href={CONTACT.appointmentUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={onClose}
-                  className="inline-flex min-h-11 w-full items-center justify-center rounded-full border border-accent-gold bg-accent-gold px-6 py-2.5 text-xs font-normal tracking-[0.14em] text-primary uppercase transition-colors duration-300 hover:border-accent-gold-light hover:bg-accent-gold-light"
-                >
-                  {t("bookAppointment")}
-                </a>
+                <div className="flex flex-col gap-[var(--spacing-compact)]">
+                  <a
+                    href={CONTACT.appointmentUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={onClose}
+                    className="inline-flex min-h-11 w-full items-center justify-center rounded-full border border-accent-gold bg-accent-gold px-6 py-2.5 text-xs font-normal tracking-[0.14em] text-primary uppercase transition-colors duration-300 hover:border-accent-gold-light hover:bg-accent-gold-light"
+                  >
+                    {t("bookAppointment")}
+                  </a>
 
-                <p className="text-center font-body text-[0.65rem] leading-relaxed tracking-[0.06em] text-white/45">
-                  {t("mobileTrustText")}
-                </p>
+                  <p className="text-center font-body text-xs leading-snug tracking-[0.1em] text-white/60">
+                    {t("mobileTrustText")}
+                  </p>
+                </div>
               </div>
             </div>
           </nav>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rösler &amp; Engert — E-Mail-Vorlagen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Lora:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #004646;
+      --primary-dark: #003333;
+      --primary-light: #f2fafa;
+      --secondary: #009696;
+      --gold: #b8956b;
+      --muted: #5a6b6b;
+      --line: #e2e8e8;
+      --black: #171717;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--primary-light);
+      color: var(--black);
+      font-family: "Lato", system-ui, sans-serif;
+      line-height: 1.6;
+    }
+    .page { max-width: 90rem; margin: 0 auto; padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem) 4rem; }
+    .hero { margin-bottom: 2.5rem; }
+    .eyebrow {
+      margin: 0 0 0.75rem;
+      color: var(--secondary);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0 0 1rem;
+      color: var(--primary);
+      font-family: "Lora", Georgia, serif;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 400;
+      line-height: 1.15;
+    }
+    .intro { max-width: 48rem; margin: 0 0 2rem; color: var(--muted); font-size: 1.05rem; }
+    .layout { display: grid; gap: 2rem; }
+    @media (min-width: 1100px) {
+      .layout { grid-template-columns: 280px 1fr; align-items: start; }
+    }
+    .sidebar {
+      background: var(--white);
+      border: 1px solid rgba(0, 70, 70, 0.08);
+      border-radius: 4px;
+      overflow: hidden;
+      position: sticky;
+      top: 1.5rem;
+    }
+    .sidebar-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--line);
+      background: rgba(242, 250, 250, 0.8);
+    }
+    .sidebar-header h2 {
+      margin: 0;
+      font-family: "Lora", Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--primary);
+    }
+    .nav-group { padding: 0.5rem 0; border-bottom: 1px solid var(--line); }
+    .nav-group:last-child { border-bottom: none; }
+    .nav-label {
+      padding: 0.5rem 1.25rem 0.25rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .nav-btn {
+      display: block;
+      width: 100%;
+      padding: 0.6rem 1.25rem;
+      border: none;
+      background: transparent;
+      text-align: left;
+      font-family: inherit;
+      font-size: 0.88rem;
+      color: var(--black);
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .nav-btn:hover { background: rgba(0, 150, 150, 0.06); }
+    .nav-btn.active {
+      background: rgba(0, 70, 70, 0.06);
+      color: var(--primary);
+      font-weight: 600;
+      border-right: 3px solid var(--gold);
+    }
+    .nav-btn .badge {
+      display: inline-block;
+      margin-left: 0.4rem;
+      padding: 0.1rem 0.4rem;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      vertical-align: middle;
+    }
+    .badge-live { background: rgba(0, 150, 150, 0.12); color: var(--secondary); }
+    .badge-planned { background: rgba(184, 149, 107, 0.15); color: #8a7048; }
+    .badge-internal { background: rgba(0, 70, 70, 0.08); color: var(--muted); }
+    .preview-panel {
+      background: var(--white);
+      border: 1px solid rgba(0, 70, 70, 0.08);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 70, 70, 0.05);
+    }
+    .preview-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--line);
+      background: rgba(242, 250, 250, 0.7);
+    }
+    .preview-meta h3 {
+      margin: 0;
+      font-family: "Lora", Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--primary);
+    }
+    .preview-meta p { margin: 0.25rem 0 0; font-size: 0.85rem; color: var(--muted); }
+    .toolbar-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .btn {
+      appearance: none;
+      border: 1px solid var(--primary);
+      border-radius: 2px;
+      background: var(--white);
+      color: var(--primary);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.5rem 0.9rem;
+      text-decoration: none;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--primary); color: var(--white); }
+    .btn-primary { background: var(--secondary); border-color: var(--secondary); color: var(--white); }
+    .btn-primary:hover { background: #007a7a; border-color: #007a7a; }
+    .preview-frame-wrap {
+      background: #d8e4e4;
+      padding: 2rem;
+      min-height: 600px;
+    }
+    .preview-frame-wrap.mobile { padding: 2rem 4rem; }
+    .preview-frame {
+      width: 100%;
+      height: 720px;
+      border: none;
+      background: var(--white);
+      box-shadow: 0 4px 24px rgba(0, 70, 70, 0.12);
+    }
+    .preview-frame-wrap.mobile .preview-frame {
+      max-width: 375px;
+      margin: 0 auto;
+      display: block;
+      height: 680px;
+    }
+    .specs {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-top: 2rem;
+    }
+    .spec-card {
+      background: var(--white);
+      border: 1px solid rgba(0, 70, 70, 0.08);
+      border-radius: 4px;
+      padding: 1.25rem;
+    }
+    .spec-card h4 {
+      margin: 0 0 0.5rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--secondary);
+    }
+    .spec-card p { margin: 0; font-size: 0.9rem; color: var(--muted); }
+    .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 2px; vertical-align: middle; margin-right: 6px; border: 1px solid rgba(0,0,0,0.08); }
+    .docs-link { color: var(--secondary); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <p class="eyebrow">E-Mail-Automatisierung</p>
+      <h1>E-Mail-Vorlagen</h1>
+      <p class="intro">
+        Professionelle, markenkonforme E-Mail-Templates für transaktionale, nurture- und interne Kommunikation.
+        Vollständiger Automatisierungsplan: <code style="font-size:0.9em;color:var(--primary);">docs/email-automations.md</code>
+        Design: Lora (Überschriften) · Lato (Fließtext) · Teal <span class="swatch" style="background:#004646"></span> · Gold-Akzent <span class="swatch" style="background:#b8956b"></span>
+      </p>
+    </header>
+
+    <div class="layout">
+      <nav class="sidebar" id="sidebar"></nav>
+
+      <div>
+        <div class="preview-panel">
+          <div class="preview-toolbar">
+            <div class="preview-meta">
+              <h3 id="preview-title">—</h3>
+              <p id="preview-subject">—</p>
+            </div>
+            <div class="toolbar-actions">
+              <button class="btn" id="btn-desktop" type="button">Desktop</button>
+              <button class="btn" id="btn-mobile" type="button">Mobil</button>
+              <a class="btn btn-primary" id="btn-open" href="#" target="_blank" rel="noopener">In neuem Tab</a>
+            </div>
+          </div>
+          <div class="preview-frame-wrap" id="frame-wrap">
+            <iframe class="preview-frame" id="preview-frame" title="E-Mail-Vorschau"></iframe>
+          </div>
+        </div>
+
+        <div class="specs">
+          <div class="spec-card">
+            <h4>Primärfarbe</h4>
+            <p><span class="swatch" style="background:#004646"></span>#004646 — Headlines, Footer</p>
+          </div>
+          <div class="spec-card">
+            <h4>CTA / Akzent</h4>
+            <p><span class="swatch" style="background:#009696"></span>#009696 — Buttons, Links</p>
+          </div>
+          <div class="spec-card">
+            <h4>Gold-Linie</h4>
+            <p><span class="swatch" style="background:#b8956b"></span>#b8956b — Header-Trenner</p>
+          </div>
+          <div class="spec-card">
+            <h4>Absender</h4>
+            <p>info@roesler-engert.de via Resend</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const templates = [
+      {
+        id: "tx-01",
+        group: "Phase 1 — Transaktional",
+        status: "live",
+        label: "Kontakt-Bestätigung (DE)",
+        subject: "Wir haben Ihre Anfrage erhalten — Rösler & Engert",
+        file: "templates/contact-confirmation-de.html",
+      },
+      {
+        id: "tx-01-en",
+        group: "Phase 1 — Transaktional",
+        status: "live",
+        label: "Contact Confirmation (EN)",
+        subject: "We received your inquiry — Rösler & Engert",
+        file: "templates/contact-confirmation-en.html",
+      },
+      {
+        id: "tx-03",
+        group: "Phase 1 — Transaktional",
+        status: "live",
+        label: "Katalog-Download (DE)",
+        subject: "Ihr B2B-Katalog — Rösler & Engert",
+        file: "templates/catalog-download-de.html",
+      },
+      {
+        id: "tx-05",
+        group: "Phase 1 — Transaktional",
+        status: "live",
+        label: "Newsletter Willkommen (DE)",
+        subject: "Newsletter-Anmeldung bestätigt — Rösler & Engert",
+        file: "templates/newsletter-welcome-de.html",
+      },
+      {
+        id: "tx-02",
+        group: "Phase 1 — Intern",
+        status: "internal",
+        label: "Sales: Neue Anfrage",
+        subject: "Neue B2B-Anfrage: {company} ({name})",
+        file: "templates/sales-notification-contact.html",
+      },
+      {
+        id: "tx-04",
+        group: "Phase 1 — Intern",
+        status: "internal",
+        label: "Sales: Katalog-Download",
+        subject: "Katalog-Download: {company} ({name})",
+        file: "templates/sales-notification-catalog.html",
+      },
+      {
+        id: "tx-06",
+        group: "Phase 2 — Compliance",
+        status: "planned",
+        label: "Newsletter Double Opt-in (DE)",
+        subject: "Bitte bestätigen Sie Ihre Newsletter-Anmeldung",
+        file: "templates/newsletter-doi-de.html",
+      },
+      {
+        id: "nur-01",
+        group: "Phase 2 — Follow-up",
+        status: "planned",
+        label: "Katalog Follow-up Tag 3",
+        subject: "Haben Sie Fragen zu unseren Kollektionen?",
+        file: "templates/catalog-followup-1-de.html",
+      },
+      {
+        id: "nur-02",
+        group: "Phase 2 — Follow-up",
+        status: "planned",
+        label: "Katalog Follow-up Tag 7",
+        subject: "Persönliche Beratung — wir sind für Sie da",
+        file: "templates/catalog-followup-2-de.html",
+      },
+      {
+        id: "nur-03",
+        group: "Phase 2 — Follow-up",
+        status: "planned",
+        label: "Kontakt Follow-up 48h",
+        subject: "Ihre Anfrage bei Rösler & Engert",
+        file: "templates/contact-followup-de.html",
+      },
+      {
+        id: "nur-p1",
+        group: "Phase 3 — Partnership Nurture",
+        status: "planned",
+        label: "Partnership 1/5 — Willkommen",
+        subject: "Willkommen — Ihr Partner für Schmuck & Diamanten",
+        file: "templates/partnership-nurture-1-de.html",
+      },
+      {
+        id: "nur-p2",
+        group: "Phase 3 — Partnership Nurture",
+        status: "planned",
+        label: "Partnership 2/5 — Zusammenarbeit",
+        subject: "So arbeiten wir mit Juwelieren zusammen",
+        file: "templates/partnership-nurture-2-de.html",
+      },
+      {
+        id: "tx-08",
+        group: "Phase 3 — Termine",
+        status: "planned",
+        label: "Termin-Bestätigung",
+        subject: "Terminbestätigung — Rösler & Engert Showroom",
+        file: "templates/appointment-confirmation-de.html",
+      },
+      {
+        id: "tx-10",
+        group: "Phase 3 — Termine",
+        status: "planned",
+        label: "Nach dem Besuch",
+        subject: "Vielen Dank für Ihren Besuch in Würzburg",
+        file: "templates/post-visit-de.html",
+      },
+    ];
+
+    const sidebar = document.getElementById("sidebar");
+    const frame = document.getElementById("preview-frame");
+    const frameWrap = document.getElementById("frame-wrap");
+    const titleEl = document.getElementById("preview-title");
+    const subjectEl = document.getElementById("preview-subject");
+    const openBtn = document.getElementById("btn-open");
+    let activeId = templates[0].id;
+
+    const badgeClass = { live: "badge-live", planned: "badge-planned", internal: "badge-internal" };
+    const badgeLabel = { live: "Live", planned: "Geplant", internal: "Intern" };
+
+    const groups = [...new Set(templates.map((t) => t.group))];
+    sidebar.innerHTML = '<div class="sidebar-header"><h2>Templates</h2></div>';
+
+    groups.forEach((group) => {
+      const section = document.createElement("div");
+      section.className = "nav-group";
+      section.innerHTML = `<div class="nav-label">${group}</div>`;
+      templates.filter((t) => t.group === group).forEach((t) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "nav-btn" + (t.id === activeId ? " active" : "");
+        btn.dataset.id = t.id;
+        btn.innerHTML = `${t.label}<span class="badge ${badgeClass[t.status]}">${badgeLabel[t.status]}</span>`;
+        btn.addEventListener("click", () => selectTemplate(t.id));
+        section.appendChild(btn);
+      });
+      sidebar.appendChild(section);
+    });
+
+    function selectTemplate(id) {
+      activeId = id;
+      const t = templates.find((x) => x.id === id);
+      if (!t) return;
+      titleEl.textContent = t.label;
+      subjectEl.textContent = "Betreff: " + t.subject;
+      frame.src = t.file;
+      openBtn.href = t.file;
+      document.querySelectorAll(".nav-btn").forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.id === id);
+      });
+    }
+
+    document.getElementById("btn-desktop").addEventListener("click", () => {
+      frameWrap.classList.remove("mobile");
+    });
+    document.getElementById("btn-mobile").addEventListener("click", () => {
+      frameWrap.classList.add("mobile");
+    });
+
+    selectTemplate(activeId);
+  </script>
+</body>
+</html>

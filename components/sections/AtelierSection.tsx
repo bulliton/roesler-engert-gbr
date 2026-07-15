@@ -22,7 +22,7 @@ export function AtelierSection() {
   return (
     <Section id="atelier">
       <Container>
-        <div className="mb-12 max-w-2xl md:mb-16">
+        <div className="section-intro-block max-w-2xl">
           <p className="mb-2 text-sm font-semibold tracking-[0.15em] text-accent-gold uppercase">
             {t("eyebrow")}
           </p>
@@ -70,7 +70,7 @@ export function AtelierSection() {
           ))}
         </div>
 
-        <div className="mt-12 md:mt-14">
+        <div className="section-actions">
           <Button href="/visit" variant="outline">
             {t("cta")}
           </Button>

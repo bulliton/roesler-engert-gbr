@@ -3,7 +3,6 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/lib/navigation";
 import { Container } from "@/components/ui/Container";
 import { FooterLabel } from "@/components/ui/FooterLabel";
-import { DiamondIcon } from "@/components/ui/DiamondIcon";
 import { CONTACT } from "@/lib/constants";
 import { FooterBackgroundMark } from "./FooterBackgroundMark";
 import { FooterContactForm } from "./FooterContactForm";
@@ -96,10 +95,7 @@ export async function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-6 border-t border-white/10 pt-8 lg:mt-16 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex items-center gap-4">
-            <DiamondIcon className="h-8 w-8 text-white/50" />
-            <p className="font-body text-sm text-white/45">{t("copyright", { year })}</p>
-          </div>
+          <p className="font-body text-sm text-white/45">{t("copyright", { year })}</p>
 
           <div className="flex flex-wrap gap-x-6 gap-y-2 font-body text-sm text-white/45">
             <Link href="/imprint" className="transition-colors hover:text-white/80">

@@ -24,7 +24,7 @@ export function SectionIntro({
   const alignClass = align === "center" ? "mx-auto text-center" : "max-w-2xl";
 
   return (
-    <div className={`${alignClass} ${className}`}>
+    <div className={`section-intro ${alignClass} ${className}`}>
       {eyebrow ? (
         <Eyebrow contrast={contrast} className={align === "center" ? "mx-auto" : ""}>
           {eyebrow}

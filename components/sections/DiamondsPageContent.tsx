@@ -30,7 +30,7 @@ export function DiamondsPageContent() {
       </Section>
       <Section className="bg-primary-light" pattern>
         <Container>
-          <Headline as="h2" className="mb-12 text-center">
+          <Headline as="h2" className="section-intro-block text-center">
             {t("cuts.title")}
           </Headline>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">

@@ -45,7 +45,7 @@ export function FaqPageContent() {
             ))}
           </div>
 
-          <div className="mx-auto mt-16 max-w-3xl border-t border-primary/10 pt-12">
+          <div className="section-divider mx-auto max-w-3xl">
             <h2 className="font-display text-[clamp(1.5rem,2vw+0.5rem,2rem)] text-primary">
               {t("cta.title")}
             </h2>

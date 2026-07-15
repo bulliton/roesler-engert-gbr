@@ -69,7 +69,7 @@ export function VisitPageContent() {
             ))}
           </ul>
 
-          <div className="mt-16 border-t border-primary/10 pt-12">
+          <div className="section-divider">
             <SectionIntro title={t("location.label")} />
             <p className="mt-4 text-primary">
               {CONTACT.address.street}

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "siteName": "Rösler & Engert GbR",
-    "defaultDescription": "Ihr B2B-Partner für Schmuck und Diamanten — Manufaktur in Würzburg mit lizenzierter Gemmologie und eigener Fertigung."
+    "defaultDescription": "Schmuck und Diamanten für Juweliere. Eigene Manufaktur in Würzburg, Gemmologie im Haus."
   },
   "nav": {
     "diamonds": "Diamanten",
@@ -42,7 +42,7 @@
       "gemology": "Steinkunde",
       "ethical": "Ethische Beschaffung",
       "partnership": "Partnerschaft",
-      "diamondsCaption": "Diamanten in höchster Qualität",
+      "diamondsCaption": "Diamanten für Ihr Sortiment",
       "cuts": {
         "brilliant": "Brilliant",
         "princess": "Princess",
@@ -81,7 +81,7 @@
     "terms": "Nutzungsbedingungen",
     "cookies": "Cookie Policy",
     "copyright": "© {year} Rösler Engert UG (haftungsbeschränkt)",
-    "tagline": "Handgefertigter Schmuck und Diamanten — Made in Germany.",
+    "tagline": "Handgefertigter Schmuck und Diamanten. Made in Germany.",
     "pages": "Seiten",
     "navGroups": {
       "collections": "Kollektionen",
@@ -91,7 +91,7 @@
     },
     "mission": {
       "title": "Handwerk mit Verantwortung",
-      "text": "Wir sind der verlässliche Hintermann für anspruchsvolle Juweliere — mit Gemmologie, Manufaktur und persönlicher Betreuung aus Würzburg."
+      "text": "Hinter Ihrem Namen stehen wir mit Gemmologie, Manufaktur und persönlicher Betreuung aus Würzburg."
     },
     "inquiries": {
       "general": "Allgemeine Anfragen",
@@ -113,11 +113,11 @@
       "privacyLink": "Datenschutzerklärung",
       "submit": "Nachricht senden",
       "submitting": "Wird gesendet…",
-      "success": "Vielen Dank — wir melden uns in Kürze bei Ihnen."
+      "success": "Vielen Dank. Wir melden uns in Kürze bei Ihnen."
     },
     "newsletter": {
       "title": "Partner-Updates",
-      "description": "Neue Kollektionen, Lieferhinweise und Messetermine — nur für registrierte Partner.",
+      "description": "Neue Kollektionen, Lieferhinweise und Messetermine. Nur für registrierte Partner.",
       "emailLabel": "E-Mail-Adresse",
       "submit": "Anmelden",
       "submitting": "Wird angemeldet…",
@@ -134,7 +134,7 @@
   },
   "ctaBand": {
     "title": "Lernen wir uns kennen",
-    "text": "In einem persönlichen Gespräch besprechen wir Ihr Sortiment, Ihre Region und wie wir Sie unterstützen können.",
+    "text": "In einem Gespräch klären wir, welches Sortiment zu Ihrem Geschäft passt und wie wir Sie unterstützen können.",
     "appointment": "Termin buchen",
     "catalog": "Katalog anfordern"
   },
@@ -148,13 +148,13 @@
   "home": {
     "hero": {
       "title": "Ihr Name vorne. Unsere Expertise dahinter.",
-      "subtitle": "Wenn Ihre Kunden Fragen zum Stein stellen, stehen Sie nicht allein. Wir fertigen Schmuck in Würzburg und begleiten Sie mit lizenzierter Gemmologie — persönlich, verlässlich, auf Augenhöhe.",
+      "subtitle": "Wenn Kunden Fragen zum Stein stellen, sind Sie nicht allein. Wir fertigen in Würzburg und unterstützen Sie mit lizenzierter Gemmologie, persönlich und auf Augenhöhe.",
       "ctaPrimary": "Termin buchen",
       "ctaSecondary": "Katalog anfordern"
     },
     "proof": {
       "quote": {
-        "text": "Wenn ein Kunde den Diamanten infrage stellt, brauche ich einen Partner, der mir sofort die Antwort liefert. Genau dafür gibt es Rösler & Engert.",
+        "text": "Wenn ein Kunde den Diamanten infrage stellt, brauche ich jemanden, der mir sofort die Antwort liefert. Genau dafür gibt es Rösler & Engert.",
         "attribution": "Partner-Juwelier, Franken"
       }
     },
@@ -167,15 +167,15 @@
     "atelier": {
       "eyebrow": "Unser Atelier",
       "title": "Vom Rohstein bis ins Schaufenster",
-      "subtitle": "Alles unter einem Dach in Würzburg — damit Sie Ihren Kunden eine klare Antwort geben können.",
+      "subtitle": "Alles unter einem Dach in Würzburg. Damit Sie Ihren Kunden eine klare Antwort geben können.",
       "steps": {
         "inspect": {
           "title": "Steinprüfung",
-          "text": "Unser Gemmologe prüft jeden Diamanten — Schliff, Reinheit, Farbe. Sie wissen, was Sie verkaufen."
+          "text": "Unser Gemmologe prüft jeden Diamanten: Schliff, Reinheit, Farbe. Sie wissen genau, was Sie verkaufen."
         },
         "craft": {
           "title": "Fertigung",
-          "text": "Meistergoldschmiede fertigen Ihre Kollektion in unserer Manufaktur — präzise, termingerecht, anpassbar."
+          "text": "Meistergoldschmiede fertigen Ihre Kollektion in unserer Manufaktur, präzise und termingerecht."
         },
         "finish": {
           "title": "Feinprüfung",
@@ -183,22 +183,22 @@
         },
         "deliver": {
           "title": "Übergabe",
-          "text": "Persönlich im Showroom, per Außendienst oder zuverlässig versendet — wie es zu Ihrem Geschäft passt."
+          "text": "Im Showroom, per Außendienst oder per Versand. So, wie es zu Ihrem Geschäft passt."
         }
       },
       "cta": "Manufaktur besuchen"
     },
     "partnerValue": {
       "title": "Was Sie als Partner erwarten können",
-      "subtitle": "Drei Säulen — persönlich, in Würzburg, auf Augenhöhe.",
+      "subtitle": "Persönlich, in Würzburg, auf Augenhöhe.",
       "items": {
         "gemology": {
           "title": "Stein-Sicherheit",
-          "text": "Lizenzierter Gemmologe im Haus — für transparente Auswahl und belastbare Verkaufsgespräche."
+          "text": "Lizenzierter Gemmologe im Haus. Für transparente Auswahl und belastbare Verkaufsgespräche."
         },
         "manufacturing": {
           "title": "Eigene Fertigung",
-          "text": "Ohrringe, Ringe und Halsschmuck aus deutscher Manufaktur — individualisierbar für Ihr Sortiment."
+          "text": "Ohrringe, Ringe und Halsschmuck aus deutscher Manufaktur, angepasst an Ihr Sortiment."
         },
         "advisor": {
           "title": "Persönlicher Ansprechpartner",
@@ -206,7 +206,7 @@
         },
         "service": {
           "title": "Service, der mitdenkt",
-          "text": "Rechnungskauf, Ringanpassungen, Gravuren und bundesweiter Versand — effizient und verlässlich."
+          "text": "Rechnungskauf, Ringanpassungen, Gravuren und bundesweiter Versand."
         }
       },
       "cta": "Partnerschaft anfragen"
@@ -214,20 +214,20 @@
     "aboutPreview": {
       "eyebrow": "Über uns",
       "title": "Handwerk über Generationen",
-      "text": "Seit Generationen fertigen wir in Deutschland exklusiven Schmuck für anspruchsvolle Juweliere. Unsere lizenzierten Gemmologen und Meistergoldschmiede vereinen Präzision, Ästhetik und Vertrauen — vom Rohdiamanten bis zum fertigen Schmuckstück.",
+      "text": "Seit Generationen fertigen wir in Deutschland Schmuck für Juweliere. Unsere Gemmologen und Meistergoldschmiede arbeiten in Würzburg, vom Rohdiamanten bis zum fertigen Stück.",
       "link": "Unsere Geschichte"
     },
     "categories": {
       "title": "Unsere Expertise",
-      "subtitle": "Von der Diamantauswahl bis zur fertigen Kollektion — alles aus einer Hand.",
+      "subtitle": "Diamantauswahl, Fertigung, Kollektion. Alles aus einer Hand.",
       "diamonds": "Diamanten",
       "earrings": "Ohrringe",
       "rings": "Ringe",
       "necklaces": "Halsschmuck"
     },
     "expertise": {
-      "title": "Lizenzierte Gemmologie & deutsche Fertigung",
-      "text": "Unser Inhouse-Gemmologe begleitet die Diamantauswahl. In Würzburg fertigen wir Kollektionen, die zu Ihrem Sortiment passen — mit klaren Qualitätsstandards, die Sie vertreten können.",
+      "title": "Gemmologie und Fertigung in Würzburg",
+      "text": "Unser Gemmologe begleitet die Diamantauswahl. In der Manufaktur fertigen wir Kollektionen, die zu Ihrem Sortiment passen, mit Qualitätsstandards, die Sie vertreten können.",
       "cta": "Partnerschaft anfragen"
     },
     "diamondCuts": {
@@ -245,17 +245,17 @@
       "craftsmanship": {
         "title": "Besuchen Sie unsere Manufaktur",
         "cta": "Besuch planen",
-        "text": "Erleben Sie unsere Manufaktur in Würzburg — Schmuck entstehen sehen, Kollektionen anfassen, Fragen direkt klären."
+        "text": "Schmuck entstehen sehen, Kollektionen anfassen, Fragen direkt klären. In Würzburg."
       },
       "diamonds": {
         "title": "Diamanten auswählen",
         "cta": "Diamanten entdecken",
-        "text": "Unser lizenzierter Gemmologe begleitet Sie bei der Auswahl — für Transparenz und höchste Qualität in Ihrer Partnerschaft."
+        "text": "Unser Gemmologe begleitet Sie bei der Auswahl. Transparent und nachvollziehbar."
       },
       "showroom": {
         "title": "Showroom besuchen",
         "cta": "Termin buchen",
-        "text": "Vereinbaren Sie einen Termin in unserem Showroom in Würzburg und entdecken Sie Kollektionen, die Ihre Kunden begeistern."
+        "text": "Vereinbaren Sie einen Termin in Würzburg und sehen Sie Kollektionen, die zu Ihrem Sortiment passen."
       }
     },
     "partners": {
@@ -267,15 +267,15 @@
         },
         "signal2": {
           "title": "Made in Germany",
-          "text": "Eigene Fertigung in Würzburg — handgefertigt und qualitätsgesichert."
+          "text": "Eigene Fertigung in Würzburg, handgefertigt und geprüft."
         },
         "signal3": {
           "title": "Lizenzierte Gemmologie",
-          "text": "Inhouse-Gemmologe für transparente Diamantauswahl."
+          "text": "Gemmologe im Haus für transparente Diamantauswahl."
         },
         "signal4": {
           "title": "128 Jahre Erfahrung",
-          "text": "Generationsübergreifendes Handwerk für anspruchsvolle Kollektionen."
+          "text": "Handwerk über Generationen, für Kollektionen mit Anspruch."
         }
       }
     }
@@ -285,29 +285,29 @@
     "hero": {
       "eyebrow": "Rösler & Engert GbR",
       "title": "Handwerk mit Geschichte seit Generationen",
-      "subtitle": "Wir sind Ihr B2B-Partner für handgefertigten Schmuck und Diamanten — mit eigener Manufaktur in Deutschland und lizenzierter Gemmologie im Haus."
+      "subtitle": "B2B-Partner für handgefertigten Schmuck und Diamanten. Eigene Manufaktur in Deutschland, Gemmologie im Haus."
     },
     "heritage": {
       "title": "Handwerk mit Geschichte",
-      "text": "Über Generationen haben wir uns als Manufaktur für anspruchsvollen Schmuck etabliert. Jedes Stück entsteht in unserer Werkstatt in Deutschland — gefertigt von Meistergoldschmieden, die Präzision und Ästhetik in jeder Facette vereinen."
+      "text": "Über Generationen haben wir uns als Manufaktur für Schmuck etabliert. Jedes Stück entsteht in unserer Werkstatt in Deutschland, gefertigt von Meistergoldschmieden."
     },
     "leadership": {
       "eyebrow": "Führung",
       "title": "Die Menschen hinter Rösler & Engert",
-      "text": "Hinter unserer Manufaktur stehen die Gesellschafter persönlich — mit Leidenschaft für Schmuck, Diamanten und ehrliche Partnerschaften. In unserer Werkstatt in Deutschland verbinden wir traditionelles Handwerk mit dem Anspruch, Juweliere langfristig und verlässlich zu begleiten.",
+      "text": "Hinter der Manufaktur stehen die Gesellschafter persönlich, mit Leidenschaft für Schmuck, Diamanten und ehrliche Partnerschaften. In Würzburg verbinden wir traditionelles Handwerk mit dem Anspruch, Juweliere langfristig zu begleiten.",
       "imageAlt": "Die Gesellschafter von Rösler & Engert in der Manufaktur"
     },
     "gemology": {
       "title": "Lizenzierte Gemmologie",
-      "text": "Unser Inhouse-Gemmologe begleitet den gesamten Prozess — von der Diamantauswahl über die Qualitätsprüfung bis zur Zertifizierung. So garantieren wir Transparenz und höchste Standards für unsere Partner-Juweliere."
+      "text": "Unser Gemmologe begleitet den gesamten Prozess: Diamantauswahl, Qualitätsprüfung, Zertifizierung. So wissen unsere Partner-Juweliere, was sie verkaufen."
     },
     "quality": {
       "title": "Qualitätssicherung",
-      "text": "Jedes Stück durchläuft eine sorgfältige Prüfung in unserer Manufaktur — von der Schliffkontrolle bis zur finalen Inspektion unter der Lupe. So stellen wir sicher, dass nur Schmuck und Diamanten höchster Güte unsere Werkstatt verlassen."
+      "text": "Jedes Stück wird in unserer Manufaktur geprüft, von der Schliffkontrolle bis zur finalen Inspektion unter der Lupe. Nur Schmuck und Diamanten, die unseren Standards entsprechen, verlassen die Werkstatt."
     },
     "manufacturing": {
       "title": "Eigene Fertigung in Deutschland",
-      "text": "In unserer Manufaktur entstehen Kollektionen für Ohrringe, Ringe und Halsschmuck — handgefertigt, individuell anpassbar und bereit für den Wiederverkauf in Ihrem Geschäft."
+      "text": "In unserer Manufaktur entstehen Kollektionen für Ohrringe, Ringe und Halsschmuck, handgefertigt und an Ihr Sortiment anpassbar."
     }
   },
   "jewelry": {
@@ -315,20 +315,20 @@
     "hero": {
       "eyebrow": "Eigene Manufaktur",
       "title": "Handgefertigter Schmuck für Juweliere",
-      "subtitle": "Kollektionen aus unserer Manufaktur in Würzburg — für Juweliere, die Qualität am Schaufenster erkennen lassen wollen."
+      "subtitle": "Kollektionen aus Würzburg, für Juweliere, die Qualität am Schaufenster zeigen wollen."
     },
     "categories": {
       "earrings": {
         "title": "Ohrringe",
-        "description": "Von klassischen Studs bis zu opulenten Creolen — handgefertigte Ohrringe in Gold und mit Diamanten, individuell für Ihre Kollektion."
+        "description": "Von klassischen Studs bis zu Creolen: handgefertigte Ohrringe in Gold und mit Diamanten, für Ihre Kollektion."
       },
       "rings": {
         "title": "Ringe",
-        "description": "Verlobungsringe, Solitäre und Bandringe — gefertigt mit höchster Präzision und edlen Materialien für Ihre Kunden."
+        "description": "Verlobungsringe, Solitäre und Bandringe, gefertigt mit Präzision und edlen Materialien."
       },
       "necklaces": {
         "title": "Halsschmuck",
-        "description": "Anhänger, Colliers und Ketten — elegante Designs, die sich nahtlos in Ihr Sortiment integrieren."
+        "description": "Anhänger, Colliers und Ketten, die sich in Ihr Sortiment einfügen."
       }
     }
   },
@@ -336,12 +336,12 @@
     "title": "Diamanten",
     "hero": {
       "eyebrow": "Lizenzierte Gemmologie",
-      "title": "Diamanten in höchster Qualität",
-      "subtitle": "Unser Inhouse-Gemmologe wählt und zertifiziert jeden Stein — für Transparenz und Vertrauen in Ihrer Partnerschaft."
+      "title": "Diamanten, die Sie vertreten können",
+      "subtitle": "Unser Gemmologe wählt und zertifiziert jeden Stein. Transparent und nachvollziehbar."
     },
     "expertise": {
       "title": "Gemmologische Expertise",
-      "text": "Von der Rohstein-Auswahl bis zur Schliffbewertung begleitet unser lizenzierter Gemmologe den gesamten Prozess. Wir bieten eine breite Palette an Schliffformen und Qualitätsstufen für Ihr Sortiment."
+      "text": "Von der Rohstein-Auswahl bis zur Schliffbewertung begleitet unser Gemmologe den Prozess. Breite Palette an Schliffformen und Qualitätsstufen für Ihr Sortiment."
     },
     "cuts": {
       "title": "Schliff-Formen",
@@ -380,7 +380,7 @@
     "hero": {
       "eyebrow": "Wir freuen uns auf Sie",
       "title": "Lassen Sie uns sprechen",
-      "subtitle": "Ob Partnerschaft, Kollektion oder Diamantauswahl — unser Team berät Sie persönlich."
+      "subtitle": "Partnerschaft, Kollektion oder Diamantauswahl: Unser Team berät Sie persönlich."
     },
     "info": {
       "phone": "Telefon",
@@ -390,7 +390,7 @@
     },
     "form": {
       "title": "Schreiben Sie uns",
-      "subtitle": "Partnerschaft, Kollektion oder Diamantauswahl — wir melden uns persönlich bei Ihnen.",
+      "subtitle": "Partnerschaft, Kollektion oder Diamantauswahl: Wir melden uns persönlich bei Ihnen.",
       "name": "Name",
       "company": "Unternehmen",
       "email": "E-Mail",
@@ -406,23 +406,23 @@
       "privacyLink": "Datenschutzerklärung",
       "submit": "Nachricht senden",
       "submitting": "Wird gesendet…",
-      "success": "Vielen Dank — wir melden uns in Kürze bei Ihnen."
+      "success": "Vielen Dank. Wir melden uns in Kürze bei Ihnen."
     }
   },
   "catalog": {
     "hero": {
       "eyebrow": "B2B-Katalog",
       "title": "Kollektionen für Ihr Geschäft",
-      "subtitle": "Laden Sie unseren digitalen Katalog herunter und entdecken Sie handgefertigten Schmuck, Diamanten und Services für Juweliere."
+      "subtitle": "Laden Sie unseren digitalen Katalog herunter: handgefertigter Schmuck, Diamanten und Services für Juweliere."
     },
     "preview": {
       "title": "Was Sie im Katalog finden",
-      "text": "Unser B2B-Katalog bietet einen Überblick über Kollektionen, Materialien, Individualisierungsoptionen und Services für Partner-Juweliere."
+      "text": "Überblick über Kollektionen, Materialien, Individualisierungsoptionen und Services für Partner-Juweliere."
     },
     "valueProps": {
       "collections": {
         "title": "Aktuelle Kollektionen",
-        "text": "Ohrringe, Ringe und Halsschmuck — handgefertigt in Deutschland."
+        "text": "Ohrringe, Ringe und Halsschmuck, handgefertigt in Deutschland."
       },
       "services": {
         "title": "B2B-Services",
@@ -430,12 +430,12 @@
       },
       "partnership": {
         "title": "Persönliche Beratung",
-        "text": "Vertriebsmitarbeiter und Showroom-Besuche für Ihre Partnerschaft."
+        "text": "Fester Ansprechpartner und Showroom-Besuche für Ihre Partnerschaft."
       }
     },
     "form": {
       "title": "Katalog anfordern",
-      "subtitle": "Bitte füllen Sie das Formular aus — wir senden Ihnen den Download-Link per E-Mail.",
+      "subtitle": "Füllen Sie das Formular aus. Wir senden Ihnen den Download-Link per E-Mail.",
       "company": "Unternehmen",
       "name": "Ansprechpartner",
       "email": "Geschäftliche E-Mail",
@@ -466,28 +466,28 @@
     "hero": {
       "eyebrow": "B2B-Service",
       "title": "Services für Juweliere",
-      "subtitle": "Von der Bestellung bis zur Individualisierung — wir unterstützen Ihr Geschäft mit effizienten B2B-Services."
+      "subtitle": "Von der Bestellung bis zur Individualisierung: Services, die zu Ihrem Geschäft passen."
     },
     "items": {
       "invoice": {
         "title": "Kauf auf Rechnung",
-        "text": "Verlässliche B2B-Konditionen mit Rechnungskauf für registrierte Partner-Juweliere."
+        "text": "Rechnungskauf für registrierte Partner-Juweliere."
       },
       "ringAdjustments": {
         "title": "Anpassungen von Ringen",
-        "text": "Professionelle Ringanpassungen in unserer Manufaktur — präzise und termingerecht."
+        "text": "Ringanpassungen in unserer Manufaktur, präzise und termingerecht."
       },
       "engraving": {
         "title": "Gravuren",
-        "text": "Individuelle Gravuren für Ringe und Schmuckstücke — für persönliche Kundenwünsche."
+        "text": "Gravuren für Ringe und Schmuckstücke, für persönliche Kundenwünsche."
       },
       "shipping": {
-        "title": "Schneller bundesweiter Versand",
-        "text": "Zuverlässiger Versand deutschlandweit — sicher verpackt und schnell bei Ihnen."
+        "title": "Bundesweiter Versand",
+        "text": "Versand deutschlandweit, sicher verpackt und zuverlässig."
       },
       "customization": {
-        "title": "Effiziente Individualisierung",
-        "text": "Anpassungen von Kollektionen und Materialien — effizient umgesetzt für Ihr Sortiment."
+        "title": "Individualisierung",
+        "text": "Anpassungen von Kollektionen und Materialien für Ihr Sortiment."
       }
     },
     "cta": {
@@ -498,12 +498,12 @@
   "partnership": {
     "hero": {
       "eyebrow": "B2B-Partnerschaft",
-      "title": "Ihr Partner für Schmuck & Diamanten",
-      "subtitle": "Wir begleiten Juweliere langfristig — mit persönlicher Betreuung, eigener Fertigung und lizenzierter Gemmologie."
+      "title": "Ihr Partner für Schmuck und Diamanten",
+      "subtitle": "Wir arbeiten langfristig mit Juwelieren zusammen: persönliche Betreuung, eigene Fertigung, Gemmologie im Haus."
     },
     "story": {
       "title": "Partnerschaft auf Augenhöhe",
-      "text": "Als Manufaktur verstehen wir die Anforderungen von Juwelieren. Unser Vertriebsmitarbeiter-Modell sorgt für direkten Kontakt, schnelle Entscheidungen und verlässliche Lieferungen."
+      "text": "Als Manufaktur kennen wir die Anforderungen von Juwelieren. Ein fester Ansprechpartner, schnelle Entscheidungen, verlässliche Lieferungen."
     },
     "journey": {
       "eyebrow": "Der Weg",
@@ -523,17 +523,17 @@
       "support": {
         "eyebrow": "Schritt 3",
         "title": "Laufende Betreuung",
-        "text": "Von der Beratung bis zur Nachbestellung — wir sind für Sie erreichbar."
+        "text": "Von der Beratung bis zur Nachbestellung: Wir sind erreichbar."
       },
       "growth": {
         "eyebrow": "Schritt 4",
         "title": "Gemeinsam wachsen",
-        "text": "Mit neuen Kollektionen, Individualisierung und Events stärken wir Ihr Schaufenster."
+        "text": "Neue Kollektionen, Individualisierung und Events für Ihr Schaufenster."
       }
     },
     "cta": {
-      "title": "Starten Sie Ihre Partnerschaft",
-      "text": "Vereinbaren Sie ein persönliches Gespräch — wir lernen Ihr Geschäft kennen und begleiten Sie von der ersten Kollektion an.",
+      "title": "Partnerschaft starten",
+      "text": "Vereinbaren Sie ein Gespräch. Wir lernen Ihr Geschäft kennen und begleiten Sie von der ersten Kollektion an.",
       "contact": "Partnerschaft anfragen",
       "appointment": "Termin buchen"
     }
@@ -542,7 +542,7 @@
     "hero": {
       "eyebrow": "Showroom Würzburg",
       "title": "Besuchen Sie uns",
-      "subtitle": "Erleben Sie unsere Manufaktur und Kollektionen persönlich — im Showroom oder durch unseren Außendienst."
+      "subtitle": "Manufaktur und Kollektionen persönlich erleben, im Showroom oder durch unseren Außendienst."
     },
     "options": {
       "showroom": {
@@ -589,11 +589,11 @@
       },
       "customization": {
         "question": "Sind Individualisierungen möglich?",
-        "answer": "Ja — von Ringanpassungen über Gravuren bis zu kollektionsspezifischen Anpassungen unterstützen wir Sie effizient."
+        "answer": "Ja. Ringanpassungen, Gravuren und kollektionsspezifische Anpassungen gehören zu unserem Service."
       },
       "shipping": {
         "question": "Wie funktioniert der Versand?",
-        "answer": "Wir liefern schnell und bundesweit — sicher verpackt und zuverlässig an Ihr Geschäft."
+        "answer": "Wir liefern bundesweit, sicher verpackt und zuverlässig an Ihr Geschäft."
       },
       "appointment": {
         "question": "Wie buche ich einen Termin?",

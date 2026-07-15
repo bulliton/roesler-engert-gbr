@@ -49,7 +49,7 @@ export function ServicesPageContent() {
             ))}
           </ul>
 
-          <div className="mt-14 flex flex-wrap gap-4">
+          <div className="section-actions flex flex-wrap gap-4">
             <Button href={CONTACT.appointmentUrl} external variant="primary">
               {t("cta.appointment")}
             </Button>
