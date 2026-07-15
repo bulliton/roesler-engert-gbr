@@ -7,6 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
+import { SITE_IMAGES } from "@/lib/site-images";
 
 export function AboutPageContent() {
   const t = useTranslations("about");
@@ -14,15 +15,15 @@ export function AboutPageContent() {
   const blocks = [
     {
       key: "heritage" as const,
-      image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80",
+      image: SITE_IMAGES.workshopInterior,
     },
     {
       key: "gemology" as const,
-      image: "https://images.unsplash.com/photo-1605100804763-247fc67f9958?w=800&q=80",
+      image: SITE_IMAGES.precisionMeasurement,
     },
     {
       key: "manufacturing" as const,
-      image: "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&q=80",
+      image: SITE_IMAGES.craftsmanAtWork,
     },
   ];
 
@@ -76,7 +77,7 @@ export function AboutPageContent() {
               className="relative aspect-[3/2] overflow-hidden rounded-sm lg:order-2"
             >
               <Image
-                src="/images/leadership.webp"
+                src={SITE_IMAGES.leadership}
                 alt={t("leadership.imageAlt")}
                 fill
                 className="object-cover object-[center_20%]"

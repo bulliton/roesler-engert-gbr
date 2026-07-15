@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { jewelrySubItems } from "@/lib/nav-config";
+import { SITE_IMAGES } from "@/lib/site-images";
 import {
   MegaMenuColumn,
   MegaMenuFeature,
@@ -63,7 +64,7 @@ export function JewelryMegaMenu({ open, onClose }: JewelryMegaMenuProps) {
         </MegaMenuColumn>
 
         <MegaMenuFeature
-          src="/images/hero-craftsmanship.webp"
+          src={SITE_IMAGES.ringFinishing}
           alt=""
           caption={t("imageCaption")}
           href="/jewelry"

@@ -5,6 +5,7 @@ import {
   DIAMOND_CUT_KEYS,
   diamondCutIcons,
 } from "@/lib/diamond-cuts";
+import { SITE_IMAGES } from "@/lib/site-images";
 import {
   MegaMenuColumn,
   MegaMenuFeature,
@@ -29,13 +30,9 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
               const Icon = diamondCutIcons[cut];
               return (
                 <li key={cut}>
-                  <MegaMenuLink
-                    href="/diamonds"
-                    onClick={onClose}
-                    className="flex items-center gap-2.5"
-                  >
+                  <MegaMenuLink href="/diamonds" onClick={onClose}>
                     <Icon className="h-4 w-4 shrink-0 text-primary/50" />
-                    {t(`cuts.${cut}`)}
+                    <span>{t(`cuts.${cut}`)}</span>
                   </MegaMenuLink>
                 </li>
               );
@@ -84,7 +81,7 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
         </MegaMenuColumn>
 
         <MegaMenuFeature
-          src="https://images.unsplash.com/photo-1605100804763-247fc67f9958?w=640&q=80"
+          src={SITE_IMAGES.solderingTorch}
           alt=""
           caption={t("diamondsCaption")}
           href="/diamonds"

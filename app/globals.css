@@ -170,7 +170,9 @@ h4 {
 
 .mega-menu-link {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
   padding-bottom: 0.125rem;
   font-size: 0.9375rem;
   font-weight: 400;
@@ -197,6 +199,62 @@ h4 {
 
 .mega-menu-link:hover::after {
   transform: scaleX(1);
+}
+
+@keyframes brand-mark-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.brand-mark-enter {
+  animation: brand-mark-enter 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-mark-enter {
+    animation: none;
+  }
+}
+
+.trust-signal-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  color: var(--color-secondary);
+}
+
+.trust-signal-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid color-mix(in srgb, var(--color-secondary) 40%, transparent);
+  transform: rotate(45deg);
+  transition: border-color 0.35s ease, transform 0.35s ease;
+}
+
+.trust-signal:hover .trust-signal-icon::before {
+  border-color: var(--color-secondary);
+  transform: rotate(45deg) scale(1.06);
+}
+
+.trust-signal-accent {
+  width: 1.5rem;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-secondary),
+    transparent
+  );
 }
 
 @keyframes logo-text-orbit {

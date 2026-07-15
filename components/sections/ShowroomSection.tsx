@@ -7,24 +7,22 @@ import { Link } from "@/lib/navigation";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { CONTACT } from "@/lib/constants";
+import { SITE_IMAGES } from "@/lib/site-images";
 
 const cards = [
   {
     key: "craftsmanship" as const,
-    image:
-      "https://images.unsplash.com/photo-1617032215425-9e6d4d6b0c8e?w=800&q=80",
+    image: SITE_IMAGES.handsCrafting,
     href: "/visit" as const,
   },
   {
     key: "diamonds" as const,
-    image:
-      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+    image: SITE_IMAGES.workbenchDetail,
     href: "/diamonds" as const,
   },
   {
     key: "showroom" as const,
-    image:
-      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+    image: SITE_IMAGES.workshopInterior,
     href: CONTACT.appointmentUrl,
     external: true,
   },

@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { FooterLabel } from "@/components/ui/FooterLabel";
 import { DiamondIcon } from "@/components/ui/DiamondIcon";
 import { CONTACT } from "@/lib/constants";
+import { FooterBackgroundMark } from "./FooterBackgroundMark";
 import { FooterContactForm } from "./FooterContactForm";
 import { FooterNavigation } from "./FooterNavigation";
 import { FooterSocial } from "./FooterSocial";
@@ -16,8 +17,9 @@ export async function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary-dark text-white">
-      <Container className="py-14 lg:py-20">
+    <footer className="relative overflow-hidden bg-primary-dark text-white">
+      <FooterBackgroundMark />
+      <Container className="relative z-10 py-14 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-8 xl:gap-12">
           <div className="space-y-8 lg:col-span-4 xl:col-span-4">
             <div>

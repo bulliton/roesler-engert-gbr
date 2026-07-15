@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
@@ -8,6 +9,7 @@ import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
 import { CONTACT } from "@/lib/constants";
+import { SITE_IMAGES } from "@/lib/site-images";
 
 const optionKeys = ["showroom", "fieldService"] as const;
 
@@ -24,6 +26,22 @@ export function VisitPageContent() {
 
       <Section>
         <Container>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative mb-12 aspect-[21/9] overflow-hidden rounded-sm md:mb-14"
+          >
+            <Image
+              src={SITE_IMAGES.workshopInterior}
+              alt=""
+              fill
+              className="object-cover object-[center_40%]"
+              sizes="100vw"
+              priority
+            />
+          </motion.div>
+
           <div className="grid gap-10 lg:grid-cols-2">
             {optionKeys.map((key, i) => (
               <motion.article

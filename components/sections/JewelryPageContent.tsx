@@ -7,6 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
+import { SITE_IMAGES } from "@/lib/site-images";
 
 const jewelryCategories = [
   {
@@ -15,7 +16,7 @@ const jewelryCategories = [
   },
   {
     id: "rings",
-    image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
+    image: SITE_IMAGES.ringSetting,
   },
   {
     id: "necklaces",

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
+import { SITE_IMAGES } from "@/lib/site-images";
 
 export function AboutPreviewSection() {
   const t = useTranslations("home.aboutPreview");
@@ -23,7 +24,7 @@ export function AboutPreviewSection() {
             className="relative aspect-[4/3] overflow-hidden rounded-sm"
           >
             <Image
-              src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80"
+              src={SITE_IMAGES.workshopInterior}
               alt=""
               fill
               className="object-cover"

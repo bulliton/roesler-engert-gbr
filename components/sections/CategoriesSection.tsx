@@ -8,13 +8,13 @@ import { Container } from "@/components/ui/Container";
 import { DiamondIcon } from "@/components/ui/DiamondIcon";
 import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
+import { SITE_IMAGES } from "@/lib/site-images";
 
 const categories = [
   {
     key: "diamonds" as const,
     href: "/diamonds" as const,
-    image:
-      "https://images.unsplash.com/photo-1605100804763-247fc67f9958?w=600&q=80",
+    image: SITE_IMAGES.solderingTorch,
   },
   {
     key: "earrings" as const,
@@ -25,8 +25,7 @@ const categories = [
   {
     key: "rings" as const,
     href: { pathname: "/jewelry" as const, hash: "rings" },
-    image:
-      "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&q=80",
+    image: SITE_IMAGES.ringSetting,
   },
   {
     key: "necklaces" as const,

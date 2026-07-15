@@ -56,3 +56,42 @@ export function ChevronDownIcon({ className = "h-3 w-3" }: IconProps) {
     </svg>
   );
 }
+
+export function PartnersNetworkIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" aria-hidden>
+      <circle cx="12" cy="6" r="2.25" />
+      <circle cx="5.5" cy="17" r="2.25" />
+      <circle cx="18.5" cy="17" r="2.25" />
+      <path strokeLinecap="round" d="M10.4 7.6 7 14.2M13.6 7.6 17 14.2M7.75 17h8.5" />
+    </svg>
+  );
+}
+
+export function ManufactureIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" aria-hidden>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3 4 9v12h16V9l-8-6Z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 21v-6h6v6M12 9v3" />
+    </svg>
+  );
+}
+
+export function GemologyIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" aria-hidden>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M8 8.5 12 4l4 4.5 6 7.5H2l6-7.5Z" />
+      <circle cx="15.5" cy="15.5" r="3.75" />
+      <path strokeLinecap="round" d="m18.25 18.25 2 2" />
+    </svg>
+  );
+}
+
+export function HeritageIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" aria-hidden>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-4 3.5-7 7-7 11a7 7 0 1 0 14 0c0-4-3-7.5-7-11Z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6M9.5 13.5h5" />
+    </svg>
+  );
+}

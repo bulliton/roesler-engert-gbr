@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { VideoBackground } from "@/components/ui/VideoBackground";
 import { Button } from "@/components/ui/Button";
 import { CONTACT } from "@/lib/constants";
+import { SITE_IMAGES } from "@/lib/site-images";
 
 export function HeroSection() {
   const t = useTranslations("home.hero");
@@ -13,7 +14,7 @@ export function HeroSection() {
   return (
     <section className="relative -mt-[var(--header-offset)] flex h-[100svh] min-h-[100svh] items-end overflow-hidden">
       <VideoBackground
-        posterSrc="/images/hero-craftsmanship.webp"
+        posterSrc={SITE_IMAGES.craftsmanAtWork}
         imageClassName="object-cover object-[65%_35%] md:object-[center_32%]"
       />
       <Container className="relative z-10 pb-12 pt-28 md:pb-16 lg:pb-20">
