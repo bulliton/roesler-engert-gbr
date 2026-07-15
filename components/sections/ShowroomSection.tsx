@@ -49,20 +49,18 @@ export function ShowroomSection() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
-              <div className="mb-3 flex items-baseline justify-between gap-4">
-                <h3 className="font-display text-lg text-secondary">
-                  {t(`${card.key}.title`)}
-                </h3>
-                <Link
-                  href="/contact"
-                  className="shrink-0 text-sm font-semibold tracking-wide text-secondary uppercase transition-colors hover:text-primary"
-                >
-                  {t(`${card.key}.cta`)}
-                </Link>
-              </div>
+              <h3 className="mb-3 font-display text-lg text-secondary">
+                {t(`${card.key}.title`)}
+              </h3>
               <p className="text-sm leading-relaxed text-muted">
                 {t(`${card.key}.text`)}
               </p>
+              <Link
+                href="/contact"
+                className="mt-4 inline-block text-sm font-semibold tracking-wide text-secondary uppercase transition-colors hover:text-primary"
+              >
+                {t(`${card.key}.cta`)}
+              </Link>
             </motion.article>
           ))}
         </div>
