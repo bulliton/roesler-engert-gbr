@@ -50,6 +50,10 @@ export const routing = defineRouting({
       de: "/datenschutz",
       en: "/privacy",
     },
+    "/cookies": {
+      de: "/cookies",
+      en: "/cookies",
+    },
   },
 });
 

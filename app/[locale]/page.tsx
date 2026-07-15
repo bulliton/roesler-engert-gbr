@@ -16,8 +16,8 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <HeroSection />
-      <ManufactorySection />
       <ProofSection />
+      <ManufactorySection />
       <PartnerValueSection />
       <CtaBand />
     </>

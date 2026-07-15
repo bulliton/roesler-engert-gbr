@@ -610,11 +610,173 @@
   "legal": {
     "imprint": {
       "title": "Imprint",
-      "content": "Information pursuant to § 5 TMG (German Telemedia Act)\n\nRösler & Engert GbR\nDomstr. 18\n97070 Würzburg\nGermany\n\nPhone: +49 (0) 931 45 25 28 92\nEmail: info@roesler-engert.de\n\nRepresented by: Christian Roesler, [additional partner]\n\nVAT ID: [insert VAT ID]\n\nResponsible for content pursuant to § 55 Abs. 2 RStV:\nChristian Roesler, address as above."
+      "lastUpdated": "Last updated: 15 July 2026",
+      "sections": [
+        {
+          "heading": "Information pursuant to § 5 DDG (German Digital Services Act)",
+          "paragraphs": [
+            "Rösler & Engert GbR\nDomstr. 18\n97070 Würzburg\nGermany",
+            "Represented by: the partners Christian Roesler and Markus Engert",
+            "Phone: +49 (0) 931 45 25 28 92\nEmail: info@roesler-engert.de"
+          ]
+        },
+        {
+          "heading": "Responsible for content pursuant to § 18 (2) MStV",
+          "paragraphs": [
+            "Christian Roesler\nDomstr. 18\n97070 Würzburg"
+          ]
+        },
+        {
+          "heading": "EU dispute resolution",
+          "paragraphs": [
+            "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr/",
+            "You can find our email address above in the imprint.",
+            "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board."
+          ]
+        },
+        {
+          "heading": "Liability for content",
+          "paragraphs": [
+            "As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to § 7 (1) DDG. However, pursuant to §§ 8 to 10 DDG, we are not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances indicating illegal activity.",
+            "Obligations to remove or block the use of information under general law remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon becoming aware of corresponding legal violations, we will remove such content immediately."
+          ]
+        },
+        {
+          "heading": "Liability for links",
+          "paragraphs": [
+            "Our website contains links to external third-party websites over whose content we have no influence. Therefore, we cannot accept any liability for this external content. The respective provider or operator of the linked pages is always responsible for their content.",
+            "The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. However, permanent monitoring of the content of linked pages is not reasonable without concrete evidence of a legal violation. Upon becoming aware of legal violations, we will remove such links immediately."
+          ]
+        },
+        {
+          "heading": "Copyright",
+          "paragraphs": [
+            "The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, or any form of commercialization beyond the scope of copyright law requires the written consent of the respective author or creator.",
+            "Downloads and copies of this site are permitted only for private, non-commercial use. Where content on this site was not created by the operator, third-party copyrights are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please notify us accordingly. Upon becoming aware of legal violations, we will remove such content immediately."
+          ]
+        }
+      ]
     },
     "privacy": {
       "title": "Privacy Policy",
-      "content": "1. Privacy at a glance\n\nGeneral information\nThe following notes provide a simple overview of what happens to your personal data when you visit this website.\n\n2. Data controller\nRösler & Engert GbR\nDomstr. 18\n97070 Würzburg\nEmail: info@roesler-engert.de\n\n3. Data collection on this website\nWhen you visit our website, technically necessary data (e.g. IP address, browser type) is stored in server log files.\n\n4. Contact form\nIf you send us inquiries via the contact form, your details will be stored for processing the request.\n\n5. Your rights\nYou have the right to information, correction, deletion, and restriction of processing of your personal data.\n\nPlease have these placeholder texts reviewed and adapted by a legal professional."
+      "lastUpdated": "Last updated: 15 July 2026",
+      "sections": [
+        {
+          "heading": "1. Privacy at a glance",
+          "paragraphs": [
+            "The following notes provide a simple overview of what happens to your personal data when you visit this website or use our online forms.",
+            "Personal data is any data with which you can be personally identified. Detailed information on data protection can be found in the following sections of this privacy policy."
+          ]
+        },
+        {
+          "heading": "2. Data controller",
+          "paragraphs": [
+            "The controller responsible for data processing on this website is:\n\nRösler & Engert GbR\nDomstr. 18\n97070 Würzburg\nGermany\n\nPhone: +49 (0) 931 45 25 28 92\nEmail: info@roesler-engert.de",
+            "The controller is the natural or legal person who alone or jointly with others determines the purposes and means of processing personal data."
+          ]
+        },
+        {
+          "heading": "3. Hosting and server log files",
+          "paragraphs": [
+            "This website is hosted by an external service provider (host). Personal data collected on this website is stored on the host's servers. This may include IP addresses, metadata and communication data, website accesses, date and time of access, browser type and version, operating system used, and referrer URL.",
+            "We use the host for the purpose of contract fulfillment with our prospective and existing customers (Art. 6 (1) lit. b GDPR) and in the interest of secure, fast, and efficient provision of our online offering by a professional provider (Art. 6 (1) lit. f GDPR).",
+            "Our host processes your data only to the extent necessary to fulfill its service obligations and acts as a processor pursuant to Art. 28 GDPR."
+          ]
+        },
+        {
+          "heading": "4. Contact forms",
+          "paragraphs": [
+            "If you send us inquiries via contact forms, your details from the form including the contact data you provide (e.g. name, company, email address, phone number, message) will be stored by us for the purpose of processing the inquiry and in case of follow-up questions.",
+            "Processing is based on Art. 6 (1) lit. b GDPR if your inquiry is related to the fulfillment of a contract or pre-contractual measures, and on your consent pursuant to Art. 6 (1) lit. a GDPR if you have given this in the form.",
+            "The data you enter will remain with us until you request deletion, revoke your consent to storage, or the purpose for data storage no longer applies. Mandatory statutory retention periods remain unaffected."
+          ]
+        },
+        {
+          "heading": "5. Newsletter",
+          "paragraphs": [
+            "If you would like to subscribe to the newsletter offered on the website, we require your email address and your consent to process this data.",
+            "Registration takes place exclusively with your express consent (Art. 6 (1) lit. a GDPR). The email address you provide for newsletter subscription will be used solely for sending the newsletter.",
+            "You can revoke your consent at any time, for example via an unsubscribe link in the newsletter or by email to info@roesler-engert.de. The lawfulness of processing already carried out remains unaffected by revocation."
+          ]
+        },
+        {
+          "heading": "6. Catalog request",
+          "paragraphs": [
+            "If you request our B2B catalog, we process the data you submit (e.g. name, company, email address) to provide the catalog and handle your inquiry.",
+            "The legal basis is Art. 6 (1) lit. b GDPR (pre-contractual measures) and your consent pursuant to Art. 6 (1) lit. a GDPR if you have given this in the form."
+          ]
+        },
+        {
+          "heading": "7. Email delivery",
+          "paragraphs": [
+            "We use the email service Resend to transmit form inquiries and notifications. The data you enter is processed via the provider's servers.",
+            "This is based on Art. 6 (1) lit. b GDPR (processing your inquiry) and Art. 6 (1) lit. f GDPR (efficient and secure communication). We have concluded a data processing agreement with the provider."
+          ]
+        },
+        {
+          "heading": "8. External appointment booking and links",
+          "paragraphs": [
+            "Our website links to an external appointment booking page. If you use this link, you leave our website. The provider of the destination page is solely responsible for data processing that takes place there.",
+            "Other external links (e.g. to social media profiles) also lead to third-party websites. Please refer to the privacy policies of the respective providers."
+          ]
+        },
+        {
+          "heading": "9. Images and external content",
+          "paragraphs": [
+            "To display our website, images may be loaded from external content delivery networks. Your IP address may be transmitted to the respective provider.",
+            "This is based on Art. 6 (1) lit. f GDPR for the appealing presentation of our online offering."
+          ]
+        },
+        {
+          "heading": "10. Your rights",
+          "paragraphs": [
+            "You have the right at any time to free information about the origin, recipient, and purpose of your stored personal data, as well as the right to rectification, blocking, or deletion of this data.",
+            "You also have the right to restriction of processing (Art. 18 GDPR), data portability (Art. 20 GDPR), and to object to processing (Art. 21 GDPR) where processing is based on Art. 6 (1) lit. e or f GDPR.",
+            "If processing is based on consent, you have the right to revoke this at any time without affecting the lawfulness of processing carried out on the basis of consent until revocation."
+          ]
+        },
+        {
+          "heading": "11. Right to lodge a complaint",
+          "paragraphs": [
+            "You have the right to lodge a complaint with a data protection supervisory authority regarding the processing of your personal data.",
+            "The competent supervisory authority for us is the Bavarian State Office for Data Protection Supervision (BayLDA), Promenade 18, 91522 Ansbach, Germany."
+          ]
+        },
+        {
+          "heading": "12. Updates to this privacy policy",
+          "paragraphs": [
+            "We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy.",
+            "For your next visit, the respective current privacy policy will apply."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last updated: 15 July 2026",
+      "sections": [
+        {
+          "heading": "What are cookies?",
+          "paragraphs": [
+            "Cookies are small text files stored on your device when you visit a website. They are often used to make websites functional or more convenient to use."
+          ]
+        },
+        {
+          "heading": "Cookies on this website",
+          "paragraphs": [
+            "We do not use marketing or analytics cookies on this website. No tracking tools are used for reach measurement or profiling.",
+            "When you access the website, your browser may process technically necessary information required for secure operation and delivery of the page. Language selection is handled via the URL and not via a permanently stored language cookie.",
+            "Server log files may be created when you visit. Further information can be found in our privacy policy."
+          ]
+        },
+        {
+          "heading": "Your choices",
+          "paragraphs": [
+            "You can configure your browser to inform you about the setting of cookies, allow cookies only in individual cases, exclude the acceptance of cookies for certain cases or in general, and activate the automatic deletion of cookies when closing the browser.",
+            "If cookies are disabled, the functionality of this website may be limited."
+          ]
+        }
+      ]
     }
   }
 }

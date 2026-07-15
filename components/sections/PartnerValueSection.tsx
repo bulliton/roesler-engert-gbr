@@ -13,7 +13,7 @@ export function PartnerValueSection() {
   const t = useTranslations("home.partnerValue");
 
   return (
-    <Section className="border-t border-primary/10">
+    <Section>
       <Container>
         <SectionIntro
           title={t("title")}
@@ -40,7 +40,7 @@ export function PartnerValueSection() {
           ))}
         </ul>
 
-        <div className="mt-12 md:mt-14">
+        <div className="mt-14">
           <Button href="/partnership" variant="outline">
             {t("cta")}
           </Button>

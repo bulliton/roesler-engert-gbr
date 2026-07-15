@@ -24,7 +24,7 @@ export function Headline({
 
   return (
     <Tag
-      className={`font-normal ${size} ${bar ? "headline-bar" : ""} ${contrast ? "!text-white" : ""} ${className}`}
+      className={`font-normal leading-[1em] ${size} ${bar ? "headline-bar" : ""} ${contrast ? "!text-white" : ""} ${className}`}
     >
       {children}
     </Tag>

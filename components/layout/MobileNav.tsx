@@ -104,14 +104,18 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
             className="contrast-band diamond-pattern flex h-full flex-col bg-primary-dark"
             aria-label="Mobile navigation"
           >
-            <div className="relative z-10 flex items-center justify-between border-b border-white/10 px-[var(--section-padding-x)] py-4">
-              <Link href="/" onClick={onClose} className="relative flex h-9 items-center justify-center overflow-visible">
+            <div className="relative z-10 flex items-center justify-between border-b border-white/10 px-[var(--section-padding-x)] py-3">
+              <Link
+                href="/"
+                onClick={onClose}
+                className="relative flex h-10 shrink-0 items-center overflow-visible"
+              >
                 <Image
                   src="/brand/logo-horizontal.svg"
                   alt="Rösler & Engert"
                   width={884}
                   height={108}
-                  className="h-full w-auto max-w-[10rem] scale-[1.2] brightness-0 invert"
+                  className="h-full w-auto max-w-[11rem] origin-left scale-[1.2] brightness-0 invert"
                 />
               </Link>
               <button

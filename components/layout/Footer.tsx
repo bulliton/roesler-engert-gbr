@@ -17,7 +17,7 @@ export async function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden bg-primary-dark text-white">
+    <footer className="relative overflow-hidden bg-primary-dark pb-[var(--mobile-bottom-bar-offset)] text-white md:pb-0">
       <FooterBackgroundMark />
       <Container className="relative z-10 py-14 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-8 xl:gap-12">
@@ -108,7 +108,7 @@ export async function Footer() {
             <Link href="/privacy" className="transition-colors hover:text-white/80">
               {t("privacy")}
             </Link>
-            <Link href="/privacy" className="transition-colors hover:text-white/80">
+            <Link href="/cookies" className="transition-colors hover:text-white/80">
               {t("cookies")}
             </Link>
           </div>

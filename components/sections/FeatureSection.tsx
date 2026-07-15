@@ -66,7 +66,7 @@ export function FeatureSection({
             {eyebrow}
           </p>
 
-          <h2 className="max-w-md font-display text-[clamp(1.75rem,2.2vw+1rem,2.75rem)] leading-[1.22] text-primary">
+          <h2 className="max-w-md font-display text-[clamp(1.75rem,2.2vw+1rem,2.75rem)] leading-[1em] text-primary">
             {title}
           </h2>
 

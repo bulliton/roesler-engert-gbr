@@ -64,7 +64,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider messages={messages}>
           <LoadingScreen />
           <Header />
-          <main className="flex-1 pt-[var(--header-offset)] pb-20 md:pb-0">{children}</main>
+          <main className="flex-1 pt-[var(--header-offset)]">{children}</main>
           <Footer />
           <StickyAppointmentButton />
         </NextIntlClientProvider>

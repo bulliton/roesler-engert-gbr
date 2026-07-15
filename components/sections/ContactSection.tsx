@@ -55,7 +55,22 @@ export async function ContactSection() {
 
   return (
     <>
-      <section className="contact-editorial-grid bg-primary-light">
+      <section className="bg-white py-[var(--section-padding-y)]">
+        <Container>
+          <div className="mx-auto max-w-2xl">
+            <ContactEditorialLabel className="mb-3">{t("sections.form")}</ContactEditorialLabel>
+            <h2 className="font-display text-[clamp(1.5rem,2vw+0.75rem,2.25rem)] font-normal text-primary">
+              {t("form.title")}
+            </h2>
+            <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted">{t("form.subtitle")}</p>
+            <div className="mt-10">
+              <ContactForm variant="editorial" />
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="contact-editorial-grid border-t border-primary/8 bg-primary-light">
         <div className="contact-editorial-content flex flex-col justify-center px-[var(--section-padding-x)] py-12 md:py-16 lg:py-20">
           <div className="mx-auto w-full max-w-md space-y-10 sm:max-w-lg lg:mx-0 lg:max-w-none lg:pl-[clamp(1rem,6vw,4rem)]">
             <EditorialRow label={t("sections.visit")}>
@@ -133,21 +148,6 @@ export async function ContactSection() {
             aria-hidden
           />
         </div>
-      </section>
-
-      <section className="border-t border-primary/8 bg-white py-[var(--section-padding-y)]">
-        <Container>
-          <div className="mx-auto max-w-2xl">
-            <ContactEditorialLabel className="mb-3">{t("sections.form")}</ContactEditorialLabel>
-            <h2 className="font-display text-[clamp(1.5rem,2vw+0.75rem,2.25rem)] font-normal text-primary">
-              {t("form.title")}
-            </h2>
-            <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted">{t("form.subtitle")}</p>
-            <div className="mt-10">
-              <ContactForm variant="editorial" />
-            </div>
-          </div>
-        </Container>
       </section>
     </>
   );
