@@ -42,7 +42,7 @@
       "gemology": "Gemology",
       "ethical": "Ethical sourcing",
       "partnership": "Partnership",
-      "diamondsCaption": "Diamonds of the highest quality",
+      "diamondsCaption": "Diamonds for your assortment",
       "cuts": {
         "brilliant": "Brilliant",
         "princess": "Princess",
@@ -284,64 +284,64 @@
     "title": "About us",
     "hero": {
       "eyebrow": "Rösler & Engert GbR",
-      "title": "Craftsmanship Across Generations",
-      "subtitle": "We are your B2B partner for handcrafted jewelry and diamonds — with our own manufactory in Germany and licensed gemology in-house."
+      "title": "Craftsmanship across generations",
+      "subtitle": "B2B partner for handcrafted jewelry and diamonds. Own manufactory in Germany, gemology in-house."
     },
     "heritage": {
-      "title": "Craft with History",
-      "text": "Across generations, we have established ourselves as a manufactory for discerning jewelry. Every piece is created in our workshop in Germany — crafted by master goldsmiths who unite precision and aesthetics in every facet."
+      "title": "Craft with history",
+      "text": "Across generations, we have established ourselves as a manufactory for jewelry. Every piece is created in our workshop in Germany, crafted by master goldsmiths."
     },
     "leadership": {
       "eyebrow": "Leadership",
-      "title": "The People Behind Rösler & Engert",
-      "text": "Behind our manufactory are the partners themselves — with a passion for jewelry, diamonds, and honest partnerships. In our workshop in Germany, we combine traditional craftsmanship with a commitment to supporting jewelers reliably over the long term.",
+      "title": "The people behind Rösler & Engert",
+      "text": "Behind the manufactory are the partners themselves, with a passion for jewelry, diamonds, and honest partnerships. In Würzburg, we combine traditional craftsmanship with a commitment to supporting jewelers over the long term.",
       "imageAlt": "The partners of Rösler & Engert in the manufactory"
     },
     "gemology": {
-      "title": "Licensed Gemology",
-      "text": "Our in-house gemologist accompanies the entire process — from diamond selection and quality inspection to certification. This guarantees transparency and the highest standards for our partner jewelers."
+      "title": "Licensed gemology",
+      "text": "Our gemologist accompanies the entire process: diamond selection, quality inspection, certification. So our partner jewelers know what they are selling."
     },
     "quality": {
-      "title": "Quality Assurance",
-      "text": "Every piece undergoes careful inspection in our manufactory — from cut evaluation to final examination under the loupe. This ensures only jewelry and diamonds of the highest grade leave our workshop."
+      "title": "Quality assurance",
+      "text": "Every piece is inspected in our manufactory, from cut evaluation to final examination under the loupe. Only jewelry and diamonds that meet our standards leave the workshop."
     },
     "manufacturing": {
-      "title": "In-House Manufacturing in Germany",
-      "text": "In our manufactory, collections for earrings, rings, and necklaces are created — handcrafted, individually customizable, and ready for resale in your store."
+      "title": "In-house manufacturing in Germany",
+      "text": "In our manufactory, collections for earrings, rings, and necklaces are created, handcrafted and adaptable to your assortment."
     }
   },
   "jewelry": {
     "title": "Jewelry",
     "hero": {
-      "eyebrow": "Own Manufactory",
-      "title": "Handcrafted Jewelry for Jewelers",
-      "subtitle": "Collections from our manufactory in Würzburg — for jewelers who let quality speak in the showroom."
+      "eyebrow": "Own manufactory",
+      "title": "Handcrafted jewelry for jewelers",
+      "subtitle": "Collections from Würzburg, for jewelers who let quality speak in the showroom."
     },
     "categories": {
       "earrings": {
         "title": "Earrings",
-        "description": "From classic studs to opulent hoops — handcrafted earrings in gold and with diamonds, tailored for your collection."
+        "description": "From classic studs to hoops: handcrafted earrings in gold and with diamonds, for your collection."
       },
       "rings": {
         "title": "Rings",
-        "description": "Engagement rings, solitaires, and band rings — crafted with the highest precision and fine materials for your customers."
+        "description": "Engagement rings, solitaires, and band rings, crafted with precision and fine materials."
       },
       "necklaces": {
         "title": "Necklaces",
-        "description": "Pendants, collars, and chains — elegant designs that integrate seamlessly into your assortment."
+        "description": "Pendants, collars, and chains that fit into your assortment."
       }
     }
   },
   "diamonds": {
     "title": "Diamonds",
     "hero": {
-      "eyebrow": "Licensed Gemology",
-      "title": "Diamonds of the Highest Quality",
-      "subtitle": "Our in-house gemologist selects and certifies every stone — for transparency and trust in your partnership."
+      "eyebrow": "Licensed gemology",
+      "title": "Diamonds you can stand behind",
+      "subtitle": "Our gemologist selects and certifies every stone. Transparent and traceable."
     },
     "expertise": {
-      "title": "Gemological Expertise",
-      "text": "From rough stone selection to cut evaluation, our licensed gemologist accompanies the entire process. We offer a wide range of cuts and quality grades for your assortment."
+      "title": "Gemological expertise",
+      "text": "From rough stone selection to cut evaluation, our gemologist accompanies the process. A wide range of cuts and quality grades for your assortment."
     },
     "cuts": {
       "title": "Cut Shapes",
@@ -380,7 +380,7 @@
     "hero": {
       "eyebrow": "We look forward to hearing from you",
       "title": "Let's talk",
-      "subtitle": "Whether partnership, collection, or diamond selection — our team will advise you personally."
+      "subtitle": "Partnership, collection, or diamond selection: our team will advise you personally."
     },
     "info": {
       "phone": "Phone",
@@ -390,7 +390,7 @@
     },
     "form": {
       "title": "Write to us",
-      "subtitle": "Partnership, collection, or diamond selection — we will get back to you personally.",
+      "subtitle": "Partnership, collection, or diamond selection: we will get back to you personally.",
       "name": "Name",
       "company": "Company",
       "email": "Email",
@@ -411,18 +411,18 @@
   },
   "catalog": {
     "hero": {
-      "eyebrow": "B2B Catalog",
+      "eyebrow": "B2B catalog",
       "title": "Collections for your business",
-      "subtitle": "Download our digital catalog and discover handcrafted jewelry, diamonds, and services for jewelers."
+      "subtitle": "Download our digital catalog: handcrafted jewelry, diamonds, and services for jewelers."
     },
     "preview": {
       "title": "What you'll find in the catalog",
-      "text": "Our B2B catalog provides an overview of collections, materials, customization options, and services for partner jewelers."
+      "text": "An overview of collections, materials, customization options, and services for partner jewelers."
     },
     "valueProps": {
       "collections": {
         "title": "Current collections",
-        "text": "Earrings, rings, and necklaces — handcrafted in Germany."
+        "text": "Earrings, rings, and necklaces, handcrafted in Germany."
       },
       "services": {
         "title": "B2B services",
@@ -430,12 +430,12 @@
       },
       "partnership": {
         "title": "Personal advice",
-        "text": "Sales representatives and showroom visits for your partnership."
+        "text": "A dedicated contact and showroom visits for your partnership."
       }
     },
     "form": {
       "title": "Request catalog",
-      "subtitle": "Please complete the form — we will send you the download link by email.",
+      "subtitle": "Complete the form. We will send you the download link by email.",
       "company": "Company",
       "name": "Contact person",
       "email": "Business email",
@@ -464,30 +464,30 @@
   },
   "services": {
     "hero": {
-      "eyebrow": "B2B Service",
+      "eyebrow": "B2B service",
       "title": "Services for jewelers",
-      "subtitle": "From ordering to customization — we support your business with efficient B2B services."
+      "subtitle": "From ordering to customization: services that fit your business."
     },
     "items": {
       "invoice": {
         "title": "Invoice purchase",
-        "text": "Reliable B2B terms with invoice purchase for registered partner jewelers."
+        "text": "Invoice purchase for registered partner jewelers."
       },
       "ringAdjustments": {
         "title": "Ring adjustments",
-        "text": "Professional ring sizing in our manufactory — precise and on schedule."
+        "text": "Ring sizing in our manufactory, precise and on schedule."
       },
       "engraving": {
         "title": "Engraving",
-        "text": "Individual engravings for rings and jewelry — for personal customer requests."
+        "text": "Engravings for rings and jewelry, for personal customer requests."
       },
       "shipping": {
-        "title": "Fast nationwide shipping",
-        "text": "Reliable shipping across Germany — securely packed and delivered quickly."
+        "title": "Nationwide shipping",
+        "text": "Shipping across Germany, securely packed and reliable."
       },
       "customization": {
-        "title": "Efficient customization",
-        "text": "Collection and material adaptations — implemented efficiently for your assortment."
+        "title": "Customization",
+        "text": "Collection and material adaptations for your assortment."
       }
     },
     "cta": {
@@ -497,13 +497,13 @@
   },
   "partnership": {
     "hero": {
-      "eyebrow": "B2B Partnership",
-      "title": "Your partner for jewelry & diamonds",
-      "subtitle": "We support jewelers long term — with personal service, in-house manufacturing, and licensed gemology."
+      "eyebrow": "B2B partnership",
+      "title": "Your partner for jewelry and diamonds",
+      "subtitle": "We work with jewelers long term: personal service, in-house manufacturing, gemology in-house."
     },
     "story": {
       "title": "Partnership at eye level",
-      "text": "As a manufactory, we understand the needs of jewelers. Our sales representative model ensures direct contact, fast decisions, and reliable deliveries."
+      "text": "As a manufactory, we know what jewelers need. A dedicated contact, fast decisions, reliable deliveries."
     },
     "journey": {
       "eyebrow": "The journey",
@@ -523,18 +523,18 @@
       "support": {
         "eyebrow": "Step 3",
         "title": "Ongoing support",
-        "text": "From consultation to reorders — we are here for you."
+        "text": "From consultation to reorders: we are here for you."
       },
       "growth": {
         "eyebrow": "Step 4",
         "title": "Grow together",
-        "text": "With new collections, customization, and events, we strengthen your showroom."
+        "text": "New collections, customization, and events for your showroom."
       }
     },
     "cta": {
-      "title": "Start your partnership",
-      "text": "Schedule a personal conversation — we'll learn about your business and support you from the first collection onward.",
-      "contact": "Inquire about partnership",
+      "title": "Start a partnership",
+      "text": "Schedule a conversation. We will learn about your business and support you from the first collection onward.",
+      "contact": "Ask about partnership",
       "appointment": "Book appointment"
     }
   },
@@ -542,7 +542,7 @@
     "hero": {
       "eyebrow": "Showroom Würzburg",
       "title": "Visit us",
-      "subtitle": "Experience our manufactory and collections in person — at the showroom or through our field service."
+      "subtitle": "Experience the manufactory and collections in person, at the showroom or through our field service."
     },
     "options": {
       "showroom": {
@@ -589,11 +589,11 @@
       },
       "customization": {
         "question": "Is customization possible?",
-        "answer": "Yes — from ring adjustments and engraving to collection-specific adaptations, we support you efficiently."
+        "answer": "Yes. Ring adjustments, engraving, and collection-specific adaptations are part of our service."
       },
       "shipping": {
         "question": "How does shipping work?",
-        "answer": "We deliver quickly nationwide — securely packed and reliably to your store."
+        "answer": "We deliver nationwide, securely packed and reliably to your store."
       },
       "appointment": {
         "question": "How do I book an appointment?",
