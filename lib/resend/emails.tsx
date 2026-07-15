@@ -113,7 +113,7 @@ export function ContactLeadFollowUpEmail({
       <EmailButton
         href={`${CONTACT.appointmentUrl}?utm_source=email&utm_medium=nurture&utm_campaign=nur-03`}
         label={isEn ? "Book an appointment" : "Termin buchen"}
-        variant="secondary"
+        variant="outline"
       />
     </EmailLayout>
   );
@@ -132,7 +132,7 @@ export function ContactLeadSalesNotificationEmail(props: ContactLeadEmailProps) 
           <Section
             style={{
               padding: "24px 28px 16px",
-              borderBottom: `3px solid #b8956b`,
+              borderBottom: "1px solid #e2e8e8",
             }}
           >
             <Text
@@ -274,7 +274,7 @@ export function BookletLeadConfirmationEmail({
       <EmailButton
         href={`${CONTACT.appointmentUrl}?utm_source=email&utm_medium=transactional&utm_campaign=tx-03`}
         label={isEn ? "Book an appointment" : "Termin buchen"}
-        variant="secondary"
+        variant="outline"
       />
       <Text style={{ ...mutedText, margin: "28px 0 0", fontStyle: "italic" }}>
             {isEn
@@ -395,7 +395,7 @@ export function BookletLeadSalesNotificationEmail(
           <Section
             style={{
               padding: "24px 28px 16px",
-              borderBottom: `3px solid #b8956b`,
+              borderBottom: "1px solid #e2e8e8",
             }}
           >
             <Text

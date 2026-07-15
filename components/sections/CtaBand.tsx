@@ -20,7 +20,7 @@ export async function CtaBand() {
             </p>
           </div>
           <div className="flex shrink-0 flex-wrap gap-4">
-            <Button href={CONTACT.appointmentUrl} external variant="inverse">
+            <Button href={CONTACT.appointmentUrl} external variant="inverse-contrast">
               {t("appointment")}
             </Button>
             <Button href="/catalog" variant="outline-contrast">

@@ -4,6 +4,7 @@ import { Link } from "@/lib/navigation";
 type ButtonVariant =
   | "primary"
   | "inverse"
+  | "inverse-contrast"
   | "accent"
   | "outline"
   | "outline-contrast";
@@ -18,9 +19,11 @@ type ButtonProps = ComponentProps<"button"> & {
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-primary text-white border-primary hover:bg-primary-dark hover:border-primary-dark",
+    "bg-primary text-white border-primary hover:bg-primary-dark hover:border-primary-dark hover:text-white",
   inverse:
     "bg-white text-primary border-white hover:bg-primary hover:text-white hover:border-primary",
+  "inverse-contrast":
+    "bg-white text-primary border-white hover:bg-transparent hover:text-white hover:border-white",
   accent:
     "bg-accent-gold text-primary border-accent-gold hover:bg-accent-gold-light hover:border-accent-gold-light",
   outline:

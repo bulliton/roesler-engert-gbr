@@ -25,7 +25,7 @@ export default async function NewsletterConfirmedPage({ params }: Props) {
         </p>
         <Link
           href="/"
-          className="inline-flex items-center justify-center rounded-full bg-secondary px-8 py-3 text-xs font-semibold tracking-[0.12em] text-white uppercase transition-colors hover:bg-secondary/90"
+          className="inline-flex min-h-10 items-center justify-center rounded-sm border border-primary bg-primary px-7 py-2 text-xs font-normal tracking-[0.14em] text-white uppercase transition-colors hover:bg-primary-dark"
         >
           {t("backHome")}
         </Link>

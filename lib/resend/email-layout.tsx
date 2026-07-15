@@ -35,19 +35,8 @@ const container = {
 };
 
 const logoSection = {
-  padding: "36px 48px 28px",
+  padding: "36px 48px 32px",
   textAlign: "center" as const,
-};
-
-const goldLine = {
-  padding: "0 48px",
-};
-
-const goldLineInner = {
-  height: "3px",
-  backgroundColor: goldColor,
-  fontSize: "0",
-  lineHeight: "0",
 };
 
 const eyebrow = {
@@ -141,9 +130,6 @@ export function EmailLayout({
               style={{ margin: "0 auto" }}
             />
           </Section>
-          <Section style={goldLine}>
-            <div style={goldLineInner}>&nbsp;</div>
-          </Section>
           {eyebrowLabel ? (
             <Section style={{ padding: "32px 48px 0" }}>
               <Text style={eyebrow}>{eyebrowLabel}</Text>
@@ -208,6 +194,34 @@ export function EmailLayout({
   );
 }
 
+export const emailButtonBase = {
+  display: "inline-block" as const,
+  minHeight: "40px",
+  padding: "8px 28px",
+  borderRadius: "2px",
+  fontSize: "12px",
+  fontWeight: "400",
+  letterSpacing: "0.14em",
+  textTransform: "uppercase" as const,
+  textDecoration: "none",
+  textAlign: "center" as const,
+  lineHeight: "24px",
+  boxSizing: "border-box" as const,
+};
+
+export const emailButtonVariants = {
+  primary: {
+    backgroundColor: brandColor,
+    color: "#ffffff",
+    border: `1px solid ${brandColor}`,
+  },
+  outline: {
+    backgroundColor: "transparent",
+    color: brandColor,
+    border: "1px solid rgba(0, 70, 70, 0.3)",
+  },
+} as const;
+
 export function EmailButton({
   href,
   label,
@@ -215,35 +229,15 @@ export function EmailButton({
 }: {
   href: string;
   label: string;
-  variant?: "primary" | "secondary";
+  variant?: keyof typeof emailButtonVariants;
 }) {
-  const style =
-    variant === "primary"
-      ? {
-          backgroundColor: accentColor,
-          color: "#ffffff",
-        }
-      : {
-          backgroundColor: "transparent",
-          color: brandColor,
-          border: `1px solid ${brandColor}`,
-        };
-
   return (
     <Section style={{ margin: "0 0 12px" }}>
       <Link
         href={href}
         style={{
-          display: "inline-block",
-          padding: variant === "primary" ? "14px 32px" : "13px 32px",
-          borderRadius: "999px",
-          fontSize: "13px",
-          fontWeight: "600",
-          letterSpacing: "0.06em",
-          textTransform: "uppercase" as const,
-          textDecoration: "none",
-          textAlign: "center" as const,
-          ...style,
+          ...emailButtonBase,
+          ...emailButtonVariants[variant],
         }}
       >
         {label}
@@ -288,4 +282,4 @@ export const internalContainer = {
   backgroundColor: "#ffffff",
 };
 
-export { text, mutedText, brandColor, accentColor };
+export { text, mutedText };

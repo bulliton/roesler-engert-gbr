@@ -101,14 +101,25 @@ export async function listLeads(): Promise<LeadRecord[]> {
 
 export async function markFollowUpSent(
   leadId: string,
-  key: keyof FollowUpState,
+  key: "catalogDay3" | "catalogDay7" | "contact48h",
+  value: string,
+): Promise<LeadRecord | null>;
+export async function markFollowUpSent(
+  leadId: string,
+  key: "partnershipStep",
+  value: number,
+): Promise<LeadRecord | null>;
+export async function markFollowUpSent(
+  leadId: string,
+  key: "catalogDay3" | "catalogDay7" | "contact48h" | "partnershipStep",
   value: string | number,
-) {
+): Promise<LeadRecord | null> {
   const store = await readStore();
   const index = store.leads.findIndex((l) => l.id === leadId);
   if (index === -1) return null;
 
   const lead = store.leads[index];
+
   if (key === "partnershipStep") {
     lead.followUps.partnershipStep = value as number;
     lead.followUps.partnershipStepsSent = [
