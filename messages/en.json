@@ -117,7 +117,7 @@
     },
     "newsletter": {
       "title": "Partner updates",
-      "description": "New collections, delivery notes, and trade fair dates — for registered partners only.",
+      "description": "New collections, delivery notes, and trade fair dates. For registered partners only.",
       "emailLabel": "Email address",
       "submit": "Sign up",
       "submitting": "Signing up…",
@@ -134,7 +134,7 @@
   },
   "ctaBand": {
     "title": "Let's get acquainted",
-    "text": "In a personal conversation, we discuss your assortment, your region, and how we can support your business.",
+    "text": "In a conversation, we figure out which assortment fits your business and how we can support you.",
     "appointment": "Book appointment",
     "catalog": "Request catalog"
   },
@@ -148,13 +148,13 @@
   "home": {
     "hero": {
       "title": "Your name out front. Our expertise behind you.",
-      "subtitle": "When your customers question a stone, you are not on your own. We craft jewelry in Würzburg and support you with licensed gemology — personal, reliable, and on equal terms.",
+      "subtitle": "When customers question a stone, you are not on your own. We craft in Würzburg and support you with licensed gemology, personally and as equals.",
       "ctaPrimary": "Book appointment",
       "ctaSecondary": "Request catalog"
     },
     "proof": {
       "quote": {
-        "text": "When a customer questions a diamond, I need a partner who gives me the answer right away. That is what Rösler & Engert is for.",
+        "text": "When a customer questions a diamond, I need someone who gives me the answer right away. That is what Rösler & Engert is for.",
         "attribution": "Partner jeweler, Franconia"
       }
     },
@@ -167,15 +167,15 @@
     "atelier": {
       "eyebrow": "Our atelier",
       "title": "From rough stone to your showroom",
-      "subtitle": "Everything under one roof in Würzburg — so you can give your customers a clear answer.",
+      "subtitle": "Everything under one roof in Würzburg. So you can give your customers a clear answer.",
       "steps": {
         "inspect": {
           "title": "Stone inspection",
-          "text": "Our gemologist examines every diamond — cut, clarity, color. You know what you are selling."
+          "text": "Our gemologist examines every diamond: cut, clarity, color. You know exactly what you are selling."
         },
         "craft": {
           "title": "Manufacturing",
-          "text": "Master goldsmiths craft your collections in our manufactory — precise, on schedule, customizable."
+          "text": "Master goldsmiths craft your collections in our manufactory, precise and on schedule."
         },
         "finish": {
           "title": "Final inspection",
@@ -183,22 +183,22 @@
         },
         "deliver": {
           "title": "Handover",
-          "text": "In person at the showroom, via field service, or shipped reliably — whatever suits your business."
+          "text": "At the showroom, via field service, or by post. Whatever suits your business."
         }
       },
       "cta": "Visit the manufactory"
     },
     "partnerValue": {
       "title": "What you can expect as a partner",
-      "subtitle": "Three pillars — personal, in Würzburg, at eye level.",
+      "subtitle": "Personal, in Würzburg, at eye level.",
       "items": {
         "gemology": {
           "title": "Stone confidence",
-          "text": "Licensed in-house gemologist — for transparent selection and credible sales conversations."
+          "text": "Licensed gemologist in-house. For transparent selection and credible sales conversations."
         },
         "manufacturing": {
           "title": "In-house production",
-          "text": "Earrings, rings, and necklaces from our German manufactory — customizable for your assortment."
+          "text": "Earrings, rings, and necklaces from our German manufactory, tailored to your assortment."
         },
         "advisor": {
           "title": "Personal contact",
@@ -206,29 +206,29 @@
         },
         "service": {
           "title": "Service that thinks ahead",
-          "text": "Invoice purchase, ring adjustments, engravings, and nationwide shipping — efficient and reliable."
+          "text": "Invoice purchase, ring adjustments, engravings, and nationwide shipping."
         }
       },
-      "cta": "Inquire about partnership"
+      "cta": "Ask about partnership"
     },
     "aboutPreview": {
       "eyebrow": "About us",
-      "title": "Craftsmanship Across Generations",
-      "text": "For generations, we have crafted exclusive jewelry in Germany for discerning jewelers. Our licensed gemologists and master goldsmiths unite precision, aesthetics, and trust — from rough diamond to finished piece.",
+      "title": "Craftsmanship across generations",
+      "text": "For generations, we have crafted jewelry in Germany for jewelers. Our gemologists and master goldsmiths work in Würzburg, from rough diamond to finished piece.",
       "link": "Our story"
     },
     "categories": {
-      "title": "Our Expertise",
-      "subtitle": "From diamond selection to finished collections — all under one roof.",
+      "title": "Our expertise",
+      "subtitle": "Diamond selection, manufacturing, collections. All under one roof.",
       "diamonds": "Diamonds",
       "earrings": "Earrings",
       "rings": "Rings",
       "necklaces": "Necklaces"
     },
     "expertise": {
-      "title": "Licensed Gemology & German Manufacturing",
-      "text": "Our in-house gemologist guides diamond selection. In Würzburg we craft collections that fit your assortment — with clear quality standards you can stand behind.",
-      "cta": "Inquire about partnership"
+      "title": "Gemology and manufacturing in Würzburg",
+      "text": "Our gemologist guides diamond selection. In the manufactory, we craft collections that fit your assortment, with quality standards you can stand behind.",
+      "cta": "Ask about partnership"
     },
     "diamondCuts": {
       "title": "Discover diamonds",
@@ -245,17 +245,17 @@
       "craftsmanship": {
         "title": "Visit our manufactory",
         "cta": "Plan your visit",
-        "text": "Experience our manufactory in Würzburg — see jewelry being made, handle collections, get answers directly."
+        "text": "See jewelry being made, handle collections, get answers directly. In Würzburg."
       },
       "diamonds": {
         "title": "Select diamonds",
         "cta": "Discover diamonds",
-        "text": "Our licensed gemologist guides your selection — for transparency and the highest quality in your partnership."
+        "text": "Our gemologist guides your selection. Transparent and traceable."
       },
       "showroom": {
         "title": "Visit our showroom",
         "cta": "Book appointment",
-        "text": "Book an appointment at our showroom in Würzburg and discover collections that delight your customers."
+        "text": "Book an appointment in Würzburg and see collections that fit your assortment."
       }
     },
     "partners": {
@@ -267,7 +267,7 @@
         },
         "signal2": {
           "title": "Made in Germany",
-          "text": "In-house production in Würzburg — handcrafted and quality assured."
+          "text": "In-house production in Würzburg, handcrafted and inspected."
         },
         "signal3": {
           "title": "Licensed gemology",
@@ -275,7 +275,7 @@
         },
         "signal4": {
           "title": "128 years of experience",
-          "text": "Generations of craftsmanship for discerning collections."
+          "text": "Craftsmanship across generations, for collections with standards."
         }
       }
     }
