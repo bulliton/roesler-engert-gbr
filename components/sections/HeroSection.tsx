@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { VideoBackground } from "@/components/ui/VideoBackground";
 import { Button } from "@/components/ui/Button";
-import { CONTACT } from "@/lib/constants";
 import { SITE_IMAGES } from "@/lib/site-images";
 
 export function HeroSection() {
@@ -31,11 +30,7 @@ export function HeroSection() {
             {t("subtitle")}
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-5 md:mt-10">
-            <Button
-              href={CONTACT.appointmentUrl}
-              external
-              variant="inverse"
-            >
+            <Button href="/contact" variant="inverse">
               {t("ctaPrimary")}
             </Button>
             <Button href="/catalog" variant="outline-contrast">

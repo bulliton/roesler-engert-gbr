@@ -8,7 +8,6 @@ import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
 import { Link } from "@/lib/navigation";
-import { CONTACT } from "@/lib/constants";
 import { submitLead } from "@/lib/forms/submit-lead";
 
 const inputClass =
@@ -94,8 +93,8 @@ export function CatalogPageContent() {
                     </Button>
                   ) : null}
                   <div>
-                    <Button href={CONTACT.appointmentUrl} external variant="outline">
-                      {t("form.bookAppointment")}
+                    <Button href="/contact" variant="outline">
+                      {t("form.contactUs")}
                     </Button>
                   </div>
                   <p className="text-sm text-muted">{t("form.emailNote")}</p>

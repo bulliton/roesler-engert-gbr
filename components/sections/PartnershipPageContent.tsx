@@ -8,7 +8,6 @@ import { SectionIntro } from "@/components/ui/SectionIntro";
 import { Section } from "@/components/ui/Section";
 import { FeatureSection } from "@/components/sections/FeatureSection";
 import { PageHero } from "@/components/sections/PageHero";
-import { CONTACT } from "@/lib/constants";
 import { SITE_IMAGES } from "@/lib/site-images";
 
 const steps = ["intro", "advisor", "support", "growth"] as const;
@@ -86,11 +85,10 @@ export function PartnershipPageContent() {
                 {t("cta.contact")}
               </Button>
               <Button
-                href={CONTACT.appointmentUrl}
-                external
+                href="/contact"
                 variant="outline-contrast"
               >
-                {t("cta.appointment")}
+                {t("cta.contact")}
               </Button>
             </div>
           </div>

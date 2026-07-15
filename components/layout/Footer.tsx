@@ -12,7 +12,6 @@ import { NewsletterForm } from "./NewsletterForm";
 
 export async function Footer() {
   const t = await getTranslations("footer");
-  const nav = await getTranslations("nav");
   const year = new Date().getFullYear();
 
   return (
@@ -57,20 +56,6 @@ export async function Footer() {
                     </a>
                   </p>
                 </div>
-              </div>
-
-              <div>
-                <FooterLabel>{t("inquiries.appointment")}</FooterLabel>
-                <p className="mt-2 font-body text-sm text-white/80">
-                  <a
-                    href={CONTACT.appointmentUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-colors hover:text-secondary"
-                  >
-                    {nav("bookAppointment")}
-                  </a>
-                </p>
               </div>
 
               <div>

@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
-import { CONTACT } from "@/lib/constants";
 
 const serviceKeys = [
   "invoice",
@@ -50,8 +49,8 @@ export function ServicesPageContent() {
           </ul>
 
           <div className="section-actions flex flex-wrap gap-4">
-            <Button href={CONTACT.appointmentUrl} external variant="primary">
-              {t("cta.appointment")}
+            <Button href="/contact" variant="primary">
+              {t("cta.contact")}
             </Button>
             <Button href="/catalog" variant="outline">
               {t("cta.catalog")}

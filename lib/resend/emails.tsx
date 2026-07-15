@@ -8,9 +8,9 @@ import {
   Section,
   Text,
 } from "@react-email/components";
-import type { AppLocale } from "@/lib/resend/config";
-import { getSiteUrl } from "@/lib/resend/config";
 import { CONTACT } from "@/lib/constants";
+import type { AppLocale } from "@/lib/resend/config";
+import { getContactPageUrl, getSiteUrl, getVisitPageUrl } from "@/lib/resend/config";
 import {
   EmailButton,
   EmailLayout,
@@ -67,12 +67,12 @@ export function ContactLeadConfirmationEmail({
       </Text>
       <Text style={mutedText}>
         {isEn
-          ? "Prefer not to wait? Book a visit at our showroom in Würzburg."
-          : "Möchten Sie nicht warten? Buchen Sie direkt einen Termin in unserem Showroom in Würzburg."}
+          ? "Prefer not to wait? Contact us or call our team in Würzburg."
+          : "Möchten Sie nicht warten? Schreiben Sie uns oder rufen Sie unser Team in Würzburg an."}
       </Text>
       <EmailButton
-        href={`${CONTACT.appointmentUrl}?utm_source=email&utm_medium=transactional&utm_campaign=tx-01`}
-        label={isEn ? "Book an appointment" : "Termin buchen"}
+        href={`${getContactPageUrl(locale)}?utm_source=email&utm_medium=transactional&utm_campaign=tx-01`}
+        label={isEn ? "Contact us" : "Kontakt aufnehmen"}
       />
       <Text style={{ ...mutedText, margin: "24px 0 0", fontSize: "14px" }}>
         {isEn ? "Or call us: " : "Oder rufen Sie uns an: "}
@@ -112,13 +112,13 @@ export function ContactLeadFollowUpEmail({
       </Text>
       <Text style={mutedText}>
         {isEn
-          ? "Mon–Fri, 9:00–17:00. Call us or book a visit at our showroom."
-          : "Mo–Fr, 9:00–17:00 Uhr. Rufen Sie uns an oder buchen Sie einen Termin in unserem Showroom."}
+          ? "Mon–Fri, 9:00–17:00. Call us or get in touch via our contact form."
+          : "Mo–Fr, 9:00–17:00 Uhr. Rufen Sie uns an oder schreiben Sie uns über das Kontaktformular."}
       </Text>
       <EmailButton href={CONTACT.phoneHref} label={isEn ? "Call now" : "Jetzt anrufen"} />
       <EmailButton
-        href={`${CONTACT.appointmentUrl}?utm_source=email&utm_medium=nurture&utm_campaign=nur-03`}
-        label={isEn ? "Book an appointment" : "Termin buchen"}
+        href={`${getContactPageUrl(locale)}?utm_source=email&utm_medium=nurture&utm_campaign=nur-03`}
+        label={isEn ? "Contact us" : "Kontakt aufnehmen"}
         variant="outline"
       />
     </EmailLayout>
@@ -282,8 +282,8 @@ export function BookletLeadConfirmationEmail({
         label={isEn ? "Download catalog (PDF)" : "Katalog herunterladen (PDF)"}
       />
       <EmailButton
-        href={`${CONTACT.appointmentUrl}?utm_source=email&utm_medium=transactional&utm_campaign=tx-03`}
-        label={isEn ? "Book an appointment" : "Termin buchen"}
+        href={`${getContactPageUrl(locale)}?utm_source=email&utm_medium=transactional&utm_campaign=tx-03`}
+        label={isEn ? "Contact us" : "Kontakt aufnehmen"}
         variant="outline"
       />
       <Text style={{ ...mutedText, margin: "28px 0 0", fontStyle: "italic" }}>
@@ -334,8 +334,8 @@ export function CatalogFollowUp1Email({
           : "Unser Team berät Sie gerne telefonisch oder bei einem Termin in unserem Showroom in Würzburg."}
       </Text>
       <EmailButton
-        href={`${CONTACT.appointmentUrl}?utm_source=email&utm_medium=nurture&utm_campaign=nur-01`}
-        label={isEn ? "Book an appointment" : "Termin buchen"}
+        href={`${getContactPageUrl(locale)}?utm_source=email&utm_medium=nurture&utm_campaign=nur-01`}
+        label={isEn ? "Contact us" : "Kontakt aufnehmen"}
       />
     </EmailLayout>
   );
@@ -371,7 +371,7 @@ export function CatalogFollowUp2Email({ locale }: { locale: AppLocale }) {
           : "Wir verstehen uns als Backoffice für unabhängige Juweliere: eigene Manufaktur, lizenzierter Gemmologe und Außendienst, wenn Sie ihn brauchen."}
       </EmailQuote>
       <EmailButton
-        href={`${CONTACT.appointmentUrl}?utm_source=email&utm_medium=nurture&utm_campaign=nur-02`}
+        href={`${getVisitPageUrl(locale)}?utm_source=email&utm_medium=nurture&utm_campaign=nur-02`}
         label={isEn ? "Visit our showroom" : "Showroom besuchen"}
       />
     </EmailLayout>
@@ -605,7 +605,7 @@ export function PartnershipNurtureEmail({
         {
           title: "Your next step: a visit to Würzburg",
           body: `Dear ${name}, we would be glad to welcome you to our showroom and talk about how Rösler & Engert can support your business.`,
-          cta: "Book an appointment",
+          cta: "Contact us",
         },
       ]
     : [
@@ -632,17 +632,17 @@ export function PartnershipNurtureEmail({
         {
           title: "Ihr nächster Schritt: ein Besuch in Würzburg",
           body: `Guten Tag ${name}, wir freuen uns, Sie in unserem Showroom begrüßen zu dürfen und zu besprechen, wie Rösler & Engert Ihr Geschäft unterstützen kann.`,
-          cta: "Termin buchen",
+          cta: "Kontakt aufnehmen",
         },
       ];
 
   const content = steps[step] ?? steps[0];
   const links = [
-    `${CONTACT.appointmentUrl}?utm_source=email&utm_medium=nurture&utm_campaign=nur-p1`,
+    `${getVisitPageUrl(locale)}?utm_source=email&utm_medium=nurture&utm_campaign=nur-p1`,
     `${getSiteUrl()}/${locale}/partnership?utm_source=email&utm_medium=nurture&utm_campaign=nur-p2`,
     `${getSiteUrl()}/${locale}/diamonds?utm_source=email&utm_medium=nurture&utm_campaign=nur-p3`,
     `${getSiteUrl()}/${locale}/jewelry?utm_source=email&utm_medium=nurture&utm_campaign=nur-p4`,
-    `${CONTACT.appointmentUrl}?utm_source=email&utm_medium=nurture&utm_campaign=nur-p5`,
+    `${getContactPageUrl(locale)}?utm_source=email&utm_medium=nurture&utm_campaign=nur-p5`,
   ];
 
   return (

@@ -8,7 +8,6 @@ import { CONTACT } from "@/lib/constants";
 import { leftNavItems, rightNavItems } from "@/lib/nav-config";
 import { LocaleSwitcher } from "@/components/ui/LocaleSwitcher";
 import {
-  BookmarkIcon,
   ChevronDownIcon,
   PhoneIcon,
   StoreIcon,
@@ -108,15 +107,6 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-3 md:gap-4">
-            <a
-              href={CONTACT.appointmentUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={utilityLinkClass}
-            >
-              <BookmarkIcon className="h-3.5 w-3.5 shrink-0" />
-              <span className="hidden sm:inline">{t("bookAppointment")}</span>
-            </a>
             <LocaleSwitcher inverted={scrolled || useLightNav} compact />
           </div>
         </div>

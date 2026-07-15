@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
-import { CONTACT } from "@/lib/constants";
 
 const faqKeys = [
   "partnership",
@@ -54,8 +53,8 @@ export function FaqPageContent() {
               <Button href="/contact" variant="primary">
                 {t("cta.contact")}
               </Button>
-              <Button href={CONTACT.appointmentUrl} external variant="outline">
-                {t("cta.appointment")}
+              <Button href="/catalog" variant="outline">
+                {t("cta.catalog")}
               </Button>
             </div>
           </div>

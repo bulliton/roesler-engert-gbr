@@ -149,7 +149,7 @@
   "ctaBand": {
     "title": "Let's get acquainted",
     "text": "In a conversation, we figure out which assortment fits your business and how we can support you.",
-    "appointment": "Book appointment",
+    "contact": "Get in touch",
     "catalog": "Request catalog"
   },
   "buttons": {
@@ -163,7 +163,7 @@
     "hero": {
       "title": "Your name out front. Our expertise behind you.",
       "subtitle": "When customers question a stone, you are not on your own. We craft in Würzburg and support you with licensed gemology, personally and as equals.",
-      "ctaPrimary": "Book appointment",
+      "ctaPrimary": "Get in touch",
       "ctaSecondary": "Request catalog"
     },
     "proof": {
@@ -268,7 +268,7 @@
       },
       "showroom": {
         "title": "Visit our showroom",
-        "cta": "Book appointment",
+        "cta": "Plan your visit",
         "text": "Book an appointment in Würzburg and see collections that fit your assortment."
       }
     },
@@ -481,7 +481,7 @@
       "successTitle": "Thank you!",
       "successText": "Your catalog is ready. You will also receive an email with the download link.",
       "download": "Download PDF",
-      "bookAppointment": "Book appointment",
+      "contactUs": "Get in touch",
       "emailNote": "Please check your spam folder if the email does not arrive."
     }
   },
@@ -514,7 +514,7 @@
       }
     },
     "cta": {
-      "appointment": "Book appointment",
+      "contact": "Get in touch",
       "catalog": "Download catalog"
     }
   },
@@ -587,7 +587,6 @@
       "label": "Address"
     },
     "cta": {
-      "appointment": "Book appointment",
       "contact": "Get in touch"
     }
   },
@@ -627,7 +626,7 @@
       "title": "Still have questions?",
       "text": "Our team is happy to advise you personally.",
       "contact": "Get in touch",
-      "appointment": "Book appointment"
+      "catalog": "Request catalog"
     }
   },
   "legal": {

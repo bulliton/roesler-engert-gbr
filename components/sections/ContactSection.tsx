@@ -122,14 +122,7 @@ export async function ContactSection() {
             </EditorialRow>
 
             <EditorialRow label={t("sections.hours")}>
-              <div className="space-y-3">
-                <p>{t("hours.text")}</p>
-                <p>
-                  <EditorialLink href={CONTACT.appointmentUrl} external>
-                    {t("hours.appointment")}
-                  </EditorialLink>
-                </p>
-              </div>
+              <p>{t("hours.text")}</p>
             </EditorialRow>
           </div>
         </div>

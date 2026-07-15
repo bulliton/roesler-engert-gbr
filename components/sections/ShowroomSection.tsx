@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/lib/navigation";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { CONTACT } from "@/lib/constants";
 import { SITE_IMAGES } from "@/lib/site-images";
 
 const cards = [
@@ -26,8 +25,7 @@ const cards = [
     key: "showroom" as const,
     image: SITE_IMAGES.workshopInterior,
     imageClassName: "object-cover object-[68%_45%] scale-[1.22]",
-    href: CONTACT.appointmentUrl,
-    external: true,
+    href: "/visit" as const,
   },
 ] as const;
 
@@ -61,23 +59,12 @@ export function ShowroomSection() {
               <p className="text-sm leading-relaxed text-muted">
                 {t(`${card.key}.text`)}
               </p>
-              {"external" in card && card.external ? (
-                <a
-                  href={card.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-block text-sm font-semibold tracking-wide text-secondary uppercase transition-colors hover:text-primary"
-                >
-                  {t(`${card.key}.cta`)}
-                </a>
-              ) : (
-                <Link
-                  href={card.href as "/visit"}
-                  className="mt-4 inline-block text-sm font-semibold tracking-wide text-secondary uppercase transition-colors hover:text-primary"
-                >
-                  {t(`${card.key}.cta`)}
-                </Link>
-              )}
+              <Link
+                href={card.href}
+                className="mt-4 inline-block text-sm font-semibold tracking-wide text-secondary uppercase transition-colors hover:text-primary"
+              >
+                {t(`${card.key}.cta`)}
+              </Link>
             </motion.article>
           ))}
         </div>

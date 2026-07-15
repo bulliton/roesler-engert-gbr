@@ -77,8 +77,8 @@ export function VisitPageContent() {
               {CONTACT.address.city}, {CONTACT.address.country}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button href={CONTACT.appointmentUrl} external variant="primary">
-                {t("cta.appointment")}
+              <Button href="/contact" variant="primary">
+                {t("cta.contact")}
               </Button>
               <Button href="/contact" variant="outline">
                 {t("cta.contact")}

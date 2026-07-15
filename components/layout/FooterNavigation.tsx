@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/lib/navigation";
-import { CONTACT } from "@/lib/constants";
 import { FooterLabel } from "@/components/ui/FooterLabel";
 
 const linkClass =
@@ -37,11 +36,6 @@ export async function FooterNavigation() {
         { href: "/about" as const, label: nav("about") },
         { href: "/partnership" as const, label: nav("partnership") },
         { href: "/contact" as const, label: nav("contact") },
-        {
-          href: CONTACT.appointmentUrl,
-          label: nav("bookAppointment"),
-          external: true,
-        },
       ],
     },
     {

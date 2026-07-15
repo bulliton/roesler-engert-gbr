@@ -266,15 +266,13 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
                 </div>
 
                 <div className="flex flex-col gap-[var(--spacing-compact)]">
-                  <a
-                    href={CONTACT.appointmentUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/contact"
                     onClick={onClose}
                     className="inline-flex min-h-11 w-full items-center justify-center rounded-full border border-accent-gold bg-accent-gold px-6 py-2.5 text-xs font-normal tracking-[0.14em] text-primary uppercase transition-colors duration-300 hover:border-accent-gold-light hover:bg-accent-gold-light"
                   >
-                    {t("bookAppointment")}
-                  </a>
+                    {t("contact")}
+                  </Link>
 
                   <p className="text-center font-body text-xs leading-snug tracking-[0.1em] text-white/60">
                     {t("mobileTrustText")}

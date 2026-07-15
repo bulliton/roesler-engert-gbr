@@ -2,7 +2,6 @@ import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
-import { CONTACT } from "@/lib/constants";
 
 export async function CtaBand() {
   const t = await getTranslations("ctaBand");
@@ -20,8 +19,8 @@ export async function CtaBand() {
             </p>
           </div>
           <div className="flex shrink-0 flex-wrap gap-4">
-            <Button href={CONTACT.appointmentUrl} external variant="inverse-contrast">
-              {t("appointment")}
+            <Button href="/contact" variant="inverse-contrast">
+              {t("contact")}
             </Button>
             <Button href="/catalog" variant="outline-contrast">
               {t("catalog")}

@@ -149,7 +149,7 @@
   "ctaBand": {
     "title": "Lernen wir uns kennen",
     "text": "In einem Gespräch klären wir, welches Sortiment zu Ihrem Geschäft passt und wie wir Sie unterstützen können.",
-    "appointment": "Termin buchen",
+    "contact": "Kontakt aufnehmen",
     "catalog": "Katalog anfordern"
   },
   "buttons": {
@@ -163,7 +163,7 @@
     "hero": {
       "title": "Ihr Name vorne. Unsere Expertise dahinter.",
       "subtitle": "Wenn Kunden Fragen zum Stein stellen, sind Sie nicht allein. Wir fertigen in Würzburg und unterstützen Sie mit lizenzierter Gemmologie, persönlich und auf Augenhöhe.",
-      "ctaPrimary": "Termin buchen",
+      "ctaPrimary": "Kontakt aufnehmen",
       "ctaSecondary": "Katalog anfordern"
     },
     "proof": {
@@ -268,7 +268,7 @@
       },
       "showroom": {
         "title": "Showroom besuchen",
-        "cta": "Termin buchen",
+        "cta": "Besuch planen",
         "text": "Vereinbaren Sie einen Termin in Würzburg und sehen Sie Kollektionen, die zu Ihrem Sortiment passen."
       }
     },
@@ -481,7 +481,7 @@
       "successTitle": "Vielen Dank!",
       "successText": "Ihr Katalog steht bereit. Sie erhalten zusätzlich eine E-Mail mit dem Download-Link.",
       "download": "PDF herunterladen",
-      "bookAppointment": "Termin buchen",
+      "contactUs": "Kontakt aufnehmen",
       "emailNote": "Prüfen Sie auch Ihren Spam-Ordner, falls die E-Mail nicht ankommt."
     }
   },
@@ -514,7 +514,7 @@
       }
     },
     "cta": {
-      "appointment": "Termin buchen",
+      "contact": "Kontakt aufnehmen",
       "catalog": "Katalog herunterladen"
     }
   },
@@ -557,8 +557,7 @@
     "cta": {
       "title": "Partnerschaft starten",
       "text": "Vereinbaren Sie ein Gespräch. Wir lernen Ihr Geschäft kennen und begleiten Sie von der ersten Kollektion an.",
-      "contact": "Partnerschaft anfragen",
-      "appointment": "Termin buchen"
+      "contact": "Partnerschaft anfragen"
     }
   },
   "visit": {
@@ -587,7 +586,6 @@
       "label": "Adresse"
     },
     "cta": {
-      "appointment": "Termin buchen",
       "contact": "Kontakt aufnehmen"
     }
   },
@@ -627,7 +625,7 @@
       "title": "Noch Fragen?",
       "text": "Unser Team berät Sie gerne persönlich.",
       "contact": "Kontakt aufnehmen",
-      "appointment": "Termin buchen"
+      "catalog": "Katalog herunterladen"
     }
   },
   "legal": {

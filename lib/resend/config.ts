@@ -48,6 +48,16 @@ export function getSiteUrl() {
   return "http://localhost:3000";
 }
 
+export function getContactPageUrl(locale: AppLocale = "de") {
+  const path = locale === "en" ? "/en/contact" : "/de/kontakt";
+  return `${getSiteUrl()}${path}`;
+}
+
+export function getVisitPageUrl(locale: AppLocale = "de") {
+  const path = locale === "en" ? "/en/visit" : "/de/besuch";
+  return `${getSiteUrl()}${path}`;
+}
+
 export function getCatalogDownloadUrl() {
   return `${getSiteUrl()}/downloads/katalog-2026.pdf`;
 }

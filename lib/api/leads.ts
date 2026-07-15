@@ -61,8 +61,8 @@ export function emailNotConfiguredError(locale: AppLocale) {
       error: "EMAIL_NOT_CONFIGURED",
       message:
         locale === "en"
-          ? "The contact form is temporarily unavailable. Please call us or book an appointment."
-          : "Das Kontaktformular ist vorübergehend nicht verfügbar. Bitte rufen Sie uns an oder buchen Sie einen Termin.",
+          ? "The contact form is temporarily unavailable. Please call us or send us an email."
+          : "Das Kontaktformular ist vorübergehend nicht verfügbar. Bitte rufen Sie uns an oder schreiben Sie uns eine E-Mail.",
     },
     503,
   );
