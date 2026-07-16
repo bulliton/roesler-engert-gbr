@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
 
 export async function CtaBand() {
@@ -11,9 +12,9 @@ export async function CtaBand() {
       <Container>
         <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
           <div className="max-w-xl">
-            <p className="font-display text-[clamp(1.5rem,2vw+0.5rem,2.25rem)] leading-snug text-white">
+            <Headline as="h2" contrast>
               {t("title")}
-            </p>
+            </Headline>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-white/70">
               {t("text")}
             </p>

@@ -56,7 +56,7 @@ export function JewelryMegaMenu({ open, onClose }: JewelryMegaMenuProps) {
               </MegaMenuLink>
             </li>
             <li>
-              <MegaMenuLink href="/contact" onClick={onClose}>
+              <MegaMenuLink href="/partnership" onClick={onClose}>
                 {t("partnership")}
               </MegaMenuLink>
             </li>

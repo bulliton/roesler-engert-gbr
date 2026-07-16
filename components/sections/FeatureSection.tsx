@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
+import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
 
 type FeatureSectionProps = {
@@ -68,9 +69,9 @@ export function FeatureSection({
             {eyebrow}
           </p>
 
-          <h2 className="max-w-md font-display text-[clamp(1.75rem,2.2vw+1rem,2.75rem)] leading-[1em] text-primary">
+          <Headline as="h2" className="mx-auto max-w-md">
             {title}
-          </h2>
+          </Headline>
 
           {text ? (
             <p className="mt-6 max-w-md text-sm leading-relaxed text-muted md:text-base">

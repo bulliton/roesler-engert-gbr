@@ -13,7 +13,7 @@ export function MegaMenuPanel({ open, onClose, children }: MegaMenuPanelProps) {
 
   return (
     <div
-      className="mega-menu-panel absolute inset-x-0 top-full z-50 border-t border-primary/10 bg-white shadow-[0_16px_48px_rgba(0,70,70,0.1)]"
+      className="mega-menu-panel absolute inset-x-0 top-full z-50 border-t border-primary/10 bg-canvas shadow-[0_16px_48px_rgba(0,70,70,0.08)]"
       onMouseLeave={onClose}
     >
       <div className="mx-auto max-w-[var(--page-max-width)] px-[var(--section-padding-x)] py-9">

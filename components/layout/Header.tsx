@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/lib/navigation";
 import { CONTACT } from "@/lib/constants";
-import { leftNavItems, rightNavItems } from "@/lib/nav-config";
+import { leftNavItems, rightNavItems, utilityNavItems } from "@/lib/nav-config";
 import { LocaleSwitcher } from "@/components/ui/LocaleSwitcher";
 import {
   ChevronDownIcon,
@@ -76,10 +76,10 @@ export function Header() {
       : "bg-white text-primary border-b border-primary/10";
 
   const mainBarClass = scrolled
-    ? "border-primary/10 bg-white/95 shadow-sm backdrop-blur-md"
+    ? "border-primary/10 bg-canvas-elevated/95 shadow-sm backdrop-blur-md"
     : useLightNav
       ? "border-transparent bg-transparent"
-      : "border-b border-primary/10 bg-white";
+      : "border-b border-primary/10 bg-canvas";
 
   const utilityLinkClass = `inline-flex items-center gap-1.5 text-xs font-normal ${contentTransition} transition-opacity hover:opacity-80`;
 
@@ -106,7 +106,21 @@ export function Header() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-3 md:gap-4">
+          <div className="hidden items-center gap-4 md:flex lg:gap-5">
+            {utilityNavItems.map((item) => (
+              <Link key={item.key} href={item.href} className={utilityLinkClass}>
+                {t(item.key)}
+              </Link>
+            ))}
+            <Link
+              href={{ pathname: CONTACT.appointmentPath, hash: CONTACT.appointmentHash }}
+              className={utilityLinkClass}
+            >
+              {t("bookAppointment")}
+            </Link>
+            <LocaleSwitcher inverted={scrolled || useLightNav} compact />
+          </div>
+          <div className="flex items-center gap-3 md:hidden">
             <LocaleSwitcher inverted={scrolled || useLightNav} compact />
           </div>
         </div>

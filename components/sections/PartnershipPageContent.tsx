@@ -1,13 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Headline } from "@/components/ui/Headline";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 import { Section } from "@/components/ui/Section";
 import { FeatureSection } from "@/components/sections/FeatureSection";
 import { PageHero } from "@/components/sections/PageHero";
+import { CONTACT } from "@/lib/constants";
 import { SITE_IMAGES } from "@/lib/site-images";
 
 const steps = ["intro", "advisor", "support", "growth"] as const;
@@ -43,27 +44,20 @@ export function PartnershipPageContent() {
           />
 
           <ol className="editorial-list">
-            {steps.map((key, index) => (
-              <motion.li
-                key={key}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="editorial-list-item"
-              >
+            {steps.map((key) => (
+              <li key={key} className="editorial-list-item">
                 <div>
-                  <p className="text-xs font-normal tracking-[0.14em] text-muted uppercase">
+                  <p className="text-[var(--text-xs)] font-normal tracking-[0.12em] text-muted uppercase">
                     {t(`steps.${key}.eyebrow`)}
                   </p>
-                  <p className="mt-2 font-display text-[clamp(1.125rem,1.2vw+0.5rem,1.375rem)] leading-snug text-primary">
+                  <Headline as="h3" className="mt-2">
                     {t(`steps.${key}.title`)}
-                  </p>
+                  </Headline>
                 </div>
                 <p className="text-sm leading-relaxed text-muted md:text-base">
                   {t(`steps.${key}.text`)}
                 </p>
-              </motion.li>
+              </li>
             ))}
           </ol>
         </Container>
@@ -73,9 +67,9 @@ export function PartnershipPageContent() {
         <Container>
           <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
             <div className="max-w-xl">
-              <p className="font-display text-[clamp(1.5rem,2vw+0.5rem,2.25rem)] leading-snug text-white">
+              <Headline as="h2" contrast>
                 {t("cta.title")}
-              </p>
+              </Headline>
               <p className="mt-4 max-w-md text-sm leading-relaxed text-white/70">
                 {t("cta.text")}
               </p>
@@ -85,10 +79,11 @@ export function PartnershipPageContent() {
                 {t("cta.contact")}
               </Button>
               <Button
-                href="/contact"
+                href={CONTACT.appointmentPath}
+                hash={CONTACT.appointmentHash}
                 variant="outline-contrast"
               >
-                {t("cta.contact")}
+                {t("cta.appointment")}
               </Button>
             </div>
           </div>

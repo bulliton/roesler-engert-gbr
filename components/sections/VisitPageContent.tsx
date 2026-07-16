@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Headline } from "@/components/ui/Headline";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
@@ -40,18 +40,9 @@ export function VisitPageContent() {
       <Section>
         <Container>
           <ul className="editorial-list">
-            {optionKeys.map((key, i) => (
-              <motion.li
-                key={key}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.06 }}
-                className="editorial-list-item"
-              >
-                <p className="font-display text-[clamp(1.125rem,1.2vw+0.5rem,1.375rem)] leading-snug text-primary">
-                  {t(`options.${key}.title`)}
-                </p>
+            {optionKeys.map((key) => (
+              <li key={key} className="editorial-list-item">
+                <Headline as="h3">{t(`options.${key}.title`)}</Headline>
                 <div>
                   <p className="text-sm leading-relaxed text-muted md:text-base">
                     {t(`options.${key}.text`)}
@@ -65,7 +56,7 @@ export function VisitPageContent() {
                     ))}
                   </ul>
                 </div>
-              </motion.li>
+              </li>
             ))}
           </ul>
 
@@ -77,8 +68,12 @@ export function VisitPageContent() {
               {CONTACT.address.city}, {CONTACT.address.country}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/contact" variant="primary">
-                {t("cta.contact")}
+              <Button
+                href={CONTACT.appointmentPath}
+                hash={CONTACT.appointmentHash}
+                variant="primary"
+              >
+                {t("cta.appointment")}
               </Button>
               <Button href="/contact" variant="outline">
                 {t("cta.contact")}

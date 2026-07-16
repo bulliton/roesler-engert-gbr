@@ -5,6 +5,7 @@ type SectionProps = {
   className?: string;
   contrast?: boolean;
   pattern?: boolean;
+  elevated?: boolean;
   id?: string;
 };
 
@@ -13,6 +14,7 @@ export function Section({
   className = "",
   contrast = false,
   pattern = false,
+  elevated = false,
   id,
 }: SectionProps) {
   const base = "py-[var(--section-padding-y)] relative";
@@ -20,7 +22,9 @@ export function Section({
     ? "contrast-band"
     : pattern
       ? "diamond-pattern bg-primary-light"
-      : "";
+      : elevated
+        ? "surface-elevated"
+        : "";
 
   return (
     <section id={id} className={`${base} ${variant} ${className}`}>

@@ -1,9 +1,15 @@
 import { setRequestLocale } from "next-intl/server";
 import { LegalPageContent } from "@/components/sections/LegalPageContent";
+import { generatePageMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  return generatePageMetadata({ locale, namespace: "legal.cookies" });
+}
 
 export default async function CookiesPage({ params }: Props) {
   const { locale } = await params;

@@ -42,6 +42,7 @@ export async function FooterNavigation() {
       title: t("navGroups.expertise"),
       links: [
         { href: "/diamonds" as const, label: t("gemology") },
+        { href: "/ethics" as const, label: t("ethics") },
         { href: "/services" as const, label: nav("services") },
         { href: "/visit" as const, label: nav("visit") },
         { href: "/about" as const, label: t("heritage") },
@@ -51,9 +52,10 @@ export async function FooterNavigation() {
       title: t("navGroups.service"),
       links: [
         { href: "/faq" as const, label: t("faq") },
-        { href: "/contact" as const, label: t("returns") },
+        { href: { pathname: "/faq" as const, hash: "returns" }, label: t("returns") },
         { href: "/imprint" as const, label: t("imprint") },
         { href: "/privacy" as const, label: t("privacy") },
+        { href: "/cookies" as const, label: t("cookies") },
       ],
     },
   ];
@@ -69,20 +71,9 @@ export async function FooterNavigation() {
             <ul className="space-y-2.5">
               {group.links.map((link) => (
                 <li key={`${group.title}-${link.label}`}>
-                  {"external" in link && link.external ? (
-                    <a
-                      href={link.href as string}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={linkClass}
-                    >
-                      {link.label}
-                    </a>
-                  ) : (
-                    <Link href={link.href as "/"} className={linkClass}>
-                      {link.label}
-                    </Link>
-                  )}
+                  <Link href={link.href as "/"} className={linkClass}>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>

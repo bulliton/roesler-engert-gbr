@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { ContactEditorialLabel } from "@/components/ui/ContactEditorialLabel";
 import { Container } from "@/components/ui/Container";
+import { Headline } from "@/components/ui/Headline";
 import { CONTACT } from "@/lib/constants";
 import { SITE_IMAGES } from "@/lib/site-images";
 import { Link } from "@/lib/navigation";
@@ -55,13 +56,11 @@ export async function ContactSection() {
 
   return (
     <>
-      <section className="bg-white py-[var(--section-padding-y)]">
+      <section id="form" className="bg-canvas py-[var(--section-padding-y)] scroll-mt-[var(--header-offset)]">
         <Container>
           <div className="mx-auto max-w-2xl">
             <ContactEditorialLabel className="mb-3">{t("sections.form")}</ContactEditorialLabel>
-            <h2 className="font-display text-[clamp(1.5rem,2vw+0.75rem,2.25rem)] font-normal text-primary">
-              {t("form.title")}
-            </h2>
+            <Headline as="h2">{t("form.title")}</Headline>
             <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted">{t("form.subtitle")}</p>
             <div className="mt-10">
               <ContactForm variant="editorial" />
@@ -122,7 +121,20 @@ export async function ContactSection() {
             </EditorialRow>
 
             <EditorialRow label={t("sections.hours")}>
-              <p>{t("hours.text")}</p>
+              <div className="space-y-2">
+                <p>{t("hours.text")}</p>
+                <p>
+                  <Link
+                    href={{
+                      pathname: CONTACT.appointmentPath,
+                      hash: CONTACT.appointmentHash,
+                    }}
+                    className="contact-editorial-link text-primary/90 transition-colors hover:text-secondary"
+                  >
+                    {t("hours.appointment")}
+                  </Link>
+                </p>
+              </div>
             </EditorialRow>
           </div>
         </div>

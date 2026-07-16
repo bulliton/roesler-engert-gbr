@@ -30,7 +30,10 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
               const Icon = diamondCutIcons[cut];
               return (
                 <li key={cut}>
-                  <MegaMenuLink href="/diamonds" onClick={onClose}>
+                  <MegaMenuLink
+                    href={{ pathname: "/diamonds", hash: cut }}
+                    onClick={onClose}
+                  >
                     <Icon className="h-4 w-4 shrink-0 text-primary/50" />
                     <span>{t(`cuts.${cut}`)}</span>
                   </MegaMenuLink>
@@ -53,7 +56,7 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
               </MegaMenuLink>
             </li>
             <li>
-              <MegaMenuLink href="/about" onClick={onClose}>
+              <MegaMenuLink href="/ethics" onClick={onClose}>
                 {t("ethical")}
               </MegaMenuLink>
             </li>
@@ -73,7 +76,7 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
               </MegaMenuLink>
             </li>
             <li>
-              <MegaMenuLink href="/contact" onClick={onClose}>
+              <MegaMenuLink href="/partnership" onClick={onClose}>
                 {t("partnership")}
               </MegaMenuLink>
             </li>

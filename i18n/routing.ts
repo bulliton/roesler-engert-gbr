@@ -54,6 +54,14 @@ export const routing = defineRouting({
       de: "/cookies",
       en: "/cookies",
     },
+    "/ethics": {
+      de: "/nachhaltigkeit",
+      en: "/ethics",
+    },
+    "/newsletter/confirmed": {
+      de: "/newsletter/bestaetigt",
+      en: "/newsletter/confirmed",
+    },
   },
 });
 

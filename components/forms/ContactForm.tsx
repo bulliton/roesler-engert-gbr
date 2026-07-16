@@ -188,13 +188,7 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
         </span>
       </label>
 
-      <Button
-        type="submit"
-        variant="primary"
-        shape={isEditorial ? "pill" : "rect"}
-        disabled={loading}
-        className={isEditorial ? "!bg-primary hover:!bg-primary-dark" : undefined}
-      >
+      <Button type="submit" variant="primary" disabled={loading}>
         {loading ? t("submitting") : t("submit")}
       </Button>
     </form>

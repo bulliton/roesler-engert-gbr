@@ -27,10 +27,10 @@ export function PageHero({
 
   if (!hasImage) {
     return (
-      <section className="border-b border-primary/10 py-16 md:py-24">
+      <section className="border-b border-primary/10 bg-canvas py-16 md:py-24">
         <Container>
           <div className="max-w-2xl">
-            <Eyebrow>{eyebrow}</Eyebrow>
+            <Eyebrow gold>{eyebrow}</Eyebrow>
             <Headline as="h1" bar={false}>
               {title}
             </Headline>
@@ -85,7 +85,7 @@ export function PageHero({
 
       <Container className="relative z-10 flex min-h-[min(72vh,40rem)] items-end pb-12 pt-[calc(var(--header-offset)+2.5rem)] md:items-center md:pb-16 md:pt-[calc(var(--header-offset)+3rem)]">
         <div className="max-w-2xl">
-          <Eyebrow contrast className="!text-accent-gold">
+          <Eyebrow contrast gold className="!text-accent-gold">
             {eyebrow}
           </Eyebrow>
           <Headline as="h1" bar={false} contrast className="hero-text-shadow">

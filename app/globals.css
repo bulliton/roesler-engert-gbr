@@ -1,18 +1,34 @@
 @import "tailwindcss";
 
 :root {
+  --color-canvas: #f7f4ef;
+  --color-canvas-elevated: #faf8f5;
   --color-primary: #004646;
   --color-primary-dark: #003333;
   --color-primary-light: #f2fafa;
-  --color-secondary: #009696;
+  --color-secondary: #2a6a6a;
   --color-white: #ffffff;
   --color-black: #171717;
-  --color-muted: #5a6b6b;
+  --color-muted: #6b6560;
   --color-accent-gold: #b8956b;
   --color-accent-gold-light: #d4b896;
 
   --font-display: var(--font-lora);
-  --font-body: var(--font-lato);
+  --font-body: var(--font-source-sans);
+
+  --text-xs: clamp(0.6875rem, 0.66rem + 0.1vw, 0.75rem);
+  --text-sm: clamp(0.8125rem, 0.78rem + 0.15vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-2xl: clamp(1.75rem, 1.4rem + 1.2vw, 2.25rem);
+  --text-3xl: clamp(2.25rem, 1.8rem + 1.8vw, 3rem);
+  --text-display: clamp(2.25rem, 3.8vw + 0.75rem, 3.75rem);
+
+  --headline-size-h1: clamp(2.25rem, 4vw + 1rem, 4.5rem);
+  --headline-size-h2: clamp(1.75rem, 2.5vw + 1rem, 3rem);
+  --headline-size-h3: clamp(1.25rem, 1.5vw + 0.75rem, 2rem);
+  --headline-size-h4: clamp(1.125rem, 1.2vw + 0.5rem, 1.375rem);
 
   --page-max-width: 90rem;
   --section-padding-y: clamp(4rem, 8vw, 6.5rem);
@@ -20,12 +36,13 @@
   --section-content-gap: clamp(2.75rem, 4vw, 3.5rem);
   --spacing-compact: calc(var(--section-padding-x) * 0.5);
   --header-offset: 7.25rem;
-  --headline-line-height: 1;
   --mobile-bottom-bar-padding: var(--section-padding-x);
   --mobile-bottom-bar-offset: calc(2.75rem + var(--mobile-bottom-bar-padding) + max(var(--mobile-bottom-bar-padding), env(safe-area-inset-bottom)));
 }
 
 @theme inline {
+  --color-canvas: var(--color-canvas);
+  --color-canvas-elevated: var(--color-canvas-elevated);
   --color-primary: var(--color-primary);
   --color-primary-dark: var(--color-primary-dark);
   --color-primary-light: var(--color-primary-light);
@@ -43,7 +60,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: var(--color-white);
+  background: var(--color-canvas);
 }
 
 html.is-loading {
@@ -66,11 +83,12 @@ html.is-loading {
 
 body {
   margin: 0;
-  background: var(--color-white);
+  background: var(--color-canvas);
   color: var(--color-black);
   font-family: var(--font-body), system-ui, sans-serif;
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  font-size: var(--text-base);
   line-height: 1.7;
+  letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -80,7 +98,46 @@ h3,
 h4 {
   font-family: var(--font-display), Georgia, serif;
   font-weight: 400;
-  line-height: var(--headline-line-height);
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: var(--headline-size-h1);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: var(--headline-size-h2);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--headline-size-h3);
+  line-height: 1.15;
+}
+
+h4 {
+  font-size: var(--headline-size-h4);
+  line-height: 1.2;
+}
+
+.headline-display {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: var(--headline-size-h1);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.headline-lead {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: var(--headline-size-h2);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  font-weight: 400;
   color: var(--color-primary);
 }
 
@@ -97,6 +154,10 @@ h4 {
 .contrast-band {
   background: var(--color-primary);
   color: var(--color-white);
+}
+
+.surface-elevated {
+  background: var(--color-canvas-elevated);
 }
 
 .headline-bar::after {

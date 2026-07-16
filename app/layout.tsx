@@ -1,4 +1,4 @@
-import { Lato, Lora } from "next/font/google";
+import { Lora, Source_Sans_3 } from "next/font/google";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -6,10 +6,10 @@ const lora = Lora({
   display: "swap",
 });
 
-const lato = Lato({
+const sourceSans = Source_Sans_3({
   subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-lato",
+  weight: ["400", "600"],
+  variable: "--font-source-sans",
   display: "swap",
 });
 
@@ -21,4 +21,4 @@ export default function RootLayout({
   return children;
 }
 
-export { lora, lato };
+export { lora, sourceSans };

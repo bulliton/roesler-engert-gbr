@@ -16,7 +16,7 @@ export function StatsSection() {
   ];
 
   return (
-    <Section pattern>
+    <Section elevated className="border-y border-primary/10 !py-12 md:!py-16">
       <Container>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-12">
           {stats.map((stat) => (

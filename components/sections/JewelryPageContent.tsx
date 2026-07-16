@@ -1,18 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
+import { SectionIntro } from "@/components/ui/SectionIntro";
 import { PageHero } from "@/components/sections/PageHero";
 import { SITE_IMAGES } from "@/lib/site-images";
 
 const jewelryCategories = [
   {
     id: "earrings",
-    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80",
+    image: SITE_IMAGES.earringsCraft,
   },
   {
     id: "rings",
@@ -20,7 +21,7 @@ const jewelryCategories = [
   },
   {
     id: "necklaces",
-    image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+    image: SITE_IMAGES.necklaceCraft,
   },
 ] as const;
 
@@ -34,21 +35,26 @@ export function JewelryPageContent() {
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
       />
+
+      <Section elevated className="border-b border-primary/10">
+        <Container>
+          <SectionIntro title={t("manufactory.title")} />
+          <p className="max-w-2xl text-muted leading-relaxed">{t("manufactory.text")}</p>
+        </Container>
+      </Section>
+
       {jewelryCategories.map((cat, i) => (
         <Section
           key={cat.id}
           id={cat.id}
-          className={i % 2 === 1 ? "bg-primary-light" : ""}
+          className={`scroll-mt-[calc(var(--header-offset)+1rem)] ${i % 2 === 1 ? "surface-elevated" : ""}`}
         >
           <Container>
             <div
               className={`grid items-center gap-12 lg:grid-cols-2 ${i % 2 === 1 ? "lg:[direction:rtl]" : ""}`}
             >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.98 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                className={`relative aspect-[4/3] overflow-hidden rounded-sm ${i % 2 === 1 ? "lg:[direction:ltr]" : ""}`}
+              <div
+                className={`relative aspect-[4/3] overflow-hidden ${i % 2 === 1 ? "lg:[direction:ltr]" : ""}`}
               >
                 <Image
                   src={cat.image}
@@ -57,12 +63,18 @@ export function JewelryPageContent() {
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
-              </motion.div>
+              </div>
               <div className={i % 2 === 1 ? "lg:[direction:ltr]" : ""}>
                 <Headline as="h2">{t(`categories.${cat.id}.title`)}</Headline>
                 <p className="mt-6 text-muted leading-relaxed">
                   {t(`categories.${cat.id}.description`)}
                 </p>
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <Button href="/contact">{t("cta.samples")}</Button>
+                  <Button href="/catalog" variant="outline">
+                    {t("cta.catalog")}
+                  </Button>
+                </div>
               </div>
             </div>
           </Container>

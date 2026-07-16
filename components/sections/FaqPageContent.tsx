@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Headline } from "@/components/ui/Headline";
 import { Section } from "@/components/ui/Section";
 import { PageHero } from "@/components/sections/PageHero";
 
@@ -13,6 +14,7 @@ const faqKeys = [
   "customization",
   "shipping",
   "appointment",
+  "returns",
 ] as const;
 
 export function FaqPageContent() {
@@ -30,7 +32,11 @@ export function FaqPageContent() {
         <Container>
           <div className="mx-auto max-w-3xl divide-y divide-primary/10">
             {faqKeys.map((key) => (
-              <details key={key} className="group py-6">
+              <details
+                key={key}
+                id={key}
+                className="group scroll-mt-[calc(var(--header-offset)+1rem)] py-6"
+              >
                 <summary className="cursor-pointer list-none font-display text-lg text-primary transition-colors group-open:text-secondary">
                   <span className="flex items-start justify-between gap-4">
                     {t(`items.${key}.question`)}
@@ -45,9 +51,7 @@ export function FaqPageContent() {
           </div>
 
           <div className="section-divider mx-auto max-w-3xl">
-            <h2 className="font-display text-[clamp(1.5rem,2vw+0.5rem,2rem)] text-primary">
-              {t("cta.title")}
-            </h2>
+            <Headline as="h2">{t("cta.title")}</Headline>
             <p className="mt-4 text-sm leading-relaxed text-muted">{t("cta.text")}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href="/contact" variant="primary">

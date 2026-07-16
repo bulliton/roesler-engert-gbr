@@ -71,7 +71,8 @@
     "whyUs": "Why us",
     "email": "Email",
     "faq": "FAQ",
-    "returns": "Returns",
+    "returns": "Partner returns",
+    "ethics": "Ethical sourcing",
     "heritage": "Heritage craftsmanship",
     "gemology": "Licensed gemology",
     "manufacturing": "In-house manufacturing",
@@ -137,7 +138,7 @@
   },
   "newsletterConfirmed": {
     "title": "Subscription confirmed",
-    "description": "Thank you — you will now receive our B2B updates on collections, trade fairs, and partnership opportunities.",
+    "description": "Your newsletter subscription to Rösler & Engert partner updates is confirmed.",
     "backHome": "Back to home"
   },
   "forms": {
@@ -161,6 +162,7 @@
   },
   "home": {
     "hero": {
+      "eyebrow": "Manufactory in Würzburg",
       "title": "Your name out front. Our expertise behind you.",
       "subtitle": "When customers question a stone, you are not on your own. We craft in Würzburg and support you with licensed gemology, personally and as equals.",
       "ctaPrimary": "Get in touch",
@@ -296,6 +298,7 @@
   },
   "about": {
     "title": "About us",
+    "description": "Heritage manufactory, licensed gemology, and B2B partnership from Würzburg.",
     "hero": {
       "eyebrow": "Rösler & Engert GbR",
       "title": "Craftsmanship across generations",
@@ -344,7 +347,16 @@
         "title": "Necklaces",
         "description": "Pendants, collars, and chains that fit into your assortment."
       }
-    }
+    },
+    "manufactory": {
+      "title": "Made in our Würzburg atelier",
+      "text": "Every collection is developed and produced in-house. You receive pieces your customers can trust, with manufacturing you can name."
+    },
+    "cta": {
+      "samples": "Request samples",
+      "catalog": "View catalog"
+    },
+    "description": "Handcrafted B2B jewelry collections from our Würzburg manufactory."
   },
   "diamonds": {
     "title": "Diamonds",
@@ -364,11 +376,32 @@
       "cushion": "Cushion",
       "baguette": "Baguette",
       "pear": "Pear",
-      "carre": "Carré"
-    }
+      "carre": "Carré",
+      "descriptions": {
+        "brilliant": "The classic round brilliant for solitaires and timeless assortments.",
+        "princess": "Square geometry with strong fire for modern collections.",
+        "cushion": "Soft corners and vintage character for distinctive pieces.",
+        "baguette": "Step-cut clarity for side stones and elegant lines.",
+        "pear": "Teardrop silhouette for pendants and statement rings.",
+        "carre": "Architectural square cut for clean, graphic designs."
+      }
+    },
+    "education": {
+      "title": "Selection you can explain",
+      "text": "Our licensed gemologist evaluates cut, color, clarity, and carat for every stone. Certificates and transparent sourcing help you answer customer questions with confidence.",
+      "certification": "Certified stones on request",
+      "traceability": "Traceable supply chain",
+      "consultation": "Personal gemology consultation"
+    },
+    "cta": {
+      "catalog": "Request catalog",
+      "contact": "Discuss your assortment"
+    },
+    "description": "Licensed gemology and diamond cuts for B2B jewelers. Transparent selection from Würzburg."
   },
   "contact": {
     "title": "Contact",
+    "description": "Contact Rösler & Engert for B2B partnership, collections, and diamond selection.",
     "imageAlt": "The partners of Rösler & Engert in the manufactory",
     "sections": {
       "visit": "Visit",
@@ -433,6 +466,8 @@
     }
   },
   "catalog": {
+    "title": "Catalog",
+    "description": "Download the B2B catalog: handcrafted jewelry, diamonds, and services for jewelers.",
     "hero": {
       "eyebrow": "B2B catalog",
       "title": "Collections for your business",
@@ -486,6 +521,8 @@
     }
   },
   "services": {
+    "title": "Services",
+    "description": "B2B services for jewelers: ordering, customization, engraving, and field service.",
     "hero": {
       "eyebrow": "B2B service",
       "title": "Services for jewelers",
@@ -519,6 +556,8 @@
     }
   },
   "partnership": {
+    "title": "Partnership",
+    "description": "Become a B2B partner for handcrafted jewelry and diamonds from Würzburg.",
     "hero": {
       "eyebrow": "B2B partnership",
       "title": "Your partner for jewelry and diamonds",
@@ -562,6 +601,8 @@
     }
   },
   "visit": {
+    "title": "Visit",
+    "description": "Visit our showroom in Würzburg or book a field service appointment.",
     "hero": {
       "eyebrow": "Showroom Würzburg",
       "title": "Visit us",
@@ -587,10 +628,40 @@
       "label": "Address"
     },
     "cta": {
-      "contact": "Get in touch"
+      "contact": "Get in touch",
+      "appointment": "Book appointment"
+    }
+  },
+  "ethics": {
+    "title": "Ethical sourcing",
+    "description": "How Rösler & Engert selects diamonds and materials with transparency for partner jewelers.",
+    "hero": {
+      "eyebrow": "Responsibility",
+      "title": "Stones you can stand behind",
+      "subtitle": "Traceable sourcing, licensed gemology, and honest answers for your customers."
+    },
+    "sections": {
+      "sourcing": {
+        "title": "Transparent sourcing",
+        "text": "We work with established suppliers and document the path from rough to finished stone. Your customers deserve answers you can give with confidence."
+      },
+      "gemology": {
+        "title": "Licensed gemology in-house",
+        "text": "Every diamond is evaluated by our gemologist before it enters your assortment. Cut, clarity, color, and certification are checked under one roof in Würzburg."
+      },
+      "partnership": {
+        "title": "Partnership with integrity",
+        "text": "We support jewelers who put their name on the counter. That means clear documentation, personal consultation, and no shortcuts on quality."
+      }
+    },
+    "cta": {
+      "contact": "Ask about sourcing",
+      "diamonds": "Explore diamonds"
     }
   },
   "faq": {
+    "title": "FAQ",
+    "description": "Answers about B2B partnership, catalog, appointments, and partner returns.",
     "hero": {
       "eyebrow": "FAQ",
       "title": "Frequently asked questions",
@@ -620,6 +691,10 @@
       "appointment": {
         "question": "How do I book an appointment?",
         "answer": "Use the appointment link on our website or call us. We look forward to your visit in Würzburg or at your location."
+      },
+      "returns": {
+        "question": "How do partner returns work?",
+        "answer": "Returns for registered B2B partners are handled individually through your sales contact. Terms depend on collection and partnership agreement."
       }
     },
     "cta": {

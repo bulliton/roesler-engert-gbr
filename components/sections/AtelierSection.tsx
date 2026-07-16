@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Headline } from "@/components/ui/Headline";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Section } from "@/components/ui/Section";
 import { SITE_IMAGES } from "@/lib/site-images";
 
@@ -23,9 +23,7 @@ export function AtelierSection() {
     <Section id="atelier">
       <Container>
         <div className="section-intro-block max-w-2xl">
-          <p className="mb-2 text-sm font-semibold tracking-[0.15em] text-accent-gold uppercase">
-            {t("eyebrow")}
-          </p>
+          <Eyebrow gold>{t("eyebrow")}</Eyebrow>
           <Headline as="h2" bar>
             {t("title")}
           </Headline>
@@ -34,16 +32,12 @@ export function AtelierSection() {
 
         <div className="space-y-0 divide-y divide-primary/10">
           {steps.map(({ key, image }, index) => (
-            <motion.article
+            <article
               key={key}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.6, delay: index * 0.05 }}
               className="grid items-center gap-8 py-10 first:pt-0 last:pb-0 md:grid-cols-2 md:gap-12 md:py-12"
             >
               <div
-                className={`relative aspect-[4/3] overflow-hidden rounded-sm ${index % 2 === 1 ? "md:order-2" : ""}`}
+                className={`relative aspect-[4/3] overflow-hidden ${index % 2 === 1 ? "md:order-2" : ""}`}
               >
                 <Image
                   src={image}
@@ -59,14 +53,14 @@ export function AtelierSection() {
               </div>
 
               <div className={index % 2 === 1 ? "md:order-1" : ""}>
-                <h3 className="font-display text-[clamp(1.35rem,1.5vw+0.75rem,1.75rem)] text-primary">
+                <h3 className="font-display text-primary">
                   {t(`steps.${key}.title`)}
                 </h3>
                 <p className="mt-3 max-w-md text-muted leading-relaxed">
                   {t(`steps.${key}.text`)}
                 </p>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
 

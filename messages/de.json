@@ -71,7 +71,8 @@
     "whyUs": "Warum Wir",
     "email": "E-Mail",
     "faq": "FAQ",
-    "returns": "Rückgabe",
+    "returns": "Partner-Rückgaben",
+    "ethics": "Verantwortungsvolle Beschaffung",
     "heritage": "Handwerk mit Geschichte",
     "gemology": "Lizenzierte Gemmologie",
     "manufacturing": "Eigene Fertigung",
@@ -137,7 +138,7 @@
   },
   "newsletterConfirmed": {
     "title": "Anmeldung bestätigt",
-    "description": "Vielen Dank — Sie erhalten ab sofort unsere B2B-Updates zu Kollektionen, Messen und Partnerschaftsmöglichkeiten.",
+    "description": "Ihre Newsletter-Anmeldung für Rösler & Engert Partner-Updates ist bestätigt.",
     "backHome": "Zur Startseite"
   },
   "forms": {
@@ -161,6 +162,7 @@
   },
   "home": {
     "hero": {
+      "eyebrow": "Manufaktur in Würzburg",
       "title": "Ihr Name vorne. Unsere Expertise dahinter.",
       "subtitle": "Wenn Kunden Fragen zum Stein stellen, sind Sie nicht allein. Wir fertigen in Würzburg und unterstützen Sie mit lizenzierter Gemmologie, persönlich und auf Augenhöhe.",
       "ctaPrimary": "Kontakt aufnehmen",
@@ -296,6 +298,7 @@
   },
   "about": {
     "title": "Über uns",
+    "description": "Traditionsreiche Manufaktur, lizenzierte Gemmologie und B2B-Partnerschaft aus Würzburg.",
     "hero": {
       "eyebrow": "Rösler & Engert GbR",
       "title": "Handwerk mit Geschichte seit Generationen",
@@ -344,7 +347,16 @@
         "title": "Halsschmuck",
         "description": "Anhänger, Colliers und Ketten, die sich in Ihr Sortiment einfügen."
       }
-    }
+    },
+    "manufactory": {
+      "title": "Gefertigt in unserer Würzburger Manufaktur",
+      "text": "Jede Kollektion wird bei uns entwickelt und produziert. Sie erhalten Stücke, denen Ihre Kunden vertrauen können, mit einer Fertigung, die Sie beim Namen nennen."
+    },
+    "cta": {
+      "samples": "Muster anfragen",
+      "catalog": "Katalog ansehen"
+    },
+    "description": "Handgefertigte B2B-Schmuckkollektionen aus unserer Würzburger Manufaktur."
   },
   "diamonds": {
     "title": "Diamanten",
@@ -364,11 +376,32 @@
       "cushion": "Cushion",
       "baguette": "Baguette",
       "pear": "Tropfen",
-      "carre": "Carré"
-    }
+      "carre": "Carré",
+      "descriptions": {
+        "brilliant": "Der klassische Rundschliff für Solitäre und zeitlose Sortimente.",
+        "princess": "Quadratische Geometrie mit starkem Feuer für moderne Kollektionen.",
+        "cushion": "Weiche Ecken und Vintage-Charakter für besondere Stücke.",
+        "baguette": "Stufenschliff-Klarheit für Seitensteine und elegante Linien.",
+        "pear": "Tropfenform für Anhänger und Statement-Ringe.",
+        "carre": "Architektonischer Carré-Schliff für klare, grafische Designs."
+      }
+    },
+    "education": {
+      "title": "Auswahl, die Sie erklären können",
+      "text": "Unser lizenzierter Gemmologe bewertet Schliff, Farbe, Reinheit und Karat für jeden Stein. Zertifikate und transparente Beschaffung helfen Ihnen, Kundenfragen souverän zu beantworten.",
+      "certification": "Zertifizierte Steine auf Anfrage",
+      "traceability": "Nachvollziehbare Lieferkette",
+      "consultation": "Persönliche Gemmologie-Beratung"
+    },
+    "cta": {
+      "catalog": "Katalog anfordern",
+      "contact": "Sortiment besprechen"
+    },
+    "description": "Lizenzierte Gemmologie und Diamantschliffe für B2B-Juweliere. Transparente Auswahl aus Würzburg."
   },
   "contact": {
     "title": "Kontakt",
+    "description": "Kontaktieren Sie Rösler & Engert für B2B-Partnerschaft, Kollektionen und Diamantauswahl.",
     "imageAlt": "Die Gesellschafter von Rösler & Engert in der Manufaktur",
     "sections": {
       "visit": "Besuch",
@@ -433,6 +466,8 @@
     }
   },
   "catalog": {
+    "title": "Katalog",
+    "description": "B2B-Katalog herunterladen: handgefertigter Schmuck, Diamanten und Services für Juweliere.",
     "hero": {
       "eyebrow": "B2B-Katalog",
       "title": "Kollektionen für Ihr Geschäft",
@@ -486,6 +521,8 @@
     }
   },
   "services": {
+    "title": "Service",
+    "description": "B2B-Services für Juweliere: Bestellung, Individualisierung, Gravur und Außendienst.",
     "hero": {
       "eyebrow": "B2B-Service",
       "title": "Services für Juweliere",
@@ -519,6 +556,8 @@
     }
   },
   "partnership": {
+    "title": "Partnerschaft",
+    "description": "Werden Sie B2B-Partner für handgefertigten Schmuck und Diamanten aus Würzburg.",
     "hero": {
       "eyebrow": "B2B-Partnerschaft",
       "title": "Ihr Partner für Schmuck und Diamanten",
@@ -557,10 +596,13 @@
     "cta": {
       "title": "Partnerschaft starten",
       "text": "Vereinbaren Sie ein Gespräch. Wir lernen Ihr Geschäft kennen und begleiten Sie von der ersten Kollektion an.",
-      "contact": "Partnerschaft anfragen"
+      "contact": "Partnerschaft anfragen",
+      "appointment": "Termin vereinbaren"
     }
   },
   "visit": {
+    "title": "Besuch",
+    "description": "Besuchen Sie unseren Showroom in Würzburg oder vereinbaren Sie einen Außendienst-Termin.",
     "hero": {
       "eyebrow": "Showroom Würzburg",
       "title": "Besuchen Sie uns",
@@ -586,10 +628,40 @@
       "label": "Adresse"
     },
     "cta": {
-      "contact": "Kontakt aufnehmen"
+      "contact": "Kontakt aufnehmen",
+      "appointment": "Termin vereinbaren"
+    }
+  },
+  "ethics": {
+    "title": "Verantwortungsvolle Beschaffung",
+    "description": "Wie Rösler & Engert Diamanten und Materialien transparent für Partner-Juweliere auswählt.",
+    "hero": {
+      "eyebrow": "Verantwortung",
+      "title": "Steine, hinter denen Sie stehen können",
+      "subtitle": "Nachvollziehbare Beschaffung, lizenzierte Gemmologie und ehrliche Antworten für Ihre Kunden."
+    },
+    "sections": {
+      "sourcing": {
+        "title": "Transparente Beschaffung",
+        "text": "Wir arbeiten mit etablierten Lieferanten und dokumentieren den Weg vom Rohstein zum fertigen Stein. Ihre Kunden verdienen Antworten, die Sie mit Überzeugung geben können."
+      },
+      "gemology": {
+        "title": "Lizenzierte Gemmologie in-house",
+        "text": "Jeder Diamant wird von unserem Gemmologen geprüft, bevor er in Ihr Sortiment kommt. Schliff, Reinheit, Farbe und Zertifizierung werden unter einem Dach in Würzburg kontrolliert."
+      },
+      "partnership": {
+        "title": "Partnerschaft mit Integrität",
+        "text": "Wir unterstützen Juweliere, die ihren Namen an den Tresen stellen. Das bedeutet klare Dokumentation, persönliche Beratung und keine Abkürzungen bei der Qualität."
+      }
+    },
+    "cta": {
+      "contact": "Zur Beschaffung fragen",
+      "diamonds": "Diamanten entdecken"
     }
   },
   "faq": {
+    "title": "FAQ",
+    "description": "Antworten zu B2B-Partnerschaft, Katalog, Terminen und Partner-Rückgaben.",
     "hero": {
       "eyebrow": "FAQ",
       "title": "Häufige Fragen",
@@ -619,6 +691,10 @@
       "appointment": {
         "question": "Wie buche ich einen Termin?",
         "answer": "Nutzen Sie den Termin-Link auf unserer Website oder rufen Sie uns an. Wir freuen uns auf Ihren Besuch in Würzburg oder bei Ihnen vor Ort."
+      },
+      "returns": {
+        "question": "Wie funktionieren Partner-Rückgaben?",
+        "answer": "Rückgaben für registrierte B2B-Partner werden individuell über Ihren Vertriebskontakt abgewickelt. Die Konditionen hängen von Kollektion und Partnerschaftsvereinbarung ab."
       }
     },
     "cta": {
