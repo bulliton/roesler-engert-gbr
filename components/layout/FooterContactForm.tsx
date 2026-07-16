@@ -207,7 +207,12 @@ export function FooterContactForm() {
         </label>
 
         <div className="mt-auto flex justify-end pt-2">
-          <Button type="submit" variant="inverse" disabled={loading}>
+          <Button
+            type="submit"
+            variant="inverse"
+            className="hover:border-accent-gold hover:bg-accent-gold hover:text-primary"
+            disabled={loading}
+          >
             {loading ? t("submitting") : t("submit")}
           </Button>
         </div>
