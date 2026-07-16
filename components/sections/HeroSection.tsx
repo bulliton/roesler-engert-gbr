@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { VideoBackground } from "@/components/ui/VideoBackground";
 import { Button } from "@/components/ui/Button";
+import { Headline } from "@/components/ui/Headline";
 import { SITE_IMAGES } from "@/lib/site-images";
 
 export function HeroSection() {
@@ -14,19 +15,19 @@ export function HeroSection() {
     <section className="relative -mt-[var(--header-offset)] flex h-[100svh] min-h-[100svh] items-end overflow-hidden">
       <VideoBackground
         posterSrc={SITE_IMAGES.craftsmanAtWork}
-        imageClassName="object-cover object-[65%_35%] md:object-[center_32%]"
+        imageClassName="object-cover object-[85%_35%] md:object-[center_32%]"
       />
       <Container className="relative z-10 pb-12 pt-28 md:pb-16 lg:pb-20">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="relative max-w-xl md:max-w-2xl"
         >
-          <h1 className="font-display text-[clamp(2.25rem,3.8vw+0.75rem,3.75rem)] font-normal leading-[1em] tracking-[-0.01em] !text-white hero-text-shadow">
+          <Headline as="h1" contrast className="hero-text-shadow">
             {t("title")}
-          </h1>
-          <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-white/70 md:mt-5 md:max-w-lg md:text-[0.9375rem]">
+          </Headline>
+          <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-white/80 md:mt-5 md:max-w-lg md:text-base">
             {t("subtitle")}
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-5 md:mt-10">
