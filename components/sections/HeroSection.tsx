@@ -15,7 +15,7 @@ export function HeroSection() {
     <section className="relative -mt-[var(--header-offset)] flex h-[100svh] min-h-[100svh] items-end overflow-hidden">
       <VideoBackground
         posterSrc={SITE_IMAGES.craftsmanAtWork}
-        imageClassName="object-cover object-[85%_35%] md:object-[center_32%]"
+        imageClassName="object-cover object-[34%_26%] md:object-[center_32%]"
       />
       <Container className="relative z-10 pb-12 pt-28 md:pb-16 lg:pb-20">
         <motion.div

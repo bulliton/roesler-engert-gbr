@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { FooterLabel } from "@/components/ui/FooterLabel";
+import { Button } from "@/components/ui/Button";
 import { Link } from "@/lib/navigation";
 import { submitLead } from "@/lib/forms/submit-lead";
 
@@ -72,13 +73,9 @@ export function NewsletterForm() {
               </Link>
             </span>
           </label>
-          <button
-            type="submit"
-            disabled={loading}
-            className="self-start py-2.5 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:text-secondary disabled:opacity-60"
-          >
+          <Button type="submit" variant="outline-contrast" disabled={loading}>
             {loading ? t("submitting") : t("submit")}
-          </button>
+          </Button>
         </form>
       )}
     </div>

@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/lib/navigation";
+import { Button } from "@/components/ui/Button";
 import { submitLead } from "@/lib/forms/submit-lead";
 import { CONTACT_SALUTATIONS } from "@/lib/leads/contact-name";
 
@@ -206,13 +207,9 @@ export function FooterContactForm() {
         </label>
 
         <div className="mt-auto flex justify-end pt-2">
-          <button
-            type="submit"
-            disabled={loading}
-            className="rounded-full bg-secondary px-8 py-2.5 text-sm font-semibold tracking-wide text-white uppercase transition-colors hover:bg-white hover:text-primary disabled:opacity-60"
-          >
+          <Button type="submit" variant="inverse" disabled={loading}>
             {loading ? t("submitting") : t("submit")}
-          </button>
+          </Button>
         </div>
       </form>
     </div>
