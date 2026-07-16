@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/lib/navigation";
 import { Container } from "@/components/ui/Container";
+import { CircularLogo } from "@/components/ui/CircularLogo";
 import { FooterLabel } from "@/components/ui/FooterLabel";
 import { CONTACT } from "@/lib/constants";
 import { FooterBackgroundMark } from "./FooterBackgroundMark";
@@ -21,18 +21,8 @@ export async function Footer() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-8 xl:gap-12">
           <div className="space-y-8 lg:col-span-4 xl:col-span-4">
             <div>
-              <Link
-                href="/"
-                className="relative inline-flex h-9 shrink-0 items-center sm:h-10 md:h-11"
-                aria-label="Rösler & Engert"
-              >
-                <Image
-                  src="/brand/logo-horizontal.svg"
-                  alt="Rösler & Engert"
-                  width={884}
-                  height={108}
-                  className="h-full w-auto max-w-[11rem] brightness-0 invert sm:max-w-[13rem] md:max-w-[15rem] lg:max-w-[17rem]"
-                />
+              <Link href="/" className="inline-block" aria-label="Rösler & Engert">
+                <CircularLogo size={88} className="text-white" />
               </Link>
               <p className="mt-4 font-body text-sm leading-relaxed text-white/65">
                 {t("mission.text")}
